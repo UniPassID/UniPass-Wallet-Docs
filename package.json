@@ -5,6 +5,7 @@
   "scripts": {
     "start-zh": "yarn run start -- --locale zh",
     "write-translations-zh": "yarn run write-translations -- --locale zh",
+    "translate-md": "mkdir -p i18n/zh/docusaurus-plugin-content-docs/current&&cp -r docs/** i18n/zh/docusaurus-plugin-content-docs/current",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

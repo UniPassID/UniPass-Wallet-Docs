@@ -1,10 +1,10 @@
 {
   "title": {
-    "message": "My Site",
+    "message": "UniPass Wallet",
     "description": "The title in the navbar"
   },
   "item.label.Tutorial": {
-    "message": "Tutorial",
+    "message": "Document",
     "description": "Navbar item with label Tutorial"
   },
   "item.label.Blog": {
