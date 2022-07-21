@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start-zh": "yarn run start -- --locale zh",
+    "write-translations-zh": "yarn run write-translations -- --locale zh",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
