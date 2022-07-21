@@ -62,11 +62,22 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        docsRouteBasePath: "/",
+      },
+    ],
+    "docusaurus-plugin-sass",
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "UniPass Wallet",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
