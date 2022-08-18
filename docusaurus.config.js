@@ -6,9 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  title: "UniPass Docs",
+  tagline: "UniPass Wallet is cool",
+  url: "https://docs.unipass.id",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "unipass", // Usually your GitHub org/user name.
+  projectName: "document", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -29,7 +29,6 @@ const config = {
       en: {
         htmlLang: "en-GB",
       },
-      // 如果你不需要覆盖默认值，你可以忽略这个语言（比如 zh-Hans）
       fa: {
         direction: "rtl",
       },
@@ -45,15 +44,23 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          editUrl: ({locale, docPath}) => {
+            if (locale === 'zh'){
+            return `https://github.com/UniPassID/UniPass-Wallet-Docs/tree/main/i18n/zh/docusaurus-plugin-content-docs/current/${docPath}`;
+            } (locale === 'en')
+            {
+              return `https://github.com/UniPassID/UniPass-Wallet-Docs/tree/main/docs/${docPath}`;
+            }
+
+          }
+
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/UniPassID/UniPass-Wallet-Docs/tree/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -79,8 +86,9 @@ const config = {
       navbar: {
         title: "UniPass Wallet",
         logo: {
-          alt: "My Site Logo",
+          alt: "UniPass Wallet Logo",
           src: "img/logo.svg",
+          href: "/docs/category/introduction" 
         },
         items: [
           {
@@ -91,7 +99,7 @@ const config = {
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/facebook/docusaurus",
+            href: "https://github.com/UniPassID/UniPass-Wallet-Docs",
             label: "GitHub",
             position: "right",
           },
@@ -109,7 +117,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/introduction/intro",
+                to: "/docs/category/develop",
               },
             ],
           },
@@ -117,16 +125,16 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Twitter",
+                href: "https://twitter.com/UniPassID",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discord.gg/XaRMFW85Pg",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "YouTube",
+                href: "https://www.youtube.com/channel/UCJZ4GOghuCdxBazZXc4M41g",
               },
             ],
           },
@@ -135,16 +143,16 @@ const config = {
             items: [
               {
                 label: "Blog",
-                to: "/blog",
+                href: "https://medium.com/unipass",
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/UniPassID/UniPass-Wallet-Docs",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UniPass Wallet document, Built with ❤️.`,
       },
       prism: {
         theme: lightCodeTheme,
