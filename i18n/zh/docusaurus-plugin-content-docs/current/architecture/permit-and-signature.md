@@ -16,9 +16,9 @@ sidebar_position: 5
 - 在本地生成一个不可导出的 session key
 - 使用这 2 个密钥分片对 session key 和授权截止时间的 timestamp 进行签名，即可获得授权 permit。
 
-这里 permit 的内在含义是：允许 session key 在此 timestamp 前代表 Master key 签名交易。
+这里 permit 的内在含义是：允许 session key 在此 timestamp 前代表 master key 签名交易。
 
-然后是 sign transaction 和 Verify 的流程：
+然后是 sign transaction 和 verify 的流程：
 
 - 用户使用 session key 签名一笔交易
 - 将 session key signature 和 permit 放在一笔交易内提交至链上
