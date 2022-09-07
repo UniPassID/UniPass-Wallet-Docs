@@ -10,7 +10,7 @@ sidebar_position: 4
 
 ## 什么是 DKIM
 
-[域名密钥识别邮件](https://datatracker.ietf.org/doc/html/rfc6376)（DomainKeys Identified Mail，简称 DKIM）是一套电子邮件认证机制，使用公开密钥加密的基础提供了数字签名与身份验证的功能，以检测发件人、主题、正文、附件等部分有否被伪冒或窜改。
+[域名密钥识别邮件](https://datatracker.ietf.org/doc/html/rfc6376)（DomainKeys Identified Mail，简称 DKIM）是一套电子邮件认证机制，使用公开密钥加密的基础提供了数字签名与身份验证的功能，以检测发件人、主题、正文、附件等部分是否有被伪冒或窜改。
 
 DKIM 是所有电子邮件供应商和用户广泛采用和强烈推荐的标准。
 

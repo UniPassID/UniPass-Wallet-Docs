@@ -8,15 +8,17 @@ sidebar_position: 5
 
 因此我们采用了 master key 授权 session key 的方式，用户日常可以使用 session key 进行签名、签交易。
 
-![permit-and-signature.png](./img/permit-and-signature.png)
-
-首先是 generate permit 流程：
+首先是授权 permit 流程：
 
 - 用户获得 master key 中 2 个密钥分片的签名权限
 - 在本地生成一个不可导出的 session key
 - 使用这 2 个密钥分片对 session key 和授权截止时间的 timestamp 进行签名，即可获得授权 permit。
 
+![permit-and-signature.png](./img/permit-and-signature.png)
+
+::: tip
 这里 permit 的内在含义是：允许 session key 在此 timestamp 前代表 master key 签名交易。
+:::
 
 然后是 sign transaction 和 verify 的流程：
 
