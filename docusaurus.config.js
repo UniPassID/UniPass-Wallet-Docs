@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "UniPass Docs",
   tagline: "UniPass Wallet is cool",
-  url: "https://docs.unipass.id",
+  url: "https://docs.wallet.unipass.id",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",

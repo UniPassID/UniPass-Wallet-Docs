@@ -16,7 +16,7 @@ sidebar_position: 5
 
 ![permit-and-signature.png](./img/permit-and-signature.png)
 
-::: tip
+:::tip
 这里 permit 的内在含义是：允许 session key 在此 timestamp 前代表 master key 签名交易。
 :::
 

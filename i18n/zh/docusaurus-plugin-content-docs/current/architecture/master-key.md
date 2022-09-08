@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Master key 的结构
 
-![master-key-sign.png](./img/master-key-sign.png)
+![mpc-solution.png](./img/mpc-solution.png)
 
 UniPass Wallet 在 Master key 中采用了 2-2 门限签名 (TSS) 方案，用户在链上会保持一个较为恒定的 Master key。
 
