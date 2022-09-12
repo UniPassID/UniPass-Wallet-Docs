@@ -16,7 +16,7 @@ UniPass Wallet aims to provide the most secure and convenient wallet experience 
 
 User uses email and password to register and login with their accounts. No need to use secret phrase and private key!
 
-### Censorship Resistance
+### Censorship resistance
 
 Users have full control of their accounts without relying on any third-party service. 
 
@@ -24,19 +24,19 @@ Users have full control of their accounts without relying on any third-party ser
 
 You can pay the gas fee for your users to achieve a truly gasless experience. Users can also pay the gas fee in any token.
 
-### On-Chain Email Recovery
+### On-chain Email recovery
 
 Users can set up guardians using only their emails. When account recovery is needed, they can easily do so by asking their guardians to submit emails appropriately.
 
-### Privacy Protection
+### Privacy protection
 
 UniPass uses Zero Knowledge technology to protect users’ email information on chain.
 
-### Multi-platform Support
+### Multi-platform support
 
 UniPass Wallet will support all platforms and be available on website, mobile, and browser extensions. It will support major libraries and frameworks, including but not limited to web3modal, and Wallet Connect.
 
-### Multi-chain Support
+### Multi-chain support
 
 UniPass Wallet is compatible with all EVM chains and can ensure that users have the same address across all chains.
 

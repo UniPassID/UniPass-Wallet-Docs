@@ -19,7 +19,7 @@ For your account safety, we highly recommend you set up 2 or more guardian email
 
 UniPass allowed the difficulty to owning and guarding a wallet account to Web2 level, giving users a smart contract account truly easy to understand, operate, and manage.
 
-## Privacy Preserving
+## Privacy preserving
 
 Because Web2 accounts’ private account information is stored in centralized servers outsiders cannot access, in normal circumstances these private information would not be leaked. Since UniPass is a non-custodial smart contract wallet, even though it stores users’ sensitive information after hashing, when such information is verified on chain, it is still possible that it could be exposed.
 

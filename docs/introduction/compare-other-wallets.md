@@ -2,9 +2,9 @@
 sidebar_position: 6
 ---
 
-# UniPass Wallet vs. Other Wallets
+# UniPass Wallet vs. other wallets
 
-## UniPass Wallet vs. EOA Wallet
+## UniPass Wallet vs. EOA wallet
 
 We can separate accounts on EVM-compatible chains into two main categories. One is Externally Owned Account (EOA) and another is Contract Account (CA). The biggest difference between EOA and CA is that EOA is controlled by private key while smart contract account is controlled by smart contract code, thus able to implement much more sophisticated logics of control.
 
@@ -22,17 +22,17 @@ In contrast, smart contract wallet uses CA, which enables us to create a secure 
 | Gas Payment | only native token supported | supports arbitrary token |
 | User Experience | Bad | Good |
 
-## UniPass Wallet vs. Other Smart Contract Wallets
+## UniPass Wallet vs. other smart contract wallets
 
 ### 1. UniPass Wallet has unified account address across all chains
 
 Unipass Wallet can ensure that user enjoys the same address across all EVM-compatible chains. This means that user can use the same address on Ethereum, its layer 2 chains (Arbitrum, Optimism, etc), and other EVM-compatible chains (Binance Smart Chain, Polygon, Avalanche, Cardano, etc).
 
-### 2. Use Threshold Signature Scheme to manage key using Multi-Party Computation
+### 2. Use threshold signature scheme to manage key using multi-party computation
 
 Other smart contract wallet solutions often rely on EOA wallets for private key management. UniPass Wallet uses Multi-Party Computation (MPC) based Threshold Signature Scheme (TSS), which allows us to be reliant on EOA wallets for security and availability while also completely avoiding private key, the largest single point of failure, throughout the entire user journey. This creates a seedless user experience that is both delightful and secure for our users.
 
-### 3. Unique on-chain email-based verification technique
+### 3. Unique on-chain Email-based verification technique
 
 Email protocols (POP3, SMTP, and IMAP), more than 50 years old already, is a foundational piece of the modern internet and plays a central role in people’s everyday life, both inside and outside of the office.
 
