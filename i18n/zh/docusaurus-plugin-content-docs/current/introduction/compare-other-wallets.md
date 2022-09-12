@@ -2,9 +2,9 @@
 sidebar_position: 6
 ---
 
-# UniPass 钱包 VS 其他钱包
+# UniPass 钱包 vs 其他钱包
 
-## UniPass Wallet VS 普通钱包
+## UniPass Wallet vs 普通钱包
 
 我们可以将以太坊上的账户分成两类，一类是外部账户（简称 EOA，Externally Owned Account），另一类是合约账户（简称 CA，Contract Account）。外部账户和合约账户最主要的区别是，外部账户是由私钥控制的，而合约账户则是由智能合约代码控制的，可以实现复杂逻辑。
 
@@ -24,7 +24,7 @@ UniPass Wallet 就是一个链上合约账户的解决方案，通过智能合�
 | 支付 Gas | 必须使用原生代币 | 可以使用任意代币 |
 | 用户使用门槛 | 高 | 低 |
 
-## UniPass Wallet VS 其他智能合约钱包
+## UniPass Wallet vs 其他智能合约钱包
 
 ### 1. UniPass Wallet 一个是多链地址统一的智能合约账户
 
