@@ -8,7 +8,6 @@ UniPass Wallet supports all EVM-compatible chains and gives users the same addre
 
 ## MainNet
 
-- Ethereum
 - BSC (Binance Smart Chain)
 - Polygon
 - Rangers Protocol
@@ -22,6 +21,7 @@ UniPass Wallet supports all EVM-compatible chains and gives users the same addre
 
 ## Chains to support in the future
 
+- Ethereum
 - Arbitrum
 - Optimism
 - Fantom
