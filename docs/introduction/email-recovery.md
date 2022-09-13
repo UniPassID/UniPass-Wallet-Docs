@@ -12,7 +12,7 @@ With our unique on-chain email verification technology, users can set multiple i
 
 :::tip TIPS
 - When users have more than 2 guardian emails (including the main email), users can immediately recover the account using both of them to submit account recovery emails.
-- When users only have one guardian email (by default the main email) the users need to wait for a 48-hour lock period before the account recovery takes place.
+- When users only have one guardian email (by default the main email) the users usually need to wait for a 48-hour lock period before the account recovery takes place.
 
 For your account safety, we highly recommend you set up 2 or more guardian emails.
 :::
