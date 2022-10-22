@@ -8,20 +8,20 @@ UniPass Wallet supports all EVM-compatible chains and gives users the same addre
 
 ## MainNet
 
+- Ethereum
 - BSC (Binance Smart Chain)
 - Polygon
 - Rangers Protocol
 
 ## TestNet
 
-- Rinkeby (Ethereum testnet)
+- Goerli (Ethereum testnet)
 - BSC testnet
 - Mumbai (Polygon testnet)
 - Robin (Rangers testnet)
 
 ## Chains to support in the future
 
-- Ethereum
 - Arbitrum
 - Optimism
 - Fantom

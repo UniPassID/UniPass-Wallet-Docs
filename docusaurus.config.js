@@ -85,6 +85,7 @@ const config = {
     ({
       navbar: {
         title: "UniPass Wallet",
+        hideOnScroll: true,
         logo: {
           alt: "UniPass Wallet Logo",
           src: "img/logo.svg",
