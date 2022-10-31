@@ -8,7 +8,7 @@ sidebar_position: 1
 
 用户注册 UniPass Wallet 账户时，会给每个用户在链上部署一个智能合约，合约内会存储着这个账户相关的数据和逻辑。
 
-在 UniPass Wallet 的智能合约中，用户是通过一系列具有角色权重的密钥来管理账户的。除了以安全多方计算（MPC）方案实现的 [Master key](/i18n/zh/docusaurus-plugin-content-docs/current/architecture/master-key.md) 外，用户还可以设置多种其他类型的密钥。每一个密钥都有一个对应的角色及权重。用户只有在集齐了总角色权重门限超过要求的密钥后，才可以获得该角色的授权。
+在 UniPass Wallet 的智能合约中，用户是通过一系列具有角色权重的密钥来管理账户的。除了以安全多方计算（MPC）方案实现的 [Master key](/i18n/zh/docusaurus-plugin-content-docs/current/architecture/03-master-key.md) 外，用户还可以设置多种其他类型的密钥。每一个密钥都有一个对应的角色及权重。用户只有在集齐了总角色权重门限超过要求的密钥后，才可以获得该角色的授权。
 
 ![keyset-structure.png](./img/keyset-structure.png)
 
