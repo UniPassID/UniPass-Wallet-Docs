@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# Master key
+# Master Key
 
 Coming soon

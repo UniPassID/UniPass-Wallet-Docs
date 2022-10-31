@@ -12,8 +12,16 @@
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Develop": {
-    "message": "入门指南",
+    "message": "开发指南",
     "description": "The label for category Develop in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Popup": {
+    "message": "Popup SDK",
+    "description": "The label for category Popup SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Flutter": {
+    "message": "Flutter SDK",
+    "description": "The label for category Flutter SDK in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "核心架构",

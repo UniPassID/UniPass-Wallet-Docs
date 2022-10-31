@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# UniPass Wallet vs. other wallets
+# UniPass Wallet vs. Other Wallets
 
 ## UniPass Wallet vs. EOA wallet
 

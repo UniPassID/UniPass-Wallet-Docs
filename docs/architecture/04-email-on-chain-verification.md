@@ -2,6 +2,6 @@
 sidebar_position: 4
 ---
 
-# Email on-chain verification
+# Email On-chain Verification
 
 Coming soon

@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Multi-chain support
+# Multi-chain Support
 
 UniPass Wallet supports all EVM-compatible chains and gives users the same address across all chains using [**EIP-2470**](https://eips.ethereum.org/EIPS/eip-2470). Currently supported chains are:
 

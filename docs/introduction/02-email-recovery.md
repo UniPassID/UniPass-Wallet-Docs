@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Email recovery
+# Email Recovery
 
 When using non-custodial smart contract wallets, once users lose access to the key due to all sorts of reasons, they won’t be able to control the account anymore. To regain their control, the users need to replace the account’s key through account recovery.
 

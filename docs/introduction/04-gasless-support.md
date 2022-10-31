@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# Gasless support
+# Gasless Support
 
 UniPass Wallet is a smart contract wallet. When users initiate a transaction, a third-party is needed to act as a relayer to fulfill the it. In this process, the relayer can allow users to use arbitrary supported tokens to pay for the gas fee, or even pay the gas fee for the users, thus achieving a gasless user experience.
 

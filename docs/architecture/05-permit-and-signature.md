@@ -2,6 +2,6 @@
 sidebar_position: 5
 ---
 
-# Permit and signature
+# Permit and Signature
 
 Coming soon

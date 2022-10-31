@@ -11,6 +11,14 @@
     "message": "Getting started",
     "description": "The label for category Develop in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Popup": {
+    "message": "Popup SDK",
+    "description": "The label for category Popup SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Flutter": {
+    "message": "Flutter SDK",
+    "description": "The label for category Flutter SDK in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "Architecture",
     "description": "The label for category Architecture in sidebar tutorialSidebar"
