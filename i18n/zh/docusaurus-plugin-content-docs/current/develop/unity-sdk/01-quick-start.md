@@ -15,7 +15,7 @@ sidebar_position: 1
 
 ### iOS
 
-准备中...
+请在[**申请表**](https://mtf0xus26cg.typeform.com/to/TW0Eh9Yu)中填写您的邮箱，我们将会给您发送 UniPass iOS demo 的 TestFlight 的测试邀请。
 
 ## 相关资料
 - [Unity SDK GitHub](https://github.com/UniPassID/unipass-unity-web-sdk)

@@ -15,7 +15,7 @@ Please download the installation package of Android on Google drive
 
 ### iOS
 
-Coming soon...
+Please fill in your email address in the [**Application Form**](https://mtf0xus26cg.typeform.com/to/TW0Eh9Yu) and we will send you a test invitation through [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) as soon as possible. 
 
 ## Reference
 - [Unity SDK GitHub](https://github.com/UniPassID/unipass-unity-web-sdk)
