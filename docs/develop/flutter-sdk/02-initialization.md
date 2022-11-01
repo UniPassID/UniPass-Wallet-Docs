@@ -6,7 +6,7 @@ sidebar_position: 2
 
 Create an instance with a `UniPassOption` object to customize. This is the definition of `UniPassOption`:
 
-```ts
+```dart
 /// The definition of UniPassOption
 
 enum Environment { testnet, mainnet }
@@ -52,7 +52,7 @@ class UniPassOption {
 
 ## Code sample
 
-```ts
+```dart
 UniPassWeb uniPassWeb = UniPassWeb(
     UniPassOption(
       env: Environment.testnet,

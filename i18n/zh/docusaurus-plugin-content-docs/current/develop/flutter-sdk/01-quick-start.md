@@ -49,7 +49,7 @@ flutter pub get
 
 3. 最后在您的 Dart 代码中使用：
 
-```ts
+```dart
 import 'package:unipass_web_sdk/unipass_web_sdk.dart';
 ```
 

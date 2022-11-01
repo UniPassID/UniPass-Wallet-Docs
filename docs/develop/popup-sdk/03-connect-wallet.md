@@ -14,7 +14,7 @@ export declare type UPConnectOptions = {
 
 Return an `UPAccount` object if succeed. Otherwise an exception will be thrown if user denied the connection request.
 
-```tsx
+```ts
 export declare class UPAccount {
     address: string;                       // Ethereum address of user
     email?: string | undefined;

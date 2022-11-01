@@ -6,7 +6,7 @@ sidebar_position: 5
 
 ## Sign message
 
-```ts
+```dart
 /// {@params} BuildContext context
 /// {@params} String message
 /// {@return} String signedMessage
@@ -19,7 +19,7 @@ try {
 
 ## Verify message
 
-```ts
+```dart
 /// {@params} BuildContext context
 /// {@params} String message
 /// {@return} String signedMessage

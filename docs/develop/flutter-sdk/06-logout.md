@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Logout Account
 
-```ts
+```dart
 /// Clear upAccount data
 await uniPassWeb.logout();
 ```

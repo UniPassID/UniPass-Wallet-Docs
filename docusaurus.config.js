@@ -158,7 +158,16 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: [
+          'markdown',
+          'json',
+          'csharp',
+          'dart'
+        ]
       },
+      colorMode: {
+        defaultMode: 'dark'
+      }
     }),
 };
 

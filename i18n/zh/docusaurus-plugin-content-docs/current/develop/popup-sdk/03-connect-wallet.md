@@ -15,7 +15,7 @@ export declare type UPConnectOptions = {
 
 返回结果：连接 UniPass 成功后返回结果为 `UPAccount` 类型数据，如果用户拒绝 UniPass Wallet 连接会抛出异常，应用需要捕获该异常并处理。
 
-```tsx
+```ts
 export declare class UPAccount {
     address: string;                       // 用户地址
     email?: string | undefined;            // 邮箱

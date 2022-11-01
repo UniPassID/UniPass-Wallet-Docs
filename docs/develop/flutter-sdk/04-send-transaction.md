@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Type definitions:
 
-```ts
+```dart
 /// Type definitions of transaction
 class TransactionMessage {
   String from;
@@ -25,7 +25,7 @@ class TransactionMessage {
 
 ## Transfer Native Token
 
-```ts
+```dart
 /// {@params} BuildContext context
 /// {@params} TransactionMessage tx
 /// {@return} String txHash
@@ -46,7 +46,7 @@ try {
 
 ## Transfer ERC20 Token
 
-```ts
+```dart
 /// {@params} BuildContext context
 /// {@params} TransactionMessage tx
 /// {@return} String txHash

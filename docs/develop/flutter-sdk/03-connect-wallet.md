@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Connect UniPass Wallet
 
-```ts
+```dart
 class UpAccount {
   String address;   // Ethereum address of user
   String email;     // Email of user

@@ -48,7 +48,7 @@ flutter pub get
 
 3. Finally, use it in your Dart code:
 
-```ts
+```dart
 import 'package:unipass_web_sdk/unipass_web_sdk.dart';
 ```
 

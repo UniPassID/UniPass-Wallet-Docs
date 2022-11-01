@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # 连接至 UniPass Wallet
 
-```ts
+```dart
 class UpAccount {
   String address;   // 用户地址
   String email;     // 邮箱

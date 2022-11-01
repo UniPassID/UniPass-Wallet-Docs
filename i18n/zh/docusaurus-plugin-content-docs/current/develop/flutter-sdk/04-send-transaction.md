@@ -6,7 +6,7 @@ sidebar_position: 4
 
 相关类型定义：
 
-```ts
+```dart
 /// 交易类型定义
 class TransactionMessage {
   String from;
@@ -25,7 +25,7 @@ class TransactionMessage {
 
 ## 发送原生代币
 
-```ts
+```dart
 /// {@params} BuildContext context  -  Widget上下文
 /// {@params} TransactionMessage tx  -  交易数据
 /// {@return} String txHash  -  交易Hash
@@ -46,7 +46,7 @@ try {
 
 ## 发送 ERC20 代币
 
-```ts
+```dart
 /// {@params} BuildContext context  -  Widget上下文
 /// {@params} TransactionMessage tx  -  交易数据
 /// {@return} String txHash  -  交易Hash

@@ -6,7 +6,7 @@ sidebar_position: 2
 
 通过传入自定义的配置信息 `UniPassOption`：
 
-```ts
+```dart
 /// UniPassOption 定义
 
 enum Environment { testnet, mainnet }
@@ -52,7 +52,7 @@ class UniPassOption {
 
 ## 代码示例
 
-```ts
+```dart
 UniPassWeb uniPassWeb = UniPassWeb(
     UniPassOption(
       env: Environment.testnet,
