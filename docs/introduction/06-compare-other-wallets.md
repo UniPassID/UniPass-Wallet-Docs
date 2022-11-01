@@ -24,15 +24,15 @@ In contrast, smart contract wallet uses CA, which enables us to create a secure 
 
 ## UniPass Wallet vs. other smart contract wallets
 
-### 1. UniPass Wallet has unified account address across all chains
+**`UniPass Wallet has unified account address across all chains`**
 
 Unipass Wallet can ensure that user enjoys the same address across all EVM-compatible chains. This means that user can use the same address on Ethereum, its layer 2 chains (Arbitrum, Optimism, etc), and other EVM-compatible chains (Binance Smart Chain, Polygon, Avalanche, Cardano, etc).
 
-### 2. Use threshold signature scheme to manage key using multi-party computation
+**`Use threshold signature scheme to manage key using multi-party computation`**
 
 Other smart contract wallet solutions often rely on EOA wallets for private key management. UniPass Wallet uses Multi-Party Computation (MPC) based Threshold Signature Scheme (TSS), which allows us to be reliant on EOA wallets for security and availability while also completely avoiding private key, the largest single point of failure, throughout the entire user journey. This creates a seedless user experience that is both delightful and secure for our users.
 
-### 3. Unique on-chain Email-based verification technique
+**`Unique on-chain Email-based verification technique`**
 
 Email protocols (POP3, SMTP, and IMAP), more than 50 years old already, is a foundational piece of the modern internet and plays a central role in people’s everyday life, both inside and outside of the office.
 
@@ -42,15 +42,15 @@ After endless research, UniPass Wallet is now able to verify DKIM’s digital si
 
 In order to protect our users’ privacy, we also added Zero Knowledge technology to ensure that user’s identity can be verified using only desensitized private information.
 
-### 4. Allow regular internet users to become account guardians
+**`Allow regular internet users to become account guardians`**
 
 Regular smart contract wallet’s social recovery solution, like the one of Argent, requires guardians to be users of Argent or has an Ethereum wallet already. This means that if your trusted family members and friends are not Web3 users, they cannot become your account’s guardians.
 
-### 5. Support gas fee payment in any supported token
+**`Support gas fee payment in any supported token`**
 
 UniPass Wallet supports gas fee payment in any supported token. Developers can customize and deploy their own relayers to achieve customized gas fee payment policies for their users.
 
-### 6. Receive asset with zero upfront cost
+**`Receive asset with zero upfront cost`**
 
 Unlike regular EOA, contract account needs to first have the smart contract deployed on chain to receive the account address and carry out operations like receiving payment.
 
@@ -58,6 +58,6 @@ UniPass Wallet can calculate user’s account address before the actual deployme
 
 Our innovation greatly improved the user experience. Now users do not need to pay an upfront cost just to own an account address across different chains; they only need to do so when they need to use it.
 
-### 7. Highly customizable security model that provides users with the security they need
+**`Highly customizable security model that provides users with the security they need`**
 
 Thanks to UniPass Wallet’s flexible account model and support of wide range of key types, developers can set up just the right amount of security needed for accounts with different levels of asset. For examples, a new account does not need extra security measures like additional guardian accounts and two-factor authentication, since the default security setting is enough. When users start accumulating more asset inside the account, developers can timely require the users to set up additional security measures. This allows developers to give users just the right amount of security, without unnecessarily sacrificing user experience for the additional security they don’t yet need.

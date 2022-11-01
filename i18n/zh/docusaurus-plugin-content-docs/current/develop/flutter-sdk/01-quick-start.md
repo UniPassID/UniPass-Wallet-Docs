@@ -24,7 +24,7 @@ sidebar_position: 1
 - [Demo Project](https://github.com/UniPassID/unipass-flutter-web-sdk/tree/master/example)
 
 :::tip
-UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
+Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
 :::
 
 ## 开发环境

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Installation
+# Quick Start
 
 | Version | Last updated | UniPass Wallet Entry URL | Upgrade Instructions |
 | --- | --- | --- | --- |
@@ -16,8 +16,6 @@ Please download the installation package of Android on Google drive
 ### iOS
 
 Please fill in your email address in the [**Application Form**](https://mtf0xus26cg.typeform.com/to/fKTDqMa8) and we will send you a test invitation through [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) as soon as possible. 
-
-
 
 ## Reference
 - [Flutter web SDK GitHub](https://github.com/UniPassID/unipass-flutter-web-sdk)
@@ -33,7 +31,7 @@ UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.i
 - `Dart sdk: '>=2.18.1 <3.0.0'`
 - `Flutter: flutter: ">=2.5.0"`
 
-## Installation
+## Setup
 
 1. Add a dependency to the file of `pubspec.yaml` in your project:
 

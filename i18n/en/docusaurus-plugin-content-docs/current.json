@@ -19,6 +19,10 @@
     "message": "Flutter SDK",
     "description": "The label for category Flutter SDK in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Unity": {
+    "message": "Unity SDK",
+    "description": "The label for category Unity SDK in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "Architecture",
     "description": "The label for category Architecture in sidebar tutorialSidebar"

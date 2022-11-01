@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# 签名和验签
+# 签名消息和验签
 
-## 签名
+## 签名消息
 
 ```ts
 const signMessage = async () => {

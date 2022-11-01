@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Sign and Verify
+# Sign Message and Verify
 
 ## Sign message
 

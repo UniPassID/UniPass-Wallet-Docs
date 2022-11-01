@@ -24,7 +24,7 @@ export declare class UPAccount {
 }
 ```
 
-`newborn` 字段能够被用来统计新注册用户.
+`newborn` 字段能够被用来统计新注册用户。
 
 ## 代码示例
 
