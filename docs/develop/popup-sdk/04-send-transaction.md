@@ -43,7 +43,7 @@ export declare class UniPassPopupSDK {
 }
 ```
 
-## Transfer Native Token
+## Transfer native token
 
 ```ts
 async sendNativeToken() {
@@ -66,7 +66,7 @@ async sendNativeToken() {
 }
 ```
 
-## Transfer ERC20 Token
+## Transfer ERC20 token
 
 ```ts
 async sendToken() {   

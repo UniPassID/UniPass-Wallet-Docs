@@ -23,7 +23,7 @@ class TransactionMessage {
 }
 ```
 
-## Transfer Native Token
+## Transfer native token
 
 ```dart
 /// {@params} BuildContext context
@@ -44,7 +44,7 @@ try {
 }
 ```
 
-## Transfer ERC20 Token
+## Transfer ERC20 token
 
 ```dart
 /// {@params} BuildContext context

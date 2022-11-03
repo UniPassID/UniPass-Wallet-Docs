@@ -25,7 +25,7 @@ public class TransactionMessage
     }
 ```
 
-## Transfer Native Token
+## Transfer native token
 
 ```csharp
 var tx = new TransactionMessage(from: wallet.getAddress(), to: native_to, value: Web3.Convert.ToWei(BigDecimal.Parse(native_value), 18).ToString(), data: "0x");
@@ -33,7 +33,7 @@ var hash = await wallet.SendTransaction(tx);
 Debug.Log(hash);
 ```
 
-## Transfer ERC20 Token
+## Transfer ERC20 token
 
 ```csharp
 // https://docs.nethereum.com/en/latest/nethereum-smartcontrats-gettingstarted/

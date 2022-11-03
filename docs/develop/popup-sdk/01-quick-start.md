@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Quick start
+# Quick Start
 
 | Version | Last updated | UniPass Wallet Entry URL | Upgrade Instructions |
 | --- | --- | --- | --- |

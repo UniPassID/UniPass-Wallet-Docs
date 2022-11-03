@@ -25,7 +25,7 @@ Please fill in your email address in the [**Application Form**](https://mtf0xus2
 UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
 :::
 
-## Development Environment
+## Development environment
 
 - `UnityHub Verison: 2021.2.11f1`
 - Third-party packages:
