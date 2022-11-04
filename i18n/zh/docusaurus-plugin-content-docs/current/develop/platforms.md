@@ -19,10 +19,8 @@ UniPass Wallet 将提供多平台的 SDK，方便应用方在各种平台上都�
 | Unreal SDK| 计划中 | |
 
 
-:::info 接入须知
-当前 UniPass Wallet 仍处于测试网阶段：
-1. 请勿往地址内转入真实的主网资产
-2. 合约升级可能会导致已注册账户不可用 (后续支持 OAuth 和 zkp 将需要升级合约)
+:::warning 注意
+当前 UniPass Wallet 仍处于测试网阶段，**请勿往测试网地址内转入真实的主网资产**，因为同一个邮箱或谷歌账户注册的 UniPass Wallet 的主网地址与测试网地址不一致。
 :::
 
 ## RPC 配置

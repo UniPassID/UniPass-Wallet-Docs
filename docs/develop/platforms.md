@@ -18,10 +18,8 @@ Applications built with Flutter or Unity can connect to UniPass Wallet by openin
 | Unity SDK | Finished | [**Start now**](./unity-sdk/01-quick-start.md) |
 | Unreal SDK| Planning | |
 
-:::info Notice
-Currently UniPass Wallet is still in the testnet phase:
-1. Kindly avoid sending real crypto assets to the address
-2. A contract upgrade may result in the inaccessibility of registered accounts (Additional support for OAuth and zkp will necessitate contract upgrade)
+:::warning Notice
+Currently UniPass Wallet is still in the testnet phase, **Kindly avoid sending real crypto assets to the testnet address**, because the testnet address of UniPass Wallet does not match the mainnet address registered to the same email or Google account.
 :::
 
 ## RPC URL
