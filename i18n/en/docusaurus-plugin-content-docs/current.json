@@ -26,5 +26,9 @@
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "Architecture",
     "description": "The label for category Architecture in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Terms": {
+    "message": "Terms",
+    "description": "The label for category Terms in sidebar tutorialSidebar"
   }
 }
