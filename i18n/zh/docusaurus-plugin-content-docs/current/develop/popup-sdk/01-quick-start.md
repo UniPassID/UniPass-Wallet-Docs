@@ -4,10 +4,11 @@ sidebar_position: 1
 
 # 快速开始
 
-| 更新版本 | 更新日期 | 调用的 UniPass Wallet 网址 | 更新说明 |
-| --- | --- | --- | --- |
-| v0.0.1 | 2022.10.09 | https://testnet.wallet.unipass.id/ | 支持连接钱包获取地址，转账原生代币和ERC20代币，签名/验签等功能。 |
-| v0.0.4 | 2022.10.14 | https://testnet.wallet.unipass.id/ | isValidSignature 增加 account 可选参数 |
+| 更新版本 | 更新日期   | 调用的 UniPass Wallet 网址         | 更新说明                                                                               |
+| -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.7   | 2022.11.15 | https://testnet.wallet.unipass.id/ | 支持 Google 第三方登录，增加连接钱包返回 Email 的可选功；signMessage 增加 unipass 前缀 |
+| v0.0.4   | 2022.10.14 | https://testnet.wallet.unipass.id/ | isValidSignature 增加 account 可选参数                                                 |
+| v0.0.1   | 2022.10.09 | https://testnet.wallet.unipass.id/ | 支持连接钱包获取地址，转账原生代币和 ERC20 代币，签名/验签等功能。                     |
 
 Popup SDK 是连接 UniPass Wallet 页面的 javascript SDK 工具包，提供了一系列的方法供第三方应用与 UniPass Wallet 进行交互。
 
@@ -48,3 +49,4 @@ yarn add @unipasswallet/popup-sdk
 :::tip
 当前 Demo 调用的 UniPass Wallet 网址：[https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
 :::
+```

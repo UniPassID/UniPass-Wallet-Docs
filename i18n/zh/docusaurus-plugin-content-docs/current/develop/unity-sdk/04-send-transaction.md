@@ -9,20 +9,20 @@ sidebar_position: 4
 ```csharp
 /// 交易类型定义
 public class TransactionMessage
-    {
-        public string from;
-        public string to;
-        public string value;
-        public string data;
+{
+    public string from;
+    public string to;
+    public string value;
+    public string data;
 
-        public TransactionMessage(string from, string to, string value, string data)
-        {
-            this.from = from;
-            this.to = to;
-            this.value = value;
-            this.data = data;
-        }
+    public TransactionMessage(string from, string to, string value, string data)
+    {
+        this.from = from;
+        this.to = to;
+        this.value = value;
+        this.data = data;
     }
+}
 ```
 
 ## 发送原生代币

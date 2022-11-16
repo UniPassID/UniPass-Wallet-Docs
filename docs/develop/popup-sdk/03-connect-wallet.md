@@ -5,10 +5,12 @@ sidebar_position: 3
 # Connect UniPass Wallet
 
 ```ts
+export declare type ConnectType = "both" | "google" | "email";
 export declare type UPEventListener = (event: UPEvent) => void;
 export declare type UPConnectOptions = {
-    email?: boolean;                 // request email or not
-		eventListener?: UPEventListener; // event listener during connection
+  email?: boolean; // request email or not
+  connectType?: ConnectType; // Type of login UniPass
+  eventListener?: UPEventListener; // event listener during connection
 };
 ```
 
@@ -16,10 +18,14 @@ Return an `UPAccount` object if succeed. Otherwise an exception will be thrown i
 
 ```ts
 export declare class UPAccount {
-    address: string;                       // Ethereum address of user
-    email?: string | undefined;
-    newborn?: boolean | undefined;         // Newly registered or not
-    constructor(username: string, email?: string | undefined, newborn?: boolean | undefined);
+  address: string; // Ethereum address of user
+  email?: string | undefined; // Email
+  newborn?: boolean | undefined; // Newly registered or not
+  constructor(
+    username: string,
+    email?: string | undefined,
+    newborn?: boolean | undefined
+  );
 }
 ```
 
@@ -39,10 +45,10 @@ try {
         ElMessage.success("a user register");
       }
     },
+    connectType: "both",
   });
-	const { address, email } = account;
+  const { address, email } = account;
   console.log("account", address, email);
-  
 } catch (err) {
   console.log("connect err", err);
 }

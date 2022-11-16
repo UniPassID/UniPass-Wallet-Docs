@@ -20,4 +20,5 @@ try {
 	// User refuesed the connection or connection error
 }
 ```
+
 `newborn` can be used to track new registration count.

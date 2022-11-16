@@ -11,12 +11,19 @@ sidebar_position: 2
 
 enum Environment { testnet, mainnet }
 
-enum ChainType { polygon, bsc, rangers }
+enum ChainType { eth, polygon, bsc, rangers }
 
 enum Protocol { https, http }
 
 /// 主题
 enum UnipassTheme { light, dark }
+
+/// both 两种登录方式都显示，选择 google or email 则只显示相关登录方式
+enum ConnectType {
+  both,
+  google,
+  email,
+}
 
 /// 应用设置
 class AppSetting {
@@ -39,6 +46,8 @@ class UniPassOption {
   String? domain;
   String? protocol;
   AppSetting? appSetting;
+  bool? returnEmail;
+  ConnectType? connectType;
 
   UniPassOption({
     this.nodeRPC,
@@ -46,6 +55,8 @@ class UniPassOption {
     this.domain,
     this.protocol,
     this.appSetting,
+    this.returnEmail,
+    this.connectType,
   });
 }
 ```
@@ -57,12 +68,15 @@ UniPassWeb uniPassWeb = UniPassWeb(
     UniPassOption(
       env: Environment.testnet,
       /// for polygon mumbai
-	  nodeRPC: "https://node.wallet.unipass.id/polygon-mumbai",
-		  
-	  /// for bsc testnet
+      nodeRPC: "https://node.wallet.unipass.id/polygon-mumbai",
+
+      /// for eth testnet
+      /// nodeRPC: "https://node.wallet.unipass.id/eth-goerli",
+
+      /// for bsc testnet
       /// nodeRPC: "https://node.wallet.unipass.id/bsc-testnet",
 
-	  /// for rangers robin
+      /// for rangers robin
       /// nodeRPC: "https://node.wallet.unipass.id/rangers-robin",
 
       domain: "testnet.wallet.unipass.id",
@@ -73,6 +87,8 @@ UniPassWeb uniPassWeb = UniPassWeb(
         theme: UnipassTheme.dark,
         chainType: ChainType.polygon,
       ),
+      returnEmail: false,
+      connectType: null,
     ),
   );
 ```

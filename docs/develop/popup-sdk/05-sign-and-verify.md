@@ -2,9 +2,9 @@
 sidebar_position: 5
 ---
 
-# 签名消息和验签
+# Sign Message and Verify
 
-## 签名消息
+## Sign message
 
 ```ts
 const signMessage = async () => {
@@ -13,17 +13,21 @@ const signMessage = async () => {
   } catch (err) {
     console.log("auth err", err);
   }
-}
+};
 ```
 
-## 验签
+## Verify message
 
 ```ts
 const verifySig = async () => {
-  const message = 'hello world';            // 需要签名的用户自定义消息
-  const sig: string;                        // 调用UniPass签名获取到的结果
-  try {
-    const ret = await upWallet.isValidSignature(message.value, sig.value, accountAddress);
+  const message = "hello world";
+  const sig: string;
+  try {
+    const ret = await upWallet.isValidSignature(
+      message.value,
+      sig.value,
+      accountAddress
+    );
     if (ret === true) {
       console.success("verify signature success");
     } else {
@@ -32,5 +36,5 @@ const verifySig = async () => {
   } catch (err) {
     console.log("auth err", err);
   }
-}
+};
 ```

@@ -24,7 +24,7 @@ export declare class UniPassPopupSDK {
    */
   sendTransaction(_transaction: UPTransactionMessage): Promise<string>;
 
-	 /**
+  /**
    * sign message with UniPass Wallet, it is compatible with EIP-1271
    *
    * @param message message to be signed

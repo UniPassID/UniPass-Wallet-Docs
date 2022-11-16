@@ -4,18 +4,20 @@ sidebar_position: 1
 
 # Quick Start
 
-| Version | Last updated | UniPass Wallet Entry URL | Upgrade Instructions |
-| --- | --- | --- | --- |
-| v0.0.1 | 2022.10.12 | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify |
+| Version | Last updated | UniPass Wallet Entry URL           | Upgrade Instructions                                                                                    |
+| ------- | ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| v0.0.3  | 2022.11.14   | https://testnet.wallet.unipass.id/ | Support Google login. Add the optional function of connect to return email. Add a prefix in signMessage |
+| v0.0.1  | 2022.10.12   | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify                                                              |
 
 ### Android
 
 Please download the installation package of Android on Google drive
-* [unipass_release_v0.0.1.apk](https://drive.google.com/file/d/1LZjZmMPTsDqSxeX9EVnVRMZH28rsLQAU/view?usp=sharing)
+
+- [unipass_release_v0.0.1.apk](https://drive.google.com/file/d/1LZjZmMPTsDqSxeX9EVnVRMZH28rsLQAU/view?usp=sharing)
 
 ### iOS
 
-Please fill in your email address in the [**Application Form**](https://mtf0xus26cg.typeform.com/to/fKTDqMa8) and we will send you a test invitation through [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) as soon as possible. 
+Please fill in your email address in the [**Application Form**](https://mtf0xus26cg.typeform.com/to/fKTDqMa8) and we will send you a test invitation through [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) as soon as possible.
 
 ## Reference
 
@@ -37,8 +39,8 @@ UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.i
 1. Add a dependency to the file of `pubspec.yaml` in your project:
 
 ```xml
-dependency:
-  unipass_web_sdk: ^0.0.1
+dependencies:
+  unipass_web_sdk: ^0.0.2
 ```
 
 2. Then run the following command:

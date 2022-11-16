@@ -25,15 +25,24 @@ public class WalletConfig
         dark, light,
     }
 
+	public enum ConnectType
+    {
+        both, google, email
+    }
+
     // for polygon mumbai
     // chainType: "polygon",
     public string nodeRPC = "https://node.wallet.unipass.id/polygon-mumbai";
 
-	// for bsc testnet
-	// chainType: "bsc",
+    // for eth testnet
+    // chainType: "eth",
+    // public string nodeRPC =  "https://node.wallet.unipass.id/eth-goerli",
+
+    // for bsc testnet
+    // chainType: "bsc",
     // public string nodeRPC = "https://node.wallet.unipass.id/bsc-testnet",
 
-	// for rangers robin
+    // for rangers robin
     // chainType: "rangers",
     // public string nodeRPC = "https://node.wallet.unipass.id/rangers-robin",
 
@@ -50,8 +59,9 @@ public class WalletConfig
     public string appName = "";
 
     public Theme theme = Theme.dark;
-}
 
+	public bool returnEmail = false;
+}
 ```
 
 ## 创建实例
