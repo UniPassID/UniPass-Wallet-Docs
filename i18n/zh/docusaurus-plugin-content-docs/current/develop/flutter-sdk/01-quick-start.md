@@ -13,7 +13,8 @@ sidebar_position: 1
 
 请前往 Google drive 下载 Android 安装包：
 
-- [unipass_release_v0.0.1.apk](https://drive.google.com/file/d/1LZjZmMPTsDqSxeX9EVnVRMZH28rsLQAU/view?usp=sharing)
+- [unipass_flutter_demo_v0.0.2.apk](https://drive.google.com/file/d/1BqGSfPX39m7Kqk2KRhIVVQqCt0waC1mY/view?usp=sharing)
+- [unipass_flutter_demo_v0.0.1.apk](https://drive.google.com/file/d/1LZjZmMPTsDqSxeX9EVnVRMZH28rsLQAU/view?usp=sharing)
 
 ### iOS
 
