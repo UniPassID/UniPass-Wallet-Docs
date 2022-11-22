@@ -24,9 +24,11 @@ TSS 可以帮助多方共同管理私钥，并允许灵活的定义阈值策略�
 - TSS 使得单点受损不会对资产造成风险。
 - 通过 resharing 方法可在保持私钥不变的情况下重新更新各方 share，使旧的 shares 失效，而不定期 shares 轮换可进一步提升密钥管理的安全性。
 
+了解更多关于 TSS，可以参见：[**Threshold Signatures Explained**](https://academy.binance.com/en/articles/threshold-signatures-explained)。
+
 ### TSS VS 传统 Multisig（多重签名）
 
-TSS 使用链下分布式多方计算技术，它比 multisig 方案更加高效，TSS 最终只有 1 个签名，而不是 n 个签名。而多重签名发生在链上，这可能会消耗更多资源，并且多重签名的参与者（公钥）会暴露在区块链中，成为潜在的攻击点。
+TSS 使用链下分布式多方计算技术，它比 multisig 方案更加高效，TSS 最终只有 1 个签名，而不是 n 个签名。并且多重签名发生在链上，这可能会消耗更多资源，多重签名的参与者（公钥）会暴露在区块链中，成为潜在的攻击点。
 
 ### TSS VS Shamir's Secret Sharing（SSS）方案
 
