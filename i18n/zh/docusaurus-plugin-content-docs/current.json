@@ -35,6 +35,10 @@
     "message": "条款",
     "description": "The label for category Terms in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Architecture.link.generated-index.description": {
     "message": "深度解析 UniPass Wallet 核心架构。",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
