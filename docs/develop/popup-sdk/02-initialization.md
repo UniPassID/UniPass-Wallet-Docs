@@ -82,7 +82,6 @@ const upWallet = new UniPassPopupSDK({
 ```ts
 const upWallet = new UniPassPopupSDK({
   env: "prod",
-
   // for polygon mainnet
   chainType: "polygon",
   nodeRPC: "https://node.wallet.unipass.id/polygon-mainnet",
