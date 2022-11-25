@@ -6,6 +6,10 @@ sidebar_position: 2
 
 应用可以通过传入自定义的配置信息 `PopupSDKOption` 来创建 `UniPassPopupSDK` 对象，`PopupSDKOption` 定义如下：
 
+:::warning 注意
+同一个邮箱在主网和测试网环境中 UniPass 账户地址不同，请勿在主网使用测试网配置
+::: 
+
 ```ts
 export declare type Environment = "test" | "prod";
 export declare type ChainType = "eth" | "polygon" | "bsc" | "rangers";
@@ -50,29 +54,10 @@ const upWallet = new UniPassPopupSDK({
   env: "test",
   // for polygon mumbai
   chainType: "polygon",
-  nodeRPC: "https://node.wallet.unipass.id/polygon-mumbai",
-
-  // for eth testnet
-  // chainType: "eth",
-  // nodeRPC: "https://node.wallet.unipass.id/eth-goerli",
-
-  // for bsc testnet
-  // chainType: "bsc",
-  // nodeRPC: "https://node.wallet.unipass.id/bsc-testnet",
-
-  // for rangers robin
-  // chainType: "rangers",
-  // nodeRPC: "https://node.wallet.unipass.id/rangers-robin",
-
   appSettings: {
-    chain: "polygon",
-    theme: toTheme.value as UniPassTheme,
+    theme: UniPassTheme.LIGHT,
     appName: "UniPass Wallet Demo",
     appIcon: "",
-  },
-  walletUrl: {
-    domain: "testnet.wallet.unipass.id",
-    protocol: "https",
   },
 });
 ```
@@ -83,29 +68,10 @@ const upWallet = new UniPassPopupSDK({
   env: "prod",
   // for polygon mainnet
   chainType: "polygon",
-  nodeRPC: "https://node.wallet.unipass.id/polygon-mainnet",
-
-  // for eth mainnet
-  // chainType: "eth",
-  // nodeRPC: "https://node.wallet.unipass.id/eth-mainnet",
-
-  // for bsc mainnet
-  // chainType: "bsc",
-  // nodeRPC: "https://node.wallet.unipass.id/bsc-mainnet",
-
-  // for rangers mainnet
-  // chainType: "rangers",
-  // nodeRPC: "https://node.wallet.unipass.id/rangers-mainnet",
-
   appSettings: {
-    chain: "polygon",
-    theme: "light",
+    theme: UniPassTheme.LIGHT,
     appName: "UniPass Wallet Demo",
     appIcon: "",
-  },
-  walletUrl: {
-    domain: "wallet.unipass.id",
-    protocol: "https",
   },
 });
 ```
