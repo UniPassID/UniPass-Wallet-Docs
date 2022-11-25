@@ -50,7 +50,7 @@ public class WalletConfig
 
     public ChainType chainType = ChainType.polygon;
 
-    public string domain = "t.wallet.unipass.id";
+    public string domain = "testnet.wallet.unipass.id";
 
     public string protocol = "https";
 

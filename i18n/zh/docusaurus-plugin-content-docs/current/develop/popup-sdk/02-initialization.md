@@ -43,6 +43,8 @@ export declare type PopupSDKOption = {
 
 ## 创建示例
 
+### 创建测试网示例
+
 ```ts
 const upWallet = new UniPassPopupSDK({
   env: "test",
@@ -69,7 +71,40 @@ const upWallet = new UniPassPopupSDK({
     appIcon: "",
   },
   walletUrl: {
-    domain: "https://testnet.wallet.unipass.id",
+    domain: "testnet.wallet.unipass.id",
+    protocol: "https",
+  },
+});
+```
+
+### 创建主网示例
+```ts
+const upWallet = new UniPassPopupSDK({
+  env: "prod",
+  // for polygon mainnet
+  chainType: "polygon",
+  nodeRPC: "https://node.wallet.unipass.id/polygon-mainnet",
+
+  // for eth mainnet
+  // chainType: "eth",
+  // nodeRPC: "https://node.wallet.unipass.id/eth-mainnet",
+
+  // for bsc mainnet
+  // chainType: "bsc",
+  // nodeRPC: "https://node.wallet.unipass.id/bsc-mainnet",
+
+  // for rangers mainnet
+  // chainType: "rangers",
+  // nodeRPC: "https://node.wallet.unipass.id/rangers-mainnet",
+
+  appSettings: {
+    chain: "polygon",
+    theme: "light",
+    appName: "UniPass Wallet Demo",
+    appIcon: "",
+  },
+  walletUrl: {
+    domain: "wallet.unipass.id",
     protocol: "https",
   },
 });

@@ -10,13 +10,12 @@ An HTML5-based web application can connect to UniPass Wallet by opening a popup 
 
 Applications built with Flutter or Unity can connect to UniPass Wallet by opening a webview page in the APP through integrating to the proper SDKs.
 
-
-| SDK | State | Document |
-| --- | --- | --- | 
-| Popup SDK | Finished | [**Start now**](./popup-sdk/01-quick-start.md) |
+| SDK         | State    | Document                                         |
+| ----------- | -------- | ------------------------------------------------ |
+| Popup SDK   | Finished | [**Start now**](./popup-sdk/01-quick-start.md)   |
 | Flutter SDK | Finished | [**Start now**](./flutter-sdk/01-quick-start.md) |
-| Unity SDK | Finished | [**Start now**](./unity-sdk/01-quick-start.md) |
-| Unreal SDK| Planning | |
+| Unity SDK   | Finished | [**Start now**](./unity-sdk/01-quick-start.md)   |
+| Unreal SDK  | Planning |                                                  |
 
 :::warning Notice
 Currently UniPass Wallet is still in the testnet phase, **Kindly avoid sending real crypto assets to the testnet address**, because the testnet address of UniPass Wallet does not match the mainnet address registered to the same email or Google account.
@@ -24,14 +23,23 @@ Currently UniPass Wallet is still in the testnet phase, **Kindly avoid sending r
 
 ## RPC URL
 
+### Mainnet
+
+| Chain Handle | nodeRPC URL                                    |
+| ------------ | ---------------------------------------------- |
+| **Ethereum** | https://node.wallet.unipass.id/eth-mainnet     |
+| **BSC**      | https://node.wallet.unipass.id/bsc-mainnet     |
+| **Polygon**  | https://node.wallet.unipass.id/polygon-mainnet |
+| **Rangers**  | https://node.wallet.unipass.id/rangers-mainnet |
+
 ### Testnet
 
-| Chain Handle | nodeRPC URL  |
-|---|---|
-| **Goerli** (Ethereum testnet)| https://node.wallet.unipass.id/eth-goerli |
-| **BSC testnet** | https://node.wallet.unipass.id/bsc-testnet |
-| **Mumbai** (Polygon testnet)| https://node.wallet.unipass.id/polygon-mumbai |
-| **Robin** (Rangers testnet)| https://node.wallet.unipass.id/rangers-robin |
+| Chain Handle                  | nodeRPC URL                                   |
+| ----------------------------- | --------------------------------------------- |
+| **Goerli** (Ethereum testnet) | https://node.wallet.unipass.id/eth-goerli     |
+| **BSC testnet**               | https://node.wallet.unipass.id/bsc-testnet    |
+| **Mumbai** (Polygon testnet)  | https://node.wallet.unipass.id/polygon-mumbai |
+| **Robin** (Rangers testnet)   | https://node.wallet.unipass.id/rangers-robin  |
 
 ## Give us some feedbacks
 
