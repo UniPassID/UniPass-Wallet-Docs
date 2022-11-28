@@ -40,6 +40,6 @@ UniPass Wallet 支持任意代币支付手续费，可兼容所有主流 EVM 链
 
 可以兼容所有 EVM 链，并且保证多链地址一致。
 
-## 尝试 DEMO
+## 尝试钱包
 
-尝试 DEMO —> [https://v1.tryunipass.com/](https://v1.tryunipass.com/)
+尝试钱包 —> [**https://wallet.unipass.id/**](https://wallet.unipass.id/)

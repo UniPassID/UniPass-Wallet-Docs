@@ -42,6 +42,6 @@ UniPass Wallet will support all platforms and be available on website, mobile, a
 
 UniPass Wallet is compatible with all EVM chains and can ensure that users have the same address across all chains.
 
-## Try POC yourself
+## Try UniPass Wallet yourself
 
-You can try the demo version here: [**https://v1.tryunipass.com/**](https://v1.tryunipass.com/)
+You can try the wallet here: [**https://wallet.unipass.id/**](https://wallet.unipass.id/)
