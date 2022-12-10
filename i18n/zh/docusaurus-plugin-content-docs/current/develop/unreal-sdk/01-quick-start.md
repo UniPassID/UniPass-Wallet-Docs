@@ -20,7 +20,7 @@ Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.i
 
 请前往 Google Drive 下载 Windows Demo Package
 
-- [unipass_ue_demo_0.0.1.apk](https://drive.google.com/file/d/1lOWhpTuqQ8RXe9W5eC6XWx93vHM7vXxF/view?usp=sharing)
+- [unipass_ue_demo_0.0.1](https://drive.google.com/file/d/1lOWhpTuqQ8RXe9W5eC6XWx93vHM7vXxF/view?usp=sharing)
 
 ## 开发环境
 

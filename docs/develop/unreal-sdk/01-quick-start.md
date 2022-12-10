@@ -22,7 +22,7 @@ UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.i
 
 Try demo on Windows. Please download portable executable file of Windows from Google drive.
 
-- [unipass_ue_demo_0.0.1.apk](https://drive.google.com/file/d/1lOWhpTuqQ8RXe9W5eC6XWx93vHM7vXxF/view?usp=sharing)
+- [unipass_ue_demo_0.0.1](https://drive.google.com/file/d/1lOWhpTuqQ8RXe9W5eC6XWx93vHM7vXxF/view?usp=sharing)
 
 ## System Requirements
 
