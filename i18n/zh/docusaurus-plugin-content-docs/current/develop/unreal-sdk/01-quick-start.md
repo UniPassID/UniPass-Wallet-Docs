@@ -28,14 +28,16 @@ Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.i
 
 ## 安装
 
-- 安装到项目
-  - 打开包含`[ProjectName].uproject` 文件的项目根目录
-  - 创建名为 Plugins 的文件夹，如果存在 Plugins 文件夹则无需创建
-  - 将 Unipass SDK 中 Plugins/UnipassSDK 文件夹拷贝至项目 Plugins 文件夹中
-- 安装到全局虚幻引擎
-  - 打开虚幻引擎默认安装目录，默认安装目录是 C:\Program Files (x86)\Epic Games\Launcher\Engine
-  - 将 Unipass SDK 中 Plugins/UnipassSDK 文件夹拷贝至上述安装目录的 Plugins 文件夹下
-- 开启 UniPass SDK 插件
-  - 最后，打开 UE5 编辑器，打开 Menu → Edit → Plugins，开启 UnipassSDK 插件
+有两种安装 UniPass SDK 的方式：
+
+1. 安装到项目
+    - 打开包含`[ProjectName].uproject` 文件的项目根目录
+    - 创建名为 Plugins 的文件夹，如果存在 Plugins 文件夹则无需创建
+    - 将 Unipass SDK 中 Plugins/UnipassSDK 文件夹拷贝至项目 Plugins 文件夹中
+2. 安装到全局
+    - 打开虚幻引擎默认安装目录，默认安装目录是 C:\Program Files (x86)\Epic Games\Launcher\Engine
+    - 将 Unipass SDK 中 Plugins/UnipassSDK 文件夹拷贝至上述安装目录的 Plugins 文件夹下
+
+最后，打开 UE5 编辑器，打开 Menu → Edit → Plugins，开启 UnipassSDK 插件
 
 ![set up Unipass SDK](./img/unreal-setup.png)

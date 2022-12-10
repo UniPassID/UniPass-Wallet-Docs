@@ -18,7 +18,7 @@ SDK 中默认 W_ExecuteWebBrowser 可能不满足您的需求，您可以自定�
 
 ![custom web browser](./img/unreal-webbrowser-3.png)
 
-4. 实现浏览器方法，加载 URL、执行 JavaScript，或者加入一些额外的浏览器方法，具体方法列表请查看 UniPassWebBrowser.cpp 代码
+4. 实现浏览器方法：`LoadURL`、 `ExecuteJavascript`，或者加入一些额外的浏览器方法，具体方法列表请查看 UniPassWebBrowser.cpp 代码
 
 ![custom web browser](./img/unreal-webbrowser-4.png)
 
