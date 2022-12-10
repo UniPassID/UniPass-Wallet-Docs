@@ -23,6 +23,10 @@
     "message": "Unity SDK",
     "description": "The label for category Unity SDK in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Unreal": {
+    "message": "Unreal SDK",
+    "description": "The label for category Unreal SDK in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "Architecture",
     "description": "The label for category Architecture in sidebar tutorialSidebar"
