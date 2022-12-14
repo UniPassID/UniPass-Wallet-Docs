@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # 登出账户 & 错误提示
@@ -11,6 +11,7 @@ sidebar_position: 6
 ```ts
 await upWallet.logout();
 ```
+
 ## 接口错误提示
 
 | Number | Notification                             | Details                     |
