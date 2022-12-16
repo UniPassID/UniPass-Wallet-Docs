@@ -40,7 +40,7 @@ Operator 是账户资产的执行者。Operator 负责账户的资产转账、�
 
 :::info 🛡️ Guardian
 
-Guardian 时账户的守护者。当账户内的密钥损毁或丢失，用户失去账户控制时，可以通过 guardian 来恢复账户。UniPass 提供的一大特色功能就是：链上邮件社交恢复。
+Guardian 是账户的守护者。当账户内的密钥损毁或丢失，用户失去账户控制时，可以通过 guardian 来恢复账户。UniPass 提供的一大特色功能就是：链上邮件社交恢复。
 
 :::
 
