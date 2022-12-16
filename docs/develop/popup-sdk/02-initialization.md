@@ -40,6 +40,7 @@ export declare type PopupSDKOption = {
   readonly nodeRPC?: string;
   readonly chainType?: ChainType;
   readonly env?: Environment;
+  readonly storageType?: StorageType;
   readonly walletUrl?: WalletURL;
   readonly appSettings?: AppSettings;
   readonly [key: string]: any;
@@ -55,6 +56,8 @@ const upWallet = new UniPassPopupSDK({
   env: "test",
   // for polygon mumbai
   chainType: "polygon",
+  // choose localStorage if you want to cache user account permanent
+  storageType: "sessionStorage"
   appSettings: {
     theme: UniPassTheme.LIGHT,
     appName: "UniPass Wallet Demo",
