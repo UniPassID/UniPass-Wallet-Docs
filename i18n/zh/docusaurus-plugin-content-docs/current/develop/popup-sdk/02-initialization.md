@@ -39,6 +39,7 @@ export declare type PopupSDKOption = {
   readonly nodeRPC?: string; // 区块链全节点RPC
   readonly chainType?: ChainType; // 区块链类型
   readonly env?: Environment; // 环境类型
+  readonly storageType?: StorageType; // 用户信息存储方式 sessionStorage 或者localStorage
   readonly walletUrl?: WalletURL; // UniPass Wallet URL
   readonly appSettings?: AppSettings; // 打开 UniPass Wallet 的设置
   readonly [key: string]: any; // 其他配置
@@ -54,6 +55,8 @@ const upWallet = new UniPassPopupSDK({
   env: "test",
   // for polygon mumbai
   chainType: "polygon",
+  // choose localStorage if you want to cache user account permanent
+  storageType: "sessionStorage"
   appSettings: {
     theme: UniPassTheme.LIGHT,
     appName: "UniPass Wallet Demo",
