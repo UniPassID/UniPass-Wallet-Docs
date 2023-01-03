@@ -31,6 +31,10 @@
     "message": "Unreal SDK",
     "description": "The label for category Unreal SDK in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.Android": {
+    "message": "Android SDK",
+    "description": "The label for category Android SDK in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "核心架构",
     "description": "The label for category Architecture in sidebar tutorialSidebar"
