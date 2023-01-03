@@ -79,3 +79,4 @@ SDK 源代码可以在 [Github](https://github.com/UniPassID/UniPass-Android-SDK
 ## 快速开始
 
 您可以浏览 [示例工程](https://github.com/UniPassID/UniPass-Android-SDK/tree/main/app) 并自行调试
+示例工程 [apk 下载地址]
