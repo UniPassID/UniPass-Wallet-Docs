@@ -20,21 +20,25 @@ data class SignInput (
     val type: SignType,
     val msg: String
 )
+
+class SignOutput: BaseOutput(OutputType.SignMessage) {
+    val signature: String? = null
+}
 ```
 
 ## 代码示例
 
 ```java
+// 请确认用户已授权登录
 if (unipassInstance.isLogin()) {
     var signInput = SignInput(unipassInstance.getAddress(), SignType.PersonalSign, "message to be signed")
-    var signMsgCompletableFuture = unipassInstance.signMessage(signInput)
-    signMsgCompletableFuture.whenComplete{ output, error ->
-        if (error == null) {
+    unipassInstance.signMessage(signInput, object : UnipassCallBack<SignOutput> {
+        override fun success(output: SignOutput?) {
             Log.d("Unipass Sign Message", "success")
-        } else {
-            Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
+        }
+        override fun failure(error: Exception) {
             Log.d("Unipass Sign Message", error.message ?: "Something went wrong")
         }
-    }
+    })
 }
 ```
