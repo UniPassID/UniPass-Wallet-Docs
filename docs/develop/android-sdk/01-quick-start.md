@@ -4,8 +4,7 @@ sidebar_position: 1
 
 | Version | Last updated   | UniPass Wallet Entry URL        | UPgrade Instruction                                                                    |
 | -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | Added support for Android API 21 or newer                                              |
-| v0.0.2   | 2023.01.03 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
+| v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
 
 ## Source Code
 
@@ -28,7 +27,6 @@ The UniPass Wallet domain used in Demo project is: [https://testnet.wallet.unipa
 ## Requirements
 
 Android API version 21 or newer
-  - v0.0.2 need Android API 24 or newer
 
 ## Installation
 
