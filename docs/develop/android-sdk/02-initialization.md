@@ -6,10 +6,10 @@ sidebar_position: 2
 
 Initialization is a two-step process:
 
-1. Creating a unipass SDK Instance
+1. Creating a UniPassSDK Instance
 2. Setting a Result URL
 
-## 创建 unipass SDK 实例
+## Creating a UniPassSDK instance
 
 The UniPassSDK Constructor takes an object with UniPassSDKOptions as input
 
