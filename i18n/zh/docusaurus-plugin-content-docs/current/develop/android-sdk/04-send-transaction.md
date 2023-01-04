@@ -13,6 +13,10 @@ data class SendTransactionInput (
   val value: String? = "0x",
   val data: String? = "0x",
 )
+
+class SendTransactionOutput: BaseOutput(OutputType.SendTransaction) {
+    val transactionHash: String? = null
+}
 ```
 
 ## 发送原生代币
@@ -24,15 +28,13 @@ if (unipassInstance.isLogin()) {
         "0x7b5Bd7c9E3A0D0Ef50A9b3aCF5d1AcD58C3590d1",
         "0x" + toWei("0.001", Convert.Unit.ETHER).toBigIntegerExact().toString(16)
     )
-
-    var signTxCompletableFuture = unipassInstance.sendTransaction(transactionInput)
-    signTxCompletableFuture.whenComplete{ output, error ->
-        if (error == null) {
+    unipassInstance.sendTransaction(transactionInput, object : UnipassCallBack<SendTransactionOutput> {
+        override fun success(output: SendTransactionOutput?) {
             Log.d("Unipass SendTransaction", "success")
-        } else {
-            Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
+        }
+        override fun failure(error: Exception) {
             Log.d("Unipass SendTransaction", error.message ?: "Something went wrong")
         }
-    }
+    })
 }
 ```
