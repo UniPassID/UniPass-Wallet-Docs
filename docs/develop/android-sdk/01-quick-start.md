@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+# Quick Start
+
 | Version | Last updated   | UniPass Wallet Entry URL        | UPgrade Instruction                                                                    |
 | -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
 | v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
@@ -10,15 +12,13 @@ sidebar_position: 1
 
 Source code of the SDK can be found on [Github](https://github.com/UniPassID/UniPass-Android-SDK).
 
-## Quick Start
-
 You can have a look at the [examples](https://github.com/UniPassID/UniPass-Android-SDK/tree/main/app) made on top of this SDK and try it out yourself.
 
-## Demo App
+### Android demo
 
-You can download Android demo apk from Google drive
+You can download Android demo apk from Google drive:
 
-- [unipass_android_demo_v0.0.2.apk](https://drive.google.com/file/d/1U1AnEpxHjZmroz-03veZ8Q0-h7aqaR87/view?usp=sharing)
+- [unipass_android_demo_v0.0.3.apk](https://drive.google.com/file/d/1U1AnEpxHjZmroz-03veZ8Q0-h7aqaR87/view?usp=sharing)
 
 :::tip
 The UniPass Wallet domain used in Demo project is: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
@@ -26,7 +26,7 @@ The UniPass Wallet domain used in Demo project is: [https://testnet.wallet.unipa
 
 ## Requirements
 
-Android API version 21 or newer
+Android `API version 21` or newer
 
 ## Installation
 

@@ -18,7 +18,7 @@ sidebar_position: 1
 
 请前往 Google drive 下载 Android demo 安装包：
 
-- [unipass_android_demo_v0.0.2.apk](https://drive.google.com/file/d/1U1AnEpxHjZmroz-03veZ8Q0-h7aqaR87/view?usp=sharing)
+- [unipass_android_demo_v0.0.3.apk](https://drive.google.com/file/d/1U1AnEpxHjZmroz-03veZ8Q0-h7aqaR87/view?usp=sharing)
 
 :::tip
 Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
