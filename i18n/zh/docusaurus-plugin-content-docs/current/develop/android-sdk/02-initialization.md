@@ -27,7 +27,9 @@ UniPassSDKOptions
 | env         | com.unipass.core.types.Environment | 是       | SDK 环境参数                                              |
 | redirectUrl | Uri                                | 否       | 重定向地址，用于重新唤起 app，需要根据您的 deep link 配置 |
 | walletUrl   | String                             | 否       | 钱包 Url，默认 domain https://testnet.wallet.unipass.id   |
-| appSettings | com.unipass.core.types.AppSettings | 否       | app 自定义配置，用于页面展示 （logo, icon, 主题色等）     |
+| appSettings | com.unipass.core.types.AppSettings | 否       | [app 自定义配置](#appsettings)，用于页面展示 （logo, icon, 主题色等）     |
+
+### AppSettings
 
 ```java
 /// app 自定义配置（appSettings）
