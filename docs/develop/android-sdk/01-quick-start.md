@@ -83,7 +83,8 @@ Make sure your sign-in activity launchMode is set to singleTop in your AndroidMa
 </activity>
 ```
 
-Open your app's AndroidManifest.xml file and add the following permission: `<uses-permission android:name="android.permission.INTERNET" />`
+Open your app's AndroidManifest.xml file and add the following permission: 
+`<uses-permission android:name="android.permission.INTERNET" />`
 
 4. Then you can use UniPassSDK in your project:
 

@@ -29,7 +29,7 @@ UniPassSDKOptions
 | walletUrl   | String                             | No       | UniPass Wallet Url，Default is https://testnet.wallet.unipass.id          |
 | appSettings | com.unipass.core.types.AppSettings | No       | configuration optional object to use custom app settings. Refer [AppSettings](#appsettings) for more info  |
 
-# AppSettings
+### AppSettings
 
 ```java
 // appSettings
