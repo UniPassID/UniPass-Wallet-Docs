@@ -2,6 +2,6 @@
 sidebar_position: 3
 ---
 
-# connect wallet
+# Connect UniPass Wallet
 
 coming soon

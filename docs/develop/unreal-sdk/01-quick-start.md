@@ -14,15 +14,15 @@ sidebar_position: 1
 
 - [Unreal SDK GitHub](https://github.com/UniPassID/Unipass-UE-SDK)
 
-:::tip
-UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
-:::
-
-### Windows
+### Windows demo
 
 Try demo on Windows. Please download portable executable file of Windows from Google drive.
 
 - [unipass_ue_demo_0.0.1](https://drive.google.com/file/d/1lOWhpTuqQ8RXe9W5eC6XWx93vHM7vXxF/view?usp=sharing)
+
+:::tip
+UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
+:::
 
 ## System Requirements
 

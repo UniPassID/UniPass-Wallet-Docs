@@ -48,7 +48,7 @@ yarn add @unipasswallet/popup-sdk
 
 - [Popup SDK GitHub](https://github.com/UniPassID/unipass-popup-sdk)
 - [Online Demo](https://popup-demo.wallet.unipass.id/)
-- [Demo code](https://github.com/UniPassID/unipass-popup-sdk/tree/main/examples/demo)
+- [Demo 源码](https://github.com/UniPassID/unipass-popup-sdk/tree/main/examples/demo)
 
 :::tip
 当前 Demo 调用的 UniPass Wallet 网址：[https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)

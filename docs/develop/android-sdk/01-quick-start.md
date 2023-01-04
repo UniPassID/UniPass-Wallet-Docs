@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# quick start
+# Quick Start
 
 coming soon

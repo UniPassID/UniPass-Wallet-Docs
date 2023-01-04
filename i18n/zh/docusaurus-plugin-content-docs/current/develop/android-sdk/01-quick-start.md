@@ -4,11 +4,27 @@ sidebar_position: 1
 
 # 快速开始
 
-| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                                                                               |
-| -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.1   | 2023.01.03 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名功能，登出                                                 |
+| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
+| -------- | ---------- | ---------------------------------- | -------------------------------------- |
+| v0.0.1   | 2023.01.03 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名功能，登出 |
 
-## 环境需求
+
+## 相关资料
+
+- [Android SDK Github](https://github.com/UniPassID/UniPass-Android-SDK)
+- [Android demo 源码](https://github.com/UniPassID/UniPass-Android-SDK/tree/main/app)
+
+### Android demo
+
+请前往 Google drive 下载 Android demo 安装包：
+
+- [unipass_android_demo_v0.0.1.apk](https://drive.google.com/file/d/1FAO1S9ZZeCc8JxYHKZyEJR6BRUND92Eo/view?usp=sharing)
+
+:::tip
+Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
+:::
+
+## 开发环境
 
 Android API 24 或以上版本
 
@@ -71,12 +87,3 @@ import com.unipass.core.UniPassSDK
 ```
 
 请在您的 Manifest file 文件中查看网络权限是否开启： `<uses-permission android:name="android.permission.INTERNET" />`
-
-## 源码
-
-SDK 源代码可以在 [Github](https://github.com/UniPassID/UniPass-Android-SDK) 中找到
-
-## 快速开始
-
-您可以浏览 [示例工程](https://github.com/UniPassID/UniPass-Android-SDK/tree/main/app) 并自行调试
-示例工程 [apk 下载地址](https://drive.google.com/file/d/1FAO1S9ZZeCc8JxYHKZyEJR6BRUND92Eo/view?usp=sharing)

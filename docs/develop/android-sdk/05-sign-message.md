@@ -2,6 +2,6 @@
 sidebar_position: 5
 ---
 
-# sign message
+# Sign Message
 
 coming soon

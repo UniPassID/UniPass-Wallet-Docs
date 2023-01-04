@@ -12,15 +12,15 @@ sidebar_position: 1
 
 - [Unreal SDK GitHub](https://github.com/UniPassID/Unipass-UE-SDK)
 
-:::tip
-Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
-:::
-
-### Windows
+### Windows demo
 
 请前往 Google Drive 下载 Windows Demo Package
 
 - [unipass_ue_demo_0.0.1](https://drive.google.com/file/d/1lOWhpTuqQ8RXe9W5eC6XWx93vHM7vXxF/view?usp=sharing)
+
+:::tip
+Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
+:::
 
 ## 开发环境
 

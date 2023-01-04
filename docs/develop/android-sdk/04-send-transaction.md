@@ -2,6 +2,6 @@
 sidebar_position: 4
 ---
 
-# send transaction
+# Send Transaction
 
 coming soon

@@ -9,21 +9,21 @@ sidebar_position: 1
 | v0.0.2  | 2022.11.14   | https://testnet.wallet.unipass.id/ | Support Google login. Add the optional function of connect to return email. Add a prefix in signMessage |
 | v0.0.1  | 2022.10.28   | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify                                                              |
 
-### Android
+## Reference
+
+- [Unity SDK GitHub](https://github.com/UniPassID/unipass-unity-web-sdk)
+- [Demo Project](https://github.com/UniPassID/unipass-unity-web-sdk/blob/master/Example/unipass_demo.cs)
+
+### Android demo
 
 Please download the installation package of Android on Google drive
 
 - [unipass_unity_demo_0.0.2.apk](https://drive.google.com/file/d/1uU7Qek-bKV6CSsEI6Uhen6Nzj_AUAMI7/view?usp=sharing)
 - [unipass_unity_demo_0.0.1.apk](https://drive.google.com/file/d/1nKyi6eJJ7N2OnrIpH7WpypDFluwtZ0z7/view?usp=sharing)
 
-### iOS
+### iOS demo
 
 Please fill in your email address in the [**Application Form**](https://mtf0xus26cg.typeform.com/to/TW0Eh9Yu) and we will send you a test invitation through [TestFlight](https://apps.apple.com/us/app/testflight/id899247664) as soon as possible.
-
-## Reference
-
-- [Unity SDK GitHub](https://github.com/UniPassID/unipass-unity-web-sdk)
-- [Demo Project](https://github.com/UniPassID/unipass-unity-web-sdk/blob/master/Example/unipass_demo.cs)
 
 :::tip
 UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
