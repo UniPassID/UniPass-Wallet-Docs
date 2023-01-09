@@ -46,7 +46,8 @@ allprojects {
 
 ```
 dependencies {
-    implementation 'com.github.UniPassID:UniPass-Android-SDK:v0.0.3'
+    // Replace {Version} with the version you what. For example v0.0.5
+    implementation 'com.github.UniPassID:UniPass-Android-SDK:{Version}'
 }
 ```
 
