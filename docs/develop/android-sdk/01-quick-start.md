@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | Version | Last updated   | UniPass Wallet Entry URL        | UPgrade Instruction                                                                    |
 | -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.5   | 2023.01.09 | https://testnet.wallet.unipass.id/ | Add UniPassActivity , remove requirements for singleTop launchMode . UniPassSDKOptions adds parameter: activity |
 | v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
 
 ## Source Code
@@ -49,10 +50,30 @@ dependencies {
 }
 ```
 
-3. Configure Deep Link
+3. Add UniPassActivity / Configure Deep Link
 
-Open your app's AndroidManifest.xml file and add the following deep link intent filter to your activity: 
+Open your app's AndroidManifest.xml file and add UniPassActivity activity in your application, add deep link intent filter to UniPassActivity activity: 
 You can refer to the [android developer documents](https://developer.android.com/training/app-links/deep-linking)
+
+```xml
+<activity
+    android:name="com.unipass.core.UniPassActivity"
+    android:exported="true"
+    android:launchMode="singleTop">
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data
+            android:scheme="unipassapp"
+            android:host="com.unipass.wallet"
+            android:pathPattern="/*"
+            android:pathPrefix="/redirect" />
+    </intent-filter>
+</activity>
+```
+
+If you are using v0.0.3 or below, you can add just deep link intent to your activity, but you should make sure your activity launchMode is set to singleTop
 
 ```xml
 <intent-filter>
@@ -71,7 +92,7 @@ You can refer to the [android developer documents](https://developer.android.com
 </intent-filter>
 ```
 
-Make sure your sign-in activity launchMode is set to singleTop in your AndroidManifest.xml
+Make sure your sign-in activity launchMode is set to singleTop in your AndroidManifest.xml if you are using v0.0.3 or below
 
 ```xml
 <activity

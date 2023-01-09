@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
 | -------- | ---------- | ---------------------------------- | --------------------------------  |
+| v0.0.5   | 2023.01.09 | https://testnet.wallet.unipass.id/ | 新增 UniPassActivity , 取消对 activity singleTop launchMode 的限制。UniPassSDKOptions 新增入参: activity |
 | v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名功能，登出 |
 
 
@@ -49,28 +50,32 @@ dependencies {
 }
 ```
 
-3. 配置深层链接 (Deep Link)
+3. 添加 UniPassActivity 并配置深层链接 (Deep Link)
 
-在 app 的 AndroidManifest.xml 文件中添加指向您应用的深层链接，具体配置可以参考 [android developer 文档](https://developer.android.com/training/app-links/deep-linking)
+在 app 的 AndroidManifest.xml 文件中添加 UniPassActivity， 并对 UniPassActivity 配置指向您应用的深层链接，具体配置可以参考 [android developer 文档](https://developer.android.com/training/app-links/deep-linking)
 
 ```xml
-<intent-filter>
-  <action android:name="android.intent.action.VIEW" />
-
-  <category android:name="android.intent.category.DEFAULT" />
-  <category android:name="android.intent.category.BROWSABLE" />
-
-  <!-- Accept URIs: {YOUR_APP_PACKAGE_NAME}://* -->
-  <data android:scheme="{YOUR_APP_PACKAGE_NAME}" />
-  <!-- 以下配置可以供您参考 -->
-  <data android:scheme="unipassapp"
-        android:host="com.unipass.wallet"
-        android:pathPattern="/*"
-        android:pathPrefix="/redirect" />
-</intent-filter>
+<activity
+    android:name="com.unipass.core.UniPassActivity"
+    android:exported="true"
+    android:launchMode="singleTop">
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <!-- Accept URIs: {YOUR_APP_PACKAGE_NAME}://* -->
+        <data android:scheme="{YOUR_APP_PACKAGE_NAME}" />
+        <!-- 以下配置可以供您参考 -->
+        <data
+            android:scheme="unipassapp"
+            android:host="com.unipass.wallet"
+            android:pathPattern="/*"
+            android:pathPrefix="/redirect" />
+    </intent-filter>
+</activity>
 ```
 
-请确保 app 配置文件 `AndroidManifest.xml` 中您应用的 launchMode 已被设置为 singleTop
+如果您使用 v0.0.3 或以下版本，您可以无需在应用中添加 UniPassActivity ，但需要在您使用 SDK 的活动中配置深层链接（Deep Link），并确保 app 配置文件 `AndroidManifest.xml` 中您应用的 launchMode 已被设置为 singleTop 
 
 ```xml
 <activity

@@ -4,11 +4,6 @@ sidebar_position: 2
 
 # 初始化
 
-初始化 unipass SDK 包含以下两个步骤
-
-1. 创建 unipass SDK 实例
-2. 配置 Result URL
-
 ## 创建 unipass SDK 实例
 
 通过传入自定义的配置信息 `UniPassSDKOptions`：
@@ -24,6 +19,7 @@ UniPassSDKOptions
 | 属性        | 类型                               | 是否必须 | 说明                                                      |
 | ----------- | ---------------------------------- | -------- | --------------------------------------------------------- |
 | context     | android.content.Context            | 是       | 应用上下文                                                |
+| activity    | AppCompatActivity                  | 是       | 调用 SDK 的活动                                           |
 | env         | com.unipass.core.types.Environment | 是       | SDK 环境参数                                              |
 | redirectUrl | Uri                                | 否       | 重定向地址，用于重新唤起 app，需要根据您的 deep link 配置 |
 | walletUrl   | String                             | 否       | 钱包 Url，默认 domain https://testnet.wallet.unipass.id   |
@@ -61,12 +57,15 @@ enum class UniPassTheme(val value: String){
 ```java
 unipassInstance = UniPassSDK(
     UniPassSDKOptions(
-        context = this!!,
+        context = this,
+        activity = this,
         redirectUrl = Uri.parse("unipassapp://com.unipass.wallet/redirect"),
         env = Environment.TESTNET
     )
 )
 ```
+
+如果您使用 v0.0.3 或以下版本，您还需要在 onNewIntent 中调用 setResultUrl API
 
 ## 配置 Result URL
 
