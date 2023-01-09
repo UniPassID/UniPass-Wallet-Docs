@@ -4,11 +4,6 @@ sidebar_position: 2
 
 # Initialization
 
-Initialization is a two-step process:
-
-1. Creating a UniPassSDK Instance
-2. Setting a Result URL
-
 ## Creating a UniPassSDK instance
 
 The UniPassSDK Constructor takes an object with UniPassSDKOptions as input
@@ -24,6 +19,7 @@ UniPassSDKOptions
 | Parameter   | Type                               | Mandatory | Description                                                              |
 | ----------- | ---------------------------------- | -------- | ------------------------------------------------------------------------- |
 | context     | android.content.Context            | Yes      | Android context to launch UniPass Wallet, usually is the current activity |
+| activity    | AppCompatActivity                  | Yes      | Android activity to use UniPassSDK                                        |
 | env         | com.unipass.core.types.Environment | Yes      | SDK Environment                                                           |
 | redirectUrl | Uri                                | No       | URL that UniPassSDK will redirect API responses                           |
 | walletUrl   | String                             | No       | UniPass Wallet Url，Default is https://testnet.wallet.unipass.id          |
@@ -61,12 +57,15 @@ enum class UniPassTheme(val value: String){
 ```java
 unipassInstance = UniPassSDK(
     UniPassSDKOptions(
-        context = this!!,
+        context = this,
+        activity = this,
         redirectUrl = Uri.parse("unipassapp://com.unipass.wallet/redirect"),
         env = Environment.TESTNET
     )
 )
 ```
+
+If you are using v0.0.3 or below, you also need to call the setResultUrl API in onNewIntent
 
 ## Set Result URL
 
