@@ -36,12 +36,31 @@ enum class OutputType {
     SendTransaction
 }
 
+enum class ConnectType(value: String) {
+    GOOGLE("google"),
+
+    EMAIL("email"),
+
+    BOTH("both"),
+}
+
 ```
 
 ## Sample Code
 
 ```java
 unipassInstance.login(object : UnipassCallBack<LoginOutput> {
+    override fun success(output: LoginOutput?) {
+        Log.d("Unipass Login", "success")
+    }
+
+    override fun failure(error: Exception) {
+        Log.d("Unipass Login", error.message ?: "Something went wrong")
+    }
+})
+// Or you can use an overloaded login so that users connect at the type you choose
+// connectType default is BOTH
+unipassInstance.login(ConnectType.GOOGLE, object : UnipassCallBack<LoginOutput> {
     override fun success(output: LoginOutput?) {
         Log.d("Unipass Login", "success")
     }

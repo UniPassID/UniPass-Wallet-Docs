@@ -4,10 +4,11 @@ sidebar_position: 1
 
 # Quick Start
 
-| Version | Last updated   | UniPass Wallet Entry URL        | UPgrade Instruction                                                                    |
-| -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.5   | 2023.01.09 | https://testnet.wallet.unipass.id/ | Add UniPassActivity , remove requirements for singleTop launchMode . UniPassSDKOptions adds parameter: activity |
-| v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
+| Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
+| -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.6   | 2023.01.13     | https://testnet.wallet.unipass.id/ | Add refactor API login, allow connectType for login . Code optimizing                  | 
+| v0.0.5   | 2023.01.09     | https://testnet.wallet.unipass.id/ | Add UniPassActivity , remove requirements for singleTop launchMode . UniPassSDKOptions adds parameter: activity |
+| v0.0.3   | 2023.01.04     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
 
 ## Source Code
 

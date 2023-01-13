@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
 | -------- | ---------- | ---------------------------------- | --------------------------------  |
+| v0.0.6   | 2023.01.13 | https://testnet.wallet.unipass.id/ | 新增重载 API login, 支持可选链接方式。代码实现优化 | 
 | v0.0.5   | 2023.01.09 | https://testnet.wallet.unipass.id/ | 新增 UniPassActivity , 取消对 activity singleTop launchMode 的限制。UniPassSDKOptions 新增入参: activity |
 | v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名功能，登出 |
 

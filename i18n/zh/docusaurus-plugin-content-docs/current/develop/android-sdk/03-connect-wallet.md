@@ -36,12 +36,30 @@ enum class OutputType {
     SendTransaction
 }
 
+enum class ConnectType(value: String) {
+    GOOGLE("google"),
+
+    EMAIL("email"),
+
+    BOTH("both"),
+}
 ```
 
 ## 代码示例
 
 ```java
 unipassInstance.login(object : UnipassCallBack<LoginOutput> {
+    override fun success(output: LoginOutput?) {
+        Log.d("Unipass Login", "success")
+    }
+
+    override fun failure(error: Exception) {
+        Log.d("Unipass Login", error.message ?: "Something went wrong")
+    }
+})
+// 或者您可以使用重载的方法，以便用户按您选择的类型连接
+// connectType 默认值为 BOTH
+unipassInstance.login(ConnectType.GOOGLE, object : UnipassCallBack<LoginOutput> {
     override fun success(output: LoginOutput?) {
         Log.d("Unipass Login", "success")
     }
