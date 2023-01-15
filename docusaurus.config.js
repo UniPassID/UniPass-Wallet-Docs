@@ -162,7 +162,9 @@ const config = {
           'markdown',
           'json',
           'csharp',
-          'dart'
+          'dart',
+          'java',
+          'swift'
         ]
       },
       colorMode: {

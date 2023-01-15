@@ -31,6 +31,10 @@
     "message": "Android SDK",
     "description": "The label for category Android SDK in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.iOS": {
+    "message": "iOS SDK",
+    "description": "The label for category iOS SDK in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "Architecture",
     "description": "The label for category Architecture in sidebar tutorialSidebar"
