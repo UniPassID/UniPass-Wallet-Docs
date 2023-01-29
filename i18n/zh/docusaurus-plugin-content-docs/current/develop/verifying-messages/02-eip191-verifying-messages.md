@@ -1,27 +1,16 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
-# Verifying Messages
+# EIP191 Verifying Messages
 
 ## Verify message -- Typescript
 
 ```typescript
-export const EIP1271_SELECTOR = '0x1626ba7e';
-export const unipassMessagePrefix = '\x18UniPass Signed Message:\n';
+import { Contract, providers } from "ethers";
+import { hashMessage } from "ethers/lib/utils";
 
-export function unipassHashMessage(message: Bytes | string): string {
-  if (typeof message === 'string') {
-    message = toUtf8Bytes(message);
-  }
-  return keccak256(
-    concat([
-      toUtf8Bytes(unipassMessagePrefix),
-      toUtf8Bytes(String(message.length)),
-      message,
-    ])
-  );
-}
+export const EIP1271_SELECTOR = '0x1626ba7e';
 
 export const encodeTypedDataHash = (typedData: TypedData): string => {
   const types = { ...typedData.types };
@@ -50,12 +39,11 @@ export const encodeTypedDataDigest = (typedData: TypedData): Uint8Array => {
 public async isValidSignature(
   _msg: string,
   _sig: string,
-  _account?: string
+  _account: string,
+  _rpcUrl: string
 ): Promise<boolean> {
-  if (!_account) {
-    this.checkInitialized();
-    _account = this._account!.address;
-  }
+  const provider = new providers.JsonRpcProvider(_rpcUrl);
+
   const contract = new Contract(
     _account!,
     [
@@ -84,11 +72,11 @@ public async isValidSignature(
         type: 'function',
       },
     ],
-    this._auth_provider
+    provider,
   );
 
   const code = await contract.isValidSignature(
-    unipassHashMessage(_msg),
+    hashMessage(_msg),
     _sig
   );
 
@@ -108,17 +96,15 @@ public async isValidSignature(
 public async isValidTypedSignature<T extends MessageTypes>(
   _data: TypedMessage<T>,
   _account: string,
-  _sig: string
+  _sig: string,
+  _rpcUrl: string
 ) {
   if (_data == null) {
     throw new Error('Missing data parameter');
   }
-  if (!_account) {
-    this.checkInitialized();
-    _account = this._account!.address;
-  }
+  const provider = new providers.JsonRpcProvider(_rpcUrl);
   const contract = new Contract(
-    _account!,
+    _account,
     [
       {
         inputs: [
@@ -145,7 +131,7 @@ public async isValidTypedSignature<T extends MessageTypes>(
         type: 'function',
       },
     ],
-    this._auth_provider
+    provider,
   );
   const messageHash = encodeTypedDataDigest(_data as TypedData);
   const code = await contract.isValidSignature(messageHash, _sig);
@@ -176,7 +162,7 @@ import (
 // 0x1626ba7e
 var EIP1271_SELECTOR = [32]byte{22, 38, 186, 126}
 
-const UnipassMessagePrefix = "\x18UniPass Signed Message:\n"
+const UnipassMessagePrefix = "\x19Ethereum Signed Message:\n"
 
 const IsValidSignatureABI = "[{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"_hash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"_signature\",\"type\":\"bytes\"}],\"name\":\"isValidSignature\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"magicValue\",\"type\":\"bytes4\"}],\"stateMutability\":\"view\",\"type\":\"function\"}]"
 
