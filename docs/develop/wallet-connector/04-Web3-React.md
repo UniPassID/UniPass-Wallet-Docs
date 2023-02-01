@@ -1,7 +1,5 @@
 # Using Web3-React V6
 
-web3-react connector for the [UniPass](https://unipass.vip/) wallet.
-
 ## Example
 
 A demo app for web3-react is available [here](https://up-web3-react-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-react-demo).
