@@ -1,7 +1,5 @@
 # Using Wagmi
 
-Wagmi connector for the [UniPass](https://unipass.vip/) wallet.
-
 ## Example
 
 A live demo for Wagmi with UniPass is available [HEAR](https://up-wagmi-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/wagmi-connector-demo).
