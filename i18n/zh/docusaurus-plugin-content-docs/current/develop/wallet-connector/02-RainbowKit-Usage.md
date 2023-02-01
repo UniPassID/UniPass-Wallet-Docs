@@ -1,7 +1,5 @@
 # Using RainbowKit
 
-RainbowKit connector for the [UniPass](https://unipass.vip/) wallet.
-
 ## Example
 
 A demo app for RainbowKit is available [HEAR](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).

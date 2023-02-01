@@ -1,7 +1,5 @@
 # Using Web3-Onboard
 
-web3-onboard for the [UniPass](https://unipass.vip/) wallet.
-
 ## Example
 
 A demo app for web3-onboard is available [here](https://up-web3-onboard-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-onboard-demo).
