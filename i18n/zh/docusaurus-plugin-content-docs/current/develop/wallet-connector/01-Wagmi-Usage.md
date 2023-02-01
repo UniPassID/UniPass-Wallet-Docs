@@ -1,0 +1,66 @@
+# Using Wagmi
+
+Wagmi connector for the [UniPass](https://unipass.vip/) wallet.
+
+## Example
+
+A live demo for Wagmi with UniPass is available [HEAR](https://up-wagmi-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/wagmi-connector-demo).
+
+## Installation
+
+```shell
+  npm install @unipasswallet/wagmi-connector wagmi
+```
+or
+```shell
+  yarn add @unipasswallet/wagmi-connector wagmi
+```
+
+## Parameters
+
+* `chains` -- Chains supported by app. This is the same parameter as would be passed to other RainbowKit wallets..
+
+* `options.connect` -- Connection options for the default networkId, name of the app.
+
+* `options.connect.chainId` -- Default chainId.
+
+* `options.connect.returnEmail` -- If true, email will return when connect function been called.
+
+* `options.connect.appSettings` -- Config appName, appIcon and theme.
+
+## Usage
+
+```ts
+  import { UniPassConnector } from "@unipasswallet/wagmi-connector'
+
+  const unipass = new UniPassConnector({
+    options: {
+      connect: {
+        chainId: 80001,
+        returnEmail: false,
+        appSettings: {
+          appName: "wagmi demo",
+          appIcon: "your icon url",
+          theme: UniPassTheme.dark,
+        },
+      },
+    },
+  });
+
+  const connectors = [
+    unipass,
+    new MetaMaskConnector({
+      chains,
+    }),
+  ];
+  
+  const wagmiClient = createClient({
+    autoConnect: false,
+    connectors,
+    provider,
+  });
+```
+
+## Verify Message
+
+You can find how to verify message [**HEAR**](../verifying-messages/eip191-verifying-messages).
