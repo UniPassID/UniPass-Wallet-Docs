@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | Version | Breaking change     | Last updated | Upgrade Instructions                                                                                           |
 | ------- | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
+| v1.0.0 |                     | 2023.02.01    | support standard SDKs |
 | v0.0.11 |                     | 2022.12.16   | add storageType in initial config |
 | v0.0.10 |                     | 2022.12.14   | add signTypedData(EIP712) and isValidTypedSignature |
 | v0.0.9  |                     | 2022.11.25   | Optimize parameters for SDK initialization, remove unnecessary parameters |
