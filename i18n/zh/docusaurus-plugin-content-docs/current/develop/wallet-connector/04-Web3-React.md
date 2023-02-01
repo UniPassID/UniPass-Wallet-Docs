@@ -1,4 +1,4 @@
-# Using Web3-React V6
+# Using Web3-React V8
 
 ## Example
 
