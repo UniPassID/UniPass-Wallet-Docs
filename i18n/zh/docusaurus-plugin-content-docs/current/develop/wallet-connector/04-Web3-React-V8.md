@@ -2,16 +2,16 @@
 
 ## Example
 
-A demo app for web3-react is available [here](https://up-web3-react-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-react-demo).
+A demo app for web3-react V8 is available [here](https://up-web3-react-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-react-demo).
 
 ## Installation
 
 ```shell
-  npm install @web3-react/unipass
+  npm install @unipasswallet/web3-react
 ```
 or
 ```shell
-  yarn add @web3-react/unipass
+  yarn add @unipasswallet/web3-react
 ```
 
 ## Parameters

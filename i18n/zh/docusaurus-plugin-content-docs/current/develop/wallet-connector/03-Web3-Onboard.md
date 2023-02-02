@@ -7,13 +7,13 @@ A demo app for web3-onboard is available [here](https://up-web3-onboard-demo.ver
 ### Installation
 
 ```shell
-npm i @web3-onboard/core @web3-onboard/unipass
+npm i @web3-onboard/core @unipasswallet/web3-onboard
 ```
 
 or
 
 ```shell
-yarn add @web3-onboard/core @web3-onboard/unipass
+yarn add @web3-onboard/core @unipasswallet/web3-onboard
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ yarn add @web3-onboard/core @web3-onboard/unipass
 
 ```typescript
 import Onboard from '@web3-onboard/core'
-import unipassModule from '@web3-onboard/unipass'
+import unipassModule from '@unipasswallet/web3-onboard'
 
 // initialize the module with options
 const unipass = unipassModule({
