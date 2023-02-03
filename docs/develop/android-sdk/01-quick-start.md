@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
 | -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.9   | 2023.02.03     | https://testnet.wallet.unipass.id/ | Add option *deep* for logout. Website state won't be cleared when deep is set to false |
 | v0.0.8   | 2023.01.29     | https://testnet.wallet.unipass.id/ | Support buildType:minifyEnable                                                         |
 | v0.0.7   | 2023.01.15     | https://testnet.wallet.unipass.id/ | Chore: Throw Exception when user close browser or interrupt process                    |
 | v0.0.6   | 2023.01.13     | https://testnet.wallet.unipass.id/ | Add overload API login, allow connectType for login . Code optimizing                  | 
