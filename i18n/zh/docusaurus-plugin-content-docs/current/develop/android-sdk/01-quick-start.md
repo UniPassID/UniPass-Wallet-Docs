@@ -6,7 +6,7 @@ sidebar_position: 1
 
 | 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
 | -------- | ---------- | ---------------------------------- | --------------------------------  |
-| v0.0.9   | 2023.01.29 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 deep，登出时可以保留网页端登陆状态  |
+| v0.0.9   | 2023.01.29 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 *deep*，设置为 false 时，登出时可以保留网页端登陆状态  |
 | v0.0.8   | 2023.01.29 | https://testnet.wallet.unipass.id/ | 支持 minifyEnable 构建    |
 | v0.0.7   | 2023.01.15 | https://testnet.wallet.unipass.id/ | 代码优化：用户 关闭浏览器/打断进程 时抛出中断异常   |
 | v0.0.6   | 2023.01.13 | https://testnet.wallet.unipass.id/ | 新增重载 API login, 支持可选链接方式。代码实现优化 | 
