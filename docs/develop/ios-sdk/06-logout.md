@@ -13,5 +13,5 @@ unipassSdk?.logOut(logOutSuccessBlock: {
     self.refreshUI()
 }, logoutErrorBlock: { error in
     print("unipassSdk: Logout failed ❎", error)
-})
+}, deep: false)
 ```
