@@ -12,6 +12,7 @@ export declare type UPEventListener = (event: UPEvent) => void;
 export declare type UPConnectOptions = {
   email?: boolean; // 是否请求用户email地址
   connectType?: ConnectType; // 打开 UniPass 登录页类型
+  authorize?: boolean; // sign with ethereum if true when connect
   eventListener?: UPEventListener; // 连接过程中的事件监听
 };
 ```
@@ -19,15 +20,12 @@ export declare type UPConnectOptions = {
 返回结果：连接 UniPass 成功后返回结果为 `UPAccount` 类型数据，如果用户拒绝 UniPass Wallet 连接会抛出异常，应用需要捕获该异常并处理。
 
 ```ts
-export declare class UPAccount {
-  address: string; // 用户地址
-  email?: string | undefined; // 邮箱
-  newborn?: boolean | undefined; // 是否为新注册用户
-  constructor(
-    username: string,
-    email?: string | undefined,
-    newborn?: boolean | undefined
-  );
+export interface UPAccount {
+  address: string; // Ethereum address of user
+  email?: string | undefined; // Email
+  newborn?: boolean | undefined; // Newly registered or not
+  message?: string; // sign with ethereum message when authorize is true
+  signature?: string; // sign with ethereum signature when authorize is true
 }
 ```
 

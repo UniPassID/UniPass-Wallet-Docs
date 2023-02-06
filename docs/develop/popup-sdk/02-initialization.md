@@ -12,8 +12,13 @@ The same email has different UniPass account address in mainnet and testnet, ple
 
 
 ```ts
-export declare type Environment = "test" | "prod";
-export declare type ChainType = "eth" | "polygon" | "bsc" | "rangers";
+export type Environment = 'test' | 'prod';
+export declare type ChainType = | 'polygon'
+  | 'bsc'
+  | 'rangers'
+  | 'eth'
+  | 'scroll'
+  | 'arbitrum';
 
 // UniPass Wallet entry URL
 export interface WalletURL {
