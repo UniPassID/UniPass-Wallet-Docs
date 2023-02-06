@@ -12,6 +12,11 @@ interface UnipassCallBack <T>{
     fun failure(exception: Exception)
 }
 
+data class LoginOption (
+    val connectType: ConnectType,
+    val authorize: Boolean
+)
+
 class LoginOutput: BaseOutput(OutputType.Login) {
     val userInfo: UserInfo? = null
 }
@@ -19,7 +24,9 @@ class LoginOutput: BaseOutput(OutputType.Login) {
 data class UserInfo (
     var email: String?,
     var address: String,
-    var newborn: Boolean = false
+    var newborn: Boolean = false,
+    val message: String?,
+    val signature: String?
 )
 
 enum class OutputType {
@@ -57,7 +64,8 @@ unipassInstance.login(object : UnipassCallBack<LoginOutput> {
     override fun failure(error: Exception) {
         Log.d("Unipass Login", error.message ?: "Something went wrong")
     }
-})
+}, LoginOption(ConnectType.BOTH, authorize))
+// LoginOption is not required, it is used to customize login option
 // Or you can use an overloaded login so that users connect at the type you choose
 // connectType default is BOTH
 unipassInstance.login(ConnectType.GOOGLE, object : UnipassCallBack<LoginOutput> {

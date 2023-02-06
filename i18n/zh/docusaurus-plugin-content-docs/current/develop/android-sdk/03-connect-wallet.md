@@ -12,6 +12,11 @@ interface UnipassCallBack <T>{
     fun failure(exception: Exception)
 }
 
+data class LoginOption (
+    val connectType: ConnectType,
+    val authorize: Boolean
+)
+
 class LoginOutput: BaseOutput(OutputType.Login) {
     val userInfo: UserInfo? = null
 }
@@ -19,7 +24,9 @@ class LoginOutput: BaseOutput(OutputType.Login) {
 data class UserInfo (
     var email: String?,
     var address: String,
-    var newborn: Boolean = false
+    var newborn: Boolean = false,
+    val message: String?,
+    val signature: String?
 )
 
 enum class OutputType {
@@ -57,6 +64,7 @@ unipassInstance.login(object : UnipassCallBack<LoginOutput> {
         Log.d("Unipass Login", error.message ?: "Something went wrong")
     }
 })
+// LoginOption不是必需的，用于自定义登录选项
 // 或者您可以使用重载的方法，以便用户按您选择的类型连接
 // connectType 默认值为 BOTH
 unipassInstance.login(ConnectType.GOOGLE, object : UnipassCallBack<LoginOutput> {
