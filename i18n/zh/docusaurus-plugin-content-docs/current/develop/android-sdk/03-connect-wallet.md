@@ -63,7 +63,7 @@ unipassInstance.login(object : UnipassCallBack<LoginOutput> {
     override fun failure(error: Exception) {
         Log.d("Unipass Login", error.message ?: "Something went wrong")
     }
-})
+}, LoginOption(ConnectType.BOTH, authorize))
 // LoginOption不是必需的，用于自定义登录选项
 // 或者您可以使用重载的方法，以便用户按您选择的类型连接
 // connectType 默认值为 BOTH
