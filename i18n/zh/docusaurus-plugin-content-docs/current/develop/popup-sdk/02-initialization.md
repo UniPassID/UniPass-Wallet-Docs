@@ -12,7 +12,12 @@ sidebar_position: 2
 
 ```ts
 export declare type Environment = "test" | "prod";
-export declare type ChainType = "eth" | "polygon" | "bsc" | "rangers";
+export declare type ChainType = | 'polygon'
+  | 'bsc'
+  | 'rangers'
+  | 'eth'
+  | 'scroll'
+  | 'arbitrum';
 
 // UniPass Wallet 的主页 URL
 export interface WalletURL {

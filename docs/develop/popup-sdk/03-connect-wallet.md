@@ -10,6 +10,7 @@ export declare type UPEventListener = (event: UPEvent) => void;
 export declare type UPConnectOptions = {
   email?: boolean; // request email or not
   connectType?: ConnectType; // Type of login UniPass
+  authorize?: boolean; // sign with ethereum if true when connect
   eventListener?: UPEventListener; // event listener during connection
 };
 ```
@@ -17,15 +18,12 @@ export declare type UPConnectOptions = {
 Return an `UPAccount` object if succeed. Otherwise an exception will be thrown if user denied the connection request.
 
 ```ts
-export declare class UPAccount {
+export interface UPAccount {
   address: string; // Ethereum address of user
   email?: string | undefined; // Email
   newborn?: boolean | undefined; // Newly registered or not
-  constructor(
-    username: string,
-    email?: string | undefined,
-    newborn?: boolean | undefined
-  );
+  message?: string; // sign with ethereum message when authorize is true
+  signature?: string; // sign with ethereum signature when authorize is true
 }
 ```
 
