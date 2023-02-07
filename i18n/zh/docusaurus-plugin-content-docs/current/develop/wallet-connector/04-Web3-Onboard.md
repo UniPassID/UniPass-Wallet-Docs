@@ -51,4 +51,4 @@ const onboard = Onboard({
 ```
 ## Verify Message
 
-You can find how to verify message [**HEAR**](../verifying-messages/eip191-verifying-messages).
+You can find how to verify message [**HERE**](../verifying-messages/eip191-verifying-messages).

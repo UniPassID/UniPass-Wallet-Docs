@@ -2,7 +2,7 @@
 
 ## Example
 
-A demo app for RainbowKit is available [HEAR](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).
+A demo app for RainbowKit is available [HERE](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).
 
 ## Installation
 
@@ -69,4 +69,4 @@ or
 ```
 ## Verify Message
 
-You can find how to verify message [**HEAR**](../verifying-messages/eip191-verifying-messages).
+You can find how to verify message [**HERE**](../verifying-messages/eip191-verifying-messages).
