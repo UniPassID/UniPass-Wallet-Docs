@@ -6,6 +6,13 @@ sidebar_position: 3
 
 请求参数：连接 UniPass 时可以通过传入参数来指定是否获取用户的 Email，可以传入的自定义参数如下：
 
+调用`login`方法获取UniPass Account `UniPassUserInfo`信息。
+
+UniPass 目前支持自定义登录选项设置, 包括下列选项:
+- connectType: 指定 UniPass 通过特定方式登录，目前提供的选项有 `google`, `email` 和 `both`. 默认值为 `both`, 表示允许支持的任意方式进行登录.
+- authorize: 如果设置为 `true`, UniPass 将会返回一个自动生成的 `Sign-in With Ethereum` 消息和对应的签名. 默认值为 `false`.
+- email: 如果设置为 `true`, UniPass 账户邮箱 email 将会返回. 默认值为 `false`.
+
 ```ts
 export declare type ConnectType = "both" | "google" | "email";
 export declare type UPEventListener = (event: UPEvent) => void;
