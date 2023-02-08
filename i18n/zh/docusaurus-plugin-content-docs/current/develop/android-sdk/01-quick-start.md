@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
 | -------- | ---------- | ---------------------------------- | --------------------------------  |
+| v0.0.11  | 2023.02.07 | https://testnet.wallet.unipass.id/ | login 方法将 *connectType* 参数迁移到 *loginOption*, 并增加 returnEmail, authorize 等选项 |
 | v0.0.10  | 2023.02.06 | https://testnet.wallet.unipass.id/ | login 方法增加可选参数 *loginOption*  |
 | v0.0.9   | 2023.01.29 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 *deep*，设置为 false 时，登出时可以保留网页端登陆状态  |
 | v0.0.8   | 2023.01.29 | https://testnet.wallet.unipass.id/ | 支持 minifyEnable 构建    |
