@@ -4,6 +4,14 @@ sidebar_position: 3
 
 # Connect UniPass Wallet
 
+After the initialization is complete, invoke the `login` method to get information about the UniPass Account `UniPassUserInfo`.
+
+UniPass currently supports customizing login options for `login` method, including:
+
+- connectType: indicate the provider used to login UniPass, including `google`, `email` and `both` options. The default value is `both`, indicating use any supported way to login UniPass.
+- authorize: if set to `true`, UniPass will return a auto generated `Sign-in With Ethereum` message, and a signature for the message. The default value is `false`.
+- email: if set to `true`, UniPass account `email` will be returned. The default value is `false`.
+
 ```ts
 export declare type ConnectType = "both" | "google" | "email";
 export declare type UPEventListener = (event: UPEvent) => void;
