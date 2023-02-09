@@ -7,12 +7,12 @@ sidebar_position: 3
 After the initialization is complete, invoke the `login` method to get information about the UniPass Account `UniPassUserInfo`.
 
 UniPass currently supports customizing login options for `login` method, including:
-- connectType: indicate the provider used to login UniPass, including `google`, `email` and `both` options. The default value is `both`, indicating use any supported way to login UniPass.
-- authorize: if set to `true`, UniPass will return a auto generated `Sign-in With Ethereum` message, and a signature for the message. The default value is `false`.
-- returnEmail: if set to `true`, UniPass account `email` will be returned. The default value is `false`.
+- `connectType`: indicate the provider used to login UniPass, including `google`, `email` and `both` options. The default value is `both`, indicating use any supported way to login UniPass.
+- `authorize`: if set to `true`, UniPass will return a auto generated `Sign-in With Ethereum` message, and a signature for the message. The default value is `false`.
+- `returnEmail`: if set to `true`, UniPass account `email` will be returned. The default value is `false`.
 
 
-## Type definitions:
+## Type definitions
 
 ```swift
 public enum ConnectType: String {
@@ -43,7 +43,7 @@ public struct UniPassUserInfo: Codable {
 
 ```
 
-## Sample Code
+## Code sample
 
 ```swift
     func loginBtnClicked() {
@@ -57,3 +57,7 @@ public struct UniPassUserInfo: Codable {
 ```
 
 `newborn` can be used to track new registration count.
+
+## Verification for Sign-in With Ethereum
+
+If you set `authorize` to `true`, you may need to verify the signature of Sign-in With Ethereum, please refer to [**Sign-in With Ethereum**](../verifying-messages/02-sign-in-with-ethereum.md).

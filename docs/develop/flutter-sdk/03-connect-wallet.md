@@ -17,7 +17,7 @@ class UpAccount {
 try {
   UpAccount upAccount = await uniPassWeb.connect(context);
 } catch (err) {
-	// User refuesed the connection or connection error
+	// User refused the connection or connection error
 }
 ```
 

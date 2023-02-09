@@ -2,9 +2,11 @@
 sidebar_position: 5
 ---
 
-# 签名消息
+# 签名消息与验签
 
-## 相关类型定义：
+## 签名消息
+
+### 相关类型定义：
 
 ```java
 enum class SignType(val value: String) {
@@ -26,7 +28,7 @@ class SignOutput: BaseOutput(OutputType.SignMessage) {
 }
 ```
 
-## 代码示例
+### 代码示例
 
 ```java
 // 请确认用户已授权登录
@@ -42,3 +44,7 @@ if (unipassInstance.isLogin()) {
     })
 }
 ```
+
+## 验签
+
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)

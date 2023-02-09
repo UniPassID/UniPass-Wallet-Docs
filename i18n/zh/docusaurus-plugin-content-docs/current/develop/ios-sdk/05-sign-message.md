@@ -2,11 +2,13 @@
 sidebar_position: 5
 ---
 
-# 签名消息
+# 签名消息与验签
+
+## 签名消息
 
 调用 `signMessage` 在 UniPass Wallet 中对指定的消息进行签名。 目前提供两种消息签名方法: `PersonalSign` 和 `SignTypedData`
 
-## 类型定义:
+### 签名函数定义
 
 ```swift
 public enum UniPassSignType: String {
@@ -22,7 +24,7 @@ public class UniPassSignInput: NSObject {
 
 ```
 
-## 示例代码
+### 代码示例
 
 ```swift
 // Ensure that the user is authorized to log in
@@ -43,3 +45,7 @@ if let userInfo = unipassSdk?.getUserInfo() {
 }
 
 ```
+
+## 验签
+
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

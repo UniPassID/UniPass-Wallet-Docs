@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Sign Message
+# Sign Message and Verify
 
 ## Type definitions:
 
@@ -26,7 +26,7 @@ class SignOutput: BaseOutput(OutputType.SignMessage) {
 }
 ```
 
-## Sample Code
+## Code sample
 
 ```java
 // Ensure that the user is authorized to log in

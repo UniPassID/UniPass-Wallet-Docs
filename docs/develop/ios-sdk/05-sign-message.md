@@ -2,11 +2,13 @@
 sidebar_position: 5
 ---
 
-# Sign Message
+# Sign Message and Verify
+
+## Sign message
 
 Use UniPass Wallet to sign the specified message, which can be done by calling `signMessage`. There are two message signature methods, `PersonalSign` and `SignTypedData`
 
-## Type definitions:
+### Definition of signature function
 
 ```swift
 public enum UniPassSignType: String {
@@ -22,7 +24,7 @@ public class UniPassSignInput: NSObject {
 
 ```
 
-## Sample Code
+## Code sample
 
 ```swift
 // Ensure that the user is authorized to log in
@@ -43,3 +45,7 @@ if let userInfo = unipassSdk?.getUserInfo() {
 }
 
 ```
+
+## Verify signature
+
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

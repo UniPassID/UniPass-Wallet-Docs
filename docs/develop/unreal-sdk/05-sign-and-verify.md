@@ -13,6 +13,6 @@ create a `Sign Message` function in the Widget Blueprint, and then complete its 
 
 ![sign message](./img/unreal-sign-message.png)
 
-## Verify message
+## Verify signature
 
-Coming soon...
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

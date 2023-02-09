@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # 登出账户
 
-## 示例代码
+## 代码示例
 
 ```swift
 // logout will clear local upAccount data

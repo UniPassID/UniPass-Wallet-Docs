@@ -2,9 +2,11 @@
 sidebar_position: 6
 ---
 
-# signTypedData(EIP-712) 和验签
+# signTypedData(EIP-712)与验签
 
-## [EIP-712](https://eips.ethereum.org/EIPS/eip-712) 签名方法类型定义
+## signTypedData([EIP-712](https://eips.ethereum.org/EIPS/eip-712))
+
+### 签名函数定义
 
 ```tsx
 export interface MessageTypeProperty {
@@ -47,7 +49,7 @@ export interface TypedMessage<T extends MessageTypes> {
 }
 ```
 
-## 签名 `signTypedData`
+### `signTypedData` 代码示例
 
 ```tsx
 const signTypedData = async () => {
@@ -63,23 +65,6 @@ const signTypedData = async () => {
 };
 ```
 
-## 验签 `isValidTypedSignature`
+## 验签
 
-```tsx
-const verifyTypedSig = async () => {
-  try {
-    const ret = await upWallet.isValidTypedSignature(
-      eip712DemoData,
-      address,
-      eip712Sig
-    );
-    if (ret === true) {
-      console.log("verify eip712 signature success");
-    } else {
-      console.log("verify eip712 signature failed");
-    }
-  } catch (err: any) {
-    console.log("auth error", err?.message);
-  }
-};
-```
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

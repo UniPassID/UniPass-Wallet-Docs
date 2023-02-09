@@ -19,7 +19,7 @@ class SendTransactionOutput: BaseOutput(OutputType.SendTransaction) {
 }
 ```
 
-## Sample Code
+## Code sample
 
 ```java
 // Ensure that the user is authorized to log in

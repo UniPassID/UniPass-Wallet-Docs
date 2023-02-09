@@ -1,0 +1,394 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
+# UniPass Verifying Messages
+
+## Introduction of AuthChain
+
+Since UniPass Wallet is a multi-chains supported smart contract wallet and share the consistent address on all EVM compatible chains. In the account deployment, in order to save the gas fees, the **deploy-on-demand** strategy is used.
+
+- Only deploy the smart contract wallet on AuthChain(Polygon) when registration
+- Deploy the smart contract wallet on the corresponding chain for the user before initiating a on-chain interaction when using the UniPass Wallet on a non-AuthChain chain
+
+Since the smart contract wallet `sign message/verify` based on the EIP1271 protocol, verifying signature requires calling the contract on the chain. The strategy of **deploy-on-demand** imposes some limitations on `sign message/verify`.
+
+- `Sign message/verify` cannot be done on the corresponding chain until the contract is deployed
+
+:::info Tips
+It would be better to `sign message/verify` only on AuthChain(Polygon) for third-party applications
+:::
+
+The UniPass Wallet SDK is also designed with a default setting so that `sign message/verify` happens on AuthChain(Polygon) as much as possible.
+
+UniPass Wallet supports signing any custom message. And it supports custom signature options, including:
+
+- **isEIP191Prefix** whether to use the standard EIP191 prefix. The default value is `false`, corresponding to `UniPassPrefix`.
+
+  - `UniPassPrefix`: `\x18UniPass Signed Message:\n`
+  - `EIP191Prefix`: `\x19Ethereum Signed Message:\n`
+
+- **onAuthChain** whether to sign/check the signature on AuthChain(Polygon). The default value is `true`.
+
+  - `true`: means `sign message/verify` on AuthChain(Polygon)
+  - `false`: means `sign message/verify` on the chain the SDK is currently connected to
+
+## Verify signature
+
+Third-party applications can use `verifyMessageSignature` from the @unipasswallet/popup-utils package to accomplish custom message verification, which supports both EOA and contract wallet.
+
+In a series of JS SDKs provided by UniPass, custom message signing is eventually done by calling `UniPassPopupSDK.signMessage` in @unipasswallet/popup-sdk, with some differences in signing parameters. The SDKs for other platforms also adopt the same message signing mechanism.
+
+Therefore, need to check the signature according to the corresponding prefix and chain.
+
+| Package                          | prefix        | modifiable of prefix | chain              | modifiable of chain |
+| -------------------------------- | ------------- | -------------------- | ------------------ | ------------------- |
+| @unipasswallet/popup-sdk         | UniPassPrefix | ✅                   | AuthChain(Polygon) | ✅                  |
+| @unipasswallet/ethereum-provider | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| @unipasswallet/wagmi-connector   | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| @unipasswallet/web3-react        | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| @unipasswallet/web3-onboard      | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| Android SDK                      | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| iOS SDK                          | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| Flutter SDK                      | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| Unity SDK                        | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| Unreal SDK                       | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+
+For EIP712 `signTypedData` is the same as `signMessage`.
+
+We currently provide the signature verification code for Typescript, Go.
+
+### Definition of verify function
+
+<Tabs>
+<TabItem value="ts" label="Typescript">
+
+```ts
+/**
+ * Verify ethereum account signature, including EOA account and Contract account.
+ *
+ * @param message
+ * @param signature
+ * @param address account address
+ * @param isEIP191Prefix boolean. Does the personal hash algorithm use EIP191 prefix.
+ *                      There are two message prefix for personal hash algorithm during signing:
+                                    - EIP191Prefix: `\x19Ethereum Signed Message:\n`
+                                    - UniPassPrefix: `\x18UniPass Signed Message:\n`
+ * @param provider optional param, for contract signature validation
+ * @returns signature validation result
+ */
+export const verifyMessageSignature = async (
+  message: BytesLike,
+  signature: string,
+  address: string,
+  isEIP191Prefix: boolean = false,
+  provider?: providers.JsonRpcProvider
+): Promise<boolean>
+
+
+/**
+ *
+ * @param typedData Typed Data message
+ * @param signature
+ * @param address account address
+ * @param provider optional param, for contract signature validation
+ * @returns signature validation result
+ */
+export const verifyTypedDataSignature = async (
+  typedData: TypedData,
+  signature: string,
+  address: string,
+  provider?: providers.JsonRpcProvider
+): Promise<boolean> 
+
+```
+
+</TabItem>
+<TabItem value="golang" label="Go">
+
+```go
+//  Verify ethereum account signature, including EOA account and Contract account.
+// - parameter
+//  - param ctx
+//  - param account: account address.
+//  - param message.
+//  - param signature.
+//  - param isEIP191Prefix boolean: Does the personal hash algorithm use EIP191 prefix.
+//                       There are two message prefix for personal hash algorithm during signing:
+//                                    - EIP191Prefix: `\x19Ethereum Signed Message:\n`
+//                                    - UniPassPrefix: `\x18UniPass Signed Message:\n`
+//   - param client: optional param, for contract signature validation
+//   - returns signature validation result and error message
+func VerifyMessageSignature(
+	ctx context.Context,
+	account common.Address,
+	message, signature []byte,
+	isEIP191 bool,
+	client *ethclient.Client) (bool, error)
+
+
+//  Verify typedData signature, including EOA account and Contract account.
+// - parameter
+//  - param ctx
+//  - param account: account address.
+//  - param data.
+//  - param signature.
+//  - param client: optional param, for contract signature validation
+//  - returns signature validation result and error message
+func VerifyTypedDataSignature(
+	ctx context.Context,
+	account common.Address,
+	data apitypes.TypedData,
+	signature []byte,
+	client *ethclient.Client) (bool, error)
+
+```
+
+</TabItem>
+</Tabs>
+
+### `verifyMessageSignature` code sample
+
+<Tabs>
+<TabItem value="ts" label="Typescript">
+
+```ts
+import { providers } from "ethers";
+import { verifyMessageSignature } from "@unipasswallet/popup-utils";
+
+const verifyMessageSig = async () => {
+  const message = "Welcome to UniPass!";
+  const sig =
+    "0x000001d0bdf2f92cfc6de71d00ca5413c19500ae912b215ca680bff55d2c4e971401fd2852989416ea19622985bfb57e341aa7875b17aae708dc0c03375250181ac1da1c020000003c000000640000000002007e7649ccd0315628dabe5256cd050d4ce7e1824d1217dba20cc5e3e5626553970000003c000000000000003c0000c06495b106de8a0701ff5e84d9f8a5c9d711b1b6000000280000000000000000";
+  const address = "0x6939dBfaAe305FCdA6815ebc9a297997969d39aB";
+  const provider = new providers.JsonRpcProvider(
+    "https://rpc.ankr.com/polygon_mumbai"
+  );
+
+  try {
+    const ret = await verifyMessageSignature(
+      message,
+      sig,
+      address,
+      false,
+      provider
+    );
+    if (ret === true) {
+      console.success("verify signature success");
+    } else {
+      console.error("verify signature failed");
+    }
+  } catch (err) {
+    console.log("auth err", err);
+  }
+};
+
+
+```
+
+</TabItem>
+<TabItem value="golang" label="Go">
+
+```go
+import (
+	"context"
+	"log"
+	"testing"
+
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/ethereum/go-ethereum/signer/core/apitypes"
+  unipass_sigverify "github.com/unipassid/unipass-sigverify-go"
+)
+
+func TestVerifyMessageSignature(t *testing.T) {
+	client, err := ethclient.Dial("https://rpc.ankr.com/polygon_mumbai")
+
+	if err != nil {
+		log.Panicf("client connect error:%v", err)
+	}
+	ctx := context.Background()
+	account := common.HexToAddress("0x6939dBfaAe305FCdA6815ebc9a297997969d39aB")
+
+	sig := common.FromHex("0x000001d0bdf2f92cfc6de71d00ca5413c19500ae912b215ca680bff55d2c4e971401fd2852989416ea19622985bfb57e341aa7875b17aae708dc0c03375250181ac1da1c020000003c000000640000000002007e7649ccd0315628dabe5256cd050d4ce7e1824d1217dba20cc5e3e5626553970000003c000000000000003c0000c06495b106de8a0701ff5e84d9f8a5c9d711b1b6000000280000000000000000")
+	msg := []byte("Welcome to UniPass!")
+	ok, err := unipass_sigverify.VerifyMessageSignature(ctx, account, msg, sig, false, client)
+	if err != nil || !ok {
+		t.Fatalf("validate signature error:%v", err)
+	}
+}
+
+```
+
+</TabItem>
+</Tabs>
+
+### `verifyTypedDataSignature` code sample
+
+<Tabs>
+  <TabItem value="ts" label="Typescript">
+
+```ts
+import { providers } from "ethers";
+import { verifyTypedDataSignature } from "@unipasswallet/popup-utils";
+const verifyTypedDataSig = async () => {
+  const provider = new providers.JsonRpcProvider(
+    "https://rpc.ankr.com/polygon_mumbai"
+  );
+
+  const typedData = {
+    types: {
+      EIP712Domain: [
+        {
+          name: "name",
+          type: "string",
+        },
+        {
+          name: "version",
+          type: "string",
+        },
+        {
+          name: "chainId",
+          type: "uint256",
+        },
+        {
+          name: "verifyingContract",
+          type: "address",
+        },
+      ],
+      Person: [
+        {
+          name: "name",
+          type: "string",
+        },
+        {
+          name: "wallet",
+          type: "address",
+        },
+      ],
+      Mail: [
+        {
+          name: "from",
+          type: "Person",
+        },
+        {
+          name: "to",
+          type: "Person",
+        },
+        {
+          name: "contents",
+          type: "string",
+        },
+      ],
+    },
+    primaryType: "Mail",
+    domain: {
+      name: "Ether Mail",
+      version: "1",
+      chainId: 1,
+      verifyingContract: "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
+    },
+    message: {
+      from: {
+        name: "Cow",
+        wallet: "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826",
+      },
+      to: {
+        name: "Bob",
+        wallet: "0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB",
+      },
+      contents: "Hello, Bob!",
+    },
+  };
+
+  const sig =
+    "0x0000018e9e9a0bd86c21c33ad96c875f976b9c9fdb78a110536d9b09b74e9d985d2eb04da24f23a78e4c9f281ecdd8869f50a2b5b4e18e4ec78cfcedf3ff3a973fb5dc1c020000003c000000640000000002007e7649ccd0315628dabe5256cd050d4ce7e1824d1217dba20cc5e3e5626553970000003c000000000000003c0000c06495b106de8a0701ff5e84d9f8a5c9d711b1b6000000280000000000000000";
+
+  const address = "0x6939dBfaAe305FCdA6815ebc9a297997969d39aB";
+
+  try {
+    const ret = await verifyTypedDataSignature(typedData, sig, address, provider);
+    if (ret === true) {
+      console.success("verify signature success");
+    } else {
+      console.error("verify signature failed");
+    }
+  } catch (err) {
+    console.log("auth err", err);
+  }
+};
+```
+    
+  </TabItem>
+  <TabItem value="golang" label="Go">
+
+```go
+import (
+	"context"
+	"log"
+	"testing"
+
+	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/ethereum/go-ethereum/ethclient"
+	"github.com/ethereum/go-ethereum/signer/core/apitypes"
+  unipass_sigverify "github.com/unipassid/unipass-sigverify-go"
+)
+
+func TestVerifySignedTypeData(t *testing.T) {
+	client, err := ethclient.Dial("https://rpc.ankr.com/polygon_mumbai")
+	if err != nil {
+		panic(err)
+	}
+	ctx := context.Background()
+	account := common.HexToAddress("0x6939dBfaAe305FCdA6815ebc9a297997969d39aB")
+	{
+		chainId := math.HexOrDecimal256(*common.Big1)
+		data :=
+			apitypes.TypedData{
+				Types: apitypes.Types{
+					"EIP712Domain": []apitypes.Type{
+						{Name: "name", Type: "string"},
+						{Name: "version", Type: "string"},
+						{Name: "chainId", Type: "uint256"},
+						{Name: "verifyingContract", Type: "address"},
+					},
+					"Person": []apitypes.Type{
+						{Name: "name", Type: "string"},
+						{Name: "wallet", Type: "address"},
+					},
+					"Mail": []apitypes.Type{
+						{Name: "from", Type: "Person"},
+						{Name: "to", Type: "Person"},
+						{Name: "contents", Type: "string"},
+					}},
+				Domain: apitypes.TypedDataDomain{
+					Name:              "Ether Mail",
+					Version:           "1",
+					ChainId:           &chainId,
+					VerifyingContract: "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC",
+				},
+				PrimaryType: "Mail",
+				Message: apitypes.TypedDataMessage{
+					"from":     apitypes.TypedDataMessage{"name": "Cow", "wallet": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826"},
+					"to":       apitypes.TypedDataMessage{"name": "Bob", "wallet": "0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB"},
+					"contents": "Hello, Bob!",
+				},
+			}
+		sig := common.FromHex("0x0000018e9e9a0bd86c21c33ad96c875f976b9c9fdb78a110536d9b09b74e9d985d2eb04da24f23a78e4c9f281ecdd8869f50a2b5b4e18e4ec78cfcedf3ff3a973fb5dc1c020000003c000000640000000002007e7649ccd0315628dabe5256cd050d4ce7e1824d1217dba20cc5e3e5626553970000003c000000000000003c0000c06495b106de8a0701ff5e84d9f8a5c9d711b1b6000000280000000000000000")
+		ok, err := unipass_sigverify.VerifyTypedDataSignature(ctx, account, data, sig, client)
+		if err != nil || !ok {
+			t.Fatalf("validate signature error:%v", err)
+		}
+	}
+}
+
+
+```
+
+</TabItem>
+</Tabs>
