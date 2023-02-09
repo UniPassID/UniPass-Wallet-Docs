@@ -31,6 +31,6 @@ async function runTest() {
 }
 ```
 
-## Verify Message
+## 验签
 
-You can find how to verify message [**HERE**](../verifying-messages/eip191-verifying-messages).
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)

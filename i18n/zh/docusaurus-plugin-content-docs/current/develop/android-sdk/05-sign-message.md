@@ -42,3 +42,7 @@ if (unipassInstance.isLogin()) {
     })
 }
 ```
+
+## 验签
+
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)

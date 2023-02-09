@@ -50,3 +50,8 @@ public struct UniPassUserInfo: Codable {
 ```
 
 `newborn` 表示用户是否在本次连接过程中注册
+
+
+## Sign-in With Ethereum 签名验证
+
+`Sign-in With Ethereum` 消息和签名的验证可参考：[**Popup-SDK 授权验证**](../popup-sdk/03-connect-wallet.md#sign-in-with-ethereum-签名验证)

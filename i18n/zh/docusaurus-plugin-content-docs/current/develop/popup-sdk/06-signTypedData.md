@@ -63,23 +63,6 @@ const signTypedData = async () => {
 };
 ```
 
-## 验签 `isValidTypedSignature`
+## 验签
 
-```tsx
-const verifyTypedSig = async () => {
-  try {
-    const ret = await upWallet.isValidTypedSignature(
-      eip712DemoData,
-      address,
-      eip712Sig
-    );
-    if (ret === true) {
-      console.log("verify eip712 signature success");
-    } else {
-      console.log("verify eip712 signature failed");
-    }
-  } catch (err: any) {
-    console.log("auth error", err?.message);
-  }
-};
-```
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)

@@ -17,3 +17,7 @@ Debug.Log(sig);
 var isValid = await wallet.isValidSignature(message, sig);
 Debug.Log("isValid:" + isValid);
 ```
+
+### 服务器端验签
+
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)
