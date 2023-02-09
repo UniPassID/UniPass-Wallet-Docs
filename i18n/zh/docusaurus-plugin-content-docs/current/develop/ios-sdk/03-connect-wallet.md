@@ -36,7 +36,7 @@ public struct UniPassUserInfo: Codable {
 
 ```
 
-## 示例代码
+## 代码示例
 
 ```swift
     func loginBtnClicked() {

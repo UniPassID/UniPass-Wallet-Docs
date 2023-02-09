@@ -49,7 +49,7 @@ export interface TypedMessage<T extends MessageTypes> {
 }
 ```
 
-## Sample of `signTypedData`
+## Code sample of `signTypedData`
 
 ```tsx
 const signTypedData = async () => {

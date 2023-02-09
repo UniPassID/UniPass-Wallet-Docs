@@ -49,7 +49,7 @@ export interface TypedMessage<T extends MessageTypes> {
 }
 ```
 
-### `signTypedData` 示例
+### `signTypedData` 代码示例
 
 ```tsx
 const signTypedData = async () => {

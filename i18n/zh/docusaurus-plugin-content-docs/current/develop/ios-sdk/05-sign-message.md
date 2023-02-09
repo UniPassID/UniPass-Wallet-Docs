@@ -24,7 +24,7 @@ public class UniPassSignInput: NSObject {
 
 ```
 
-### 示例代码
+### 代码示例
 
 ```swift
 // Ensure that the user is authorized to log in

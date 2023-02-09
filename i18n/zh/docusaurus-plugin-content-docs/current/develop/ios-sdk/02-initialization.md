@@ -49,7 +49,7 @@ public enum UniPassTheme: String {
 
 ```
 
-### 示例代码
+### 代码示例
 
 ```swift
    // init app setting
