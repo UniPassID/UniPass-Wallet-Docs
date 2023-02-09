@@ -2,9 +2,11 @@
 sidebar_position: 6
 ---
 
-# signTypedData(EIP-712) 和验签
+# signTypedData(EIP-712)与验签
 
-## [EIP-712](https://eips.ethereum.org/EIPS/eip-712) 签名方法类型定义
+## signTypedData([EIP-712](https://eips.ethereum.org/EIPS/eip-712))
+
+### 签名函数定义
 
 ```tsx
 export interface MessageTypeProperty {
@@ -47,7 +49,7 @@ export interface TypedMessage<T extends MessageTypes> {
 }
 ```
 
-## 签名 `signTypedData`
+### `signTypedData` 示例
 
 ```tsx
 const signTypedData = async () => {
@@ -65,4 +67,4 @@ const signTypedData = async () => {
 
 ## 验签
 
-服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

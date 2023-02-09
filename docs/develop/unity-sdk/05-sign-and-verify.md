@@ -11,9 +11,6 @@ var sig = await wallet.SignMessage(message);
 Debug.Log(sig);
 ```
 
-## Verify message
+## Verify signature
 
-```csharp
-var isValid = await wallet.isValidSignature(message, sig);
-Debug.Log("isValid:" + isValid);
-```
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

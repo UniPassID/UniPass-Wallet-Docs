@@ -4,7 +4,9 @@ sidebar_position: 6
 
 # signTypedData(EIP-712) and Verify
 
-## [EIP-712](https://eips.ethereum.org/EIPS/eip-712) Type definitions
+## signTypedData([EIP-712](https://eips.ethereum.org/EIPS/eip-712))
+
+### Definition of signature function
 
 ```tsx
 export interface MessageTypeProperty {
@@ -47,7 +49,7 @@ export interface TypedMessage<T extends MessageTypes> {
 }
 ```
 
-## sign TypedData `signTypedData`
+## Sample of `signTypedData`
 
 ```tsx
 const signTypedData = async () => {
@@ -63,23 +65,6 @@ const signTypedData = async () => {
 };
 ```
 
-## verify TypedSig `isValidTypedSignature`
+## Verify signature
 
-```tsx
-const verifyTypedSig = async () => {
-  try {
-    const ret = await upWallet.isValidTypedSignature(
-      eip712DemoData,
-      address,
-      eip712Sig
-    );
-    if (ret === true) {
-      console.log("verify eip712 signature success");
-    } else {
-      console.log("verify eip712 signature failed");
-    }
-  } catch (err: any) {
-    console.log("auth error", err?.message);
-  }
-};
-```
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

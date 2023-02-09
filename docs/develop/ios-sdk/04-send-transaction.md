@@ -15,7 +15,7 @@ public class UniPassTransaction: NSObject {
 }
 ```
 
-## Sample Code
+## Code sample
 
 ```swift
 // Ensure that the user is authorized to log in

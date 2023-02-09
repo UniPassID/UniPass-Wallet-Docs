@@ -13,19 +13,10 @@ sidebar_position: 5
 try {
   String signedMessage = await uniPassWeb.signMessage(context, message);
 } catch (err) {
-  // User refuesed the signature or connection error
+  // User refused the signature or connection error
 }
 ```
 
-## Verify message
+## Verify signature
 
-```dart
-/// {@params} BuildContext context
-/// {@params} String message
-/// {@return} String signedMessage
-try {
-  String signedMessage = await uniPassWeb.signMessage(context, message);
-} catch (err) {
-  // User refuesed the signature or connection error
-}
-```
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

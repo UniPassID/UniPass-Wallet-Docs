@@ -19,17 +19,4 @@ try {
 
 ## 验签
 
-```ts
-/// {@params} String message  -  需要验签的字符串
-/// {@params} String sig  -  需要验签的签名
-/// {@return} bool isValid  -  验签是否通过
-try {
-  bool isValid = await uniPassWeb.isValidSignature(message, sig);
-} catch (err) {
-  // 验签错误
-}
-```
-
-### 服务器端验签
-
 服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)

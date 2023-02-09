@@ -67,6 +67,7 @@ or
         provider,
     });
 ```
-## Verify Message
 
-You can find how to verify message [**HERE**](../verifying-messages/eip191-verifying-messages).
+## Verify signature
+
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

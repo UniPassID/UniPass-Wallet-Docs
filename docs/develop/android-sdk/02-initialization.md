@@ -52,7 +52,7 @@ enum class UniPassTheme(val value: String){
 }
 ```
 
-### Sample Code
+### Code sample
 
 ```java
 unipassInstance = UniPassSDK(

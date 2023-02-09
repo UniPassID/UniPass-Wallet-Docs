@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
 import Tabs from "@theme/Tabs";
@@ -7,16 +7,18 @@ import TabItem from "@theme/TabItem";
 
 # UniPass Verifying Messages
 
-由于 UniPass Wallet 是一款支持多链的智能合约钱包，并且多链地址一致。 在多链账户部署策略上，为了节省用户的手续费，采用**按需部署**策略：
+## 关于 AuthChain 的说明
+
+由于 UniPass Wallet 是一款支持多链的智能合约钱包，并且多链地址一致。 在多链账户部署上，为了节省用户的手续费，采用**按需部署**策略：
 
 - 初始注册时，只在 AuthChain(Polygon) 上部署智能合约钱包
-- 在非 AuthChain 链上使用 UniPass Wallet 发起交易前，为用户在对应链上部署智能合约钱包
+- 在非 AuthChain 链上使用 UniPass Wallet 发起链上交互前，为用户在对应链上部署智能合约钱包
 
 由于智能合约钱包签名/验签采用 EIP1271 协议，验签需要调用链上的合约。使用**按需部署**合约账户的策略为签名/验签带来了一些限制：
 
 - 在合约未部署到链上之前，不能在对应链上进行签名/验签
 
-:::info 建议
+:::info Tips
 第三方应用尽可能在 AuthChain(Polygon) 上进行签名/验签
 :::
 
@@ -24,12 +26,13 @@ UniPass Wallet SDK 在设计上也做了相关默认设置，尽量让签名/验
 
 UniPass Wallet 支持签署任意自定义消息。并且支持自定义签名选项，包含：
 
-- **isEIP191Prefix** 是否使用标准 EIP191 前缀。默认值为 `false`, 使用 _UniPassPrefix_
+- **isEIP191Prefix** 是否使用标准 EIP191 前缀。默认值为 `false`, 对应 UniPassPrefix。
 
   - UniPassPrefix: `\x18UniPass Signed Message:\n`
   - EIP191Prefix: `\x19Ethereum Signed Message:\n`
 
 - **onAuthChain** 是否在 AuthChain(Polygon) 上进行签名/验签。默认值为 `true`。
+
   - true: 表示在 AuthChain(Polygon) 上进行签名/验签
   - false: 表示在当前 SDK 连接的链上进行签名/验签
 
@@ -54,7 +57,9 @@ UniPass Wallet 支持签署任意自定义消息。并且支持自定义签名�
 | Unity SDK                        | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
 | Unreal SDK                       | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
 
-对于 EIP712 `signTypedData` 签名验签时 chain 的选取策略与 `signMessage` 一致
+对于 EIP712 `signTypedData` 签名验签时 chain 的选取策略与 `signMessage` 一致。
+
+当前我们提供了 Typescript, Go 的验签代码。
 
 ### 验签函数定义
 
@@ -126,7 +131,7 @@ func VerifySignedTypedData(
 </TabItem>
 </Tabs>
 
-### 验签样例 verifyMessageSignature
+### `verifyMessageSignature` 示例
 
 <Tabs>
 <TabItem value="ts" label="Typescript">
@@ -202,7 +207,7 @@ func TestVerifyMessageSignature(t *testing.T) {
 </TabItem>
 </Tabs>
 
-### 验签样例 verifyTypedDataSignature
+### `verifyTypedDataSignature` 代码示例
 
 <Tabs>
   <TabItem value="ts" label="Typescript">

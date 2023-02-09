@@ -2,13 +2,11 @@
 sidebar_position: 5
 ---
 
-# 签名消息和验签
+# 签名消息与验签
 
 ## 签名消息
 
-
-
-### 签名函数定义：
+### 签名函数定义
 
 ```typescript
   /**
@@ -20,7 +18,7 @@ sidebar_position: 5
   public async signMessage(message: BytesLike, options?: { isEIP191Prefix?: boolean; onAuthChain?: boolean }): Promise<string>
 ```
 
-### 样例：
+### 代码示例
 
 ```ts
 const signMessage = async () => {
@@ -35,4 +33,4 @@ const signMessage = async () => {
 
 ## 验签
 
-服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

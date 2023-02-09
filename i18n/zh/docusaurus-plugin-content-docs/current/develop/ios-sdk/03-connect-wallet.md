@@ -7,9 +7,9 @@ sidebar_position: 3
 调用`login`方法获取UniPass Account `UniPassUserInfo`信息。
 
 UniPass 目前支持自定义登录选项设置, 包括下列选项:
-- connectType: 指定 UniPass 通过特定方式登录，目前提供的选项有 `google`, `email` 和 `both`. 默认值为 `both`, 表示允许支持的任意方式进行登录.
-- authorize: 如果设置为 `true`, UniPass 将会返回一个自动生成的 `Sign-in With Ethereum` 消息和对应的签名. 默认值为 `false`.
-- returnEmail: 如果设置为 `true`, UniPass 账户邮箱 email 将会返回. 默认值为 `false`.
+- `connectType`: 指定 UniPass 通过特定方式登录，目前提供的选项有 `google`, `email` 和 `both`. 默认值为 `both`, 表示允许支持的任意方式进行登录.
+- `authorize`: 如果设置为 `true`, UniPass 将会返回一个自动生成的 `Sign-in With Ethereum` 消息和对应的签名. 默认值为 `false`.
+- `returnEmail`: 如果设置为 `true`, UniPass 账户邮箱 email 将会返回. 默认值为 `false`.
 
 ## 类型定义:
 
@@ -54,4 +54,4 @@ public struct UniPassUserInfo: Codable {
 
 ## Sign-in With Ethereum 签名验证
 
-`Sign-in With Ethereum` 消息和签名的验证可参考：[**Popup-SDK 授权验证**](../popup-sdk/03-connect-wallet.md#sign-in-with-ethereum-签名验证)
+如果您将 `authorize` 设置为 `true`，你可能需要进行 Sign-in With Ethereum 验签，请参考 [**Sign-in With Ethereum**](../verifying-messages/02-sign-in-with-ethereum.md)。

@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Logout Account
 
-## Sample Code
+## Code sample
 
 ```java
 // logout will clear local upAccount data
