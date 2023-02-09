@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Sign Message
+# Sign Message and Verify
 
 ## Type definitions:
 
