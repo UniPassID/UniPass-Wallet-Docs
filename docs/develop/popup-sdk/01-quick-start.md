@@ -6,6 +6,7 @@ sidebar_position: 1
 
 | Version | Breaking change     | Last updated | Upgrade Instructions                                                                                           |
 | ------- | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
+| v1.1.0 |                      | 2023.02.13    | add rpcUrls config for ethereum-provider |
 | v1.0.2 |                      | 2023.02.06    | login func add authorize param, for sign with ethereum |
 | v1.0.1 |                      | 2023.02.01    | support standard SDKs |
 | v0.0.11 |                     | 2022.12.16   | add storageType in initial config |
