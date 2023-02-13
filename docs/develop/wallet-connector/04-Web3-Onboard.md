@@ -24,6 +24,8 @@ yarn add @web3-onboard/core @unipasswallet/web3-onboard
 
 - `options.appSettings` -- Config appName, appIcon and theme.
 
+* `options.connect.rpcUrls` -- Config mainnet and testnet rpc URLs. In the local development environment, you don't need to fill in, this will use our default test URLs, but in the production environment, you need to fill in with your own rpc node url.
+
 ## Usage
 
 ```typescript
@@ -38,7 +40,20 @@ const unipass = unipassModule({
     appName: 'web3-onboard test for unipass',
     appIcon: 'your icon url',
     theme: UniPassTheme.DARK
-  }
+  },
+  rpcUrls: {
+    mainnet: "your eth mainnet rpc url",
+    polygon: "your polygon mainnet rpc url",
+    bscMainnet: "your bsc mainnet rpc url",
+    rangersMainnet: "your rangers mainnet rpc url",
+    arbitrumMainnet: "your arbitrum mainnet rpc url",
+
+    polygonMumbai: "your polygon testnet rpc url",
+    goerli: "your goerli testnet rpc url",
+    bscTestnet: "your bsc testnet rpc url",
+    rangersRobin: "your rangers testnet rpc url",
+    arbitrumTestnet: "your arbitrum testnet rpc url",
+  },
 })
 
 const onboard = Onboard({
