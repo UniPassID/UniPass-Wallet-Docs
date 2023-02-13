@@ -9,6 +9,23 @@ async function runTest() {
   const upProvider = new UniPassProvider({
     chainId: 137,
     returnEmail: false,
+    appSetting: {
+      appName: 'test dapp',
+      appIcon: 'your icon url',
+    },
+    rpcUrls: {
+      mainnet: "your eth mainnet rpc url",
+      polygon: "your polygon mainnet rpc url",
+      bscMainnet: "your bsc mainnet rpc url",
+      rangersMainnet: "your rangers mainnet rpc url",
+      arbitrumMainnet: "your arbitrum mainnet rpc url",
+
+      polygonMumbai: "your polygon testnet rpc url",
+      goerli: "your goerli testnet rpc url",
+      bscTestnet: "your bsc testnet rpc url",
+      rangersRobin: "your rangers testnet rpc url",
+      arbitrumTestnet: "your arbitrum testnet rpc url",
+    },
   });
   await upProvider.connect();
 
@@ -31,6 +48,6 @@ async function runTest() {
 }
 ```
 
-## Verify signature
+## 验签
 
-For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)
