@@ -9,7 +9,12 @@ sidebar_position: 7
 可以通过调用 logout 方法完成登出
 
 ```ts
-await upWallet.logout();
+ /**
+   *
+   * @param deep boolean, 若deep为true，将会登出UniPass钱包
+   * 
+   */
+await upWallet.logout(deep);
 ```
 
 ## 接口错误提示
