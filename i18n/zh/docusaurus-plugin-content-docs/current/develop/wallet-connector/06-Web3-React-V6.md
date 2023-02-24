@@ -45,7 +45,7 @@ export default function Layout() {
 ```
 ```ts
 import { useWeb3React } from "@web3-react/core";
-import { UniPassConnector } from "@unipasswalet/web3-react-v6-connector";
+import { UniPassConnector } from "@unipasswallet/web3-react-v6-connector";
 
 export const unipassConnector = new UniPassConnector({
   chainId: 80001,
