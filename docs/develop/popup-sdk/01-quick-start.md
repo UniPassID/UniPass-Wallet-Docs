@@ -6,7 +6,8 @@ sidebar_position: 1
 
 | Version | Breaking change     | Last updated | Upgrade Instructions                                                                                           |
 | ------- | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
-| v1.1.1 |                      | 2023.02.24    | logout func add deep param, if deep is true, UniPass Wallet will logout too |
+| v1.1.2 |                      | 2023.02.24    | logout func add deep param, if deep is true, UniPass Wallet will logout too |
+| v1.1.1 |                      | 2023.02.14    | support arbitrum network |
 | v1.1.0 |                      | 2023.02.13    | add rpcUrls config for ethereum-provider |
 | v1.0.2 |                      | 2023.02.06    | login func add authorize param, for sign with ethereum |
 | v1.0.1 |                      | 2023.02.01    | support standard SDKs |
