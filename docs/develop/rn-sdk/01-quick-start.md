@@ -6,7 +6,7 @@ sidebar_position: 1
 
 | Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
 | -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.1   | 2023.02.23     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
+| v0.1.0   | 2023.02.23     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
 
 ## Requirements
 
