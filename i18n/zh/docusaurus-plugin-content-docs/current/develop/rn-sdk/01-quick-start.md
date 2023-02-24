@@ -6,7 +6,7 @@ sidebar_position: 1
 
 | 更新版本  | 更新日期   | 默认使用 Domain          | 更新说明                                                                   |
 | -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.1   | 2023.02.23     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
+| v0.1.0   | 2023.02.23     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
 
 ## 环境依赖
 
