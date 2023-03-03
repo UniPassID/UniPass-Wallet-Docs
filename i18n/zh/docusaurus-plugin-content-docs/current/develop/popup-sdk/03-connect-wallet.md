@@ -33,6 +33,8 @@ export interface UPAccount {
   newborn?: boolean | undefined; // Newly registered or not
   message?: string; // sign with ethereum message when authorize is true
   signature?: string; // sign with ethereum signature when authorize is true
+  starKeyInfo?: string; // starKeyInfo if pass starKeyMessage when login
+  sessionKeyPermit?: string // sessionKeyPermit if pass sessionKeyAddress when login
 }
 ```
 
@@ -53,6 +55,8 @@ try {
       }
     },
     connectType: "both",
+    starKeyMessage: "Hello StarKey",
+    sessionKeyAddress: "your session key address",
   });
   const { address, email } = account;
   console.log("account", address, email);
