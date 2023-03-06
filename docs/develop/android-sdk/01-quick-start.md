@@ -71,11 +71,12 @@ You can refer to the [android developer documents](https://developer.android.com
         <action android:name="android.intent.action.VIEW" />
         <category android:name="android.intent.category.DEFAULT" />
         <category android:name="android.intent.category.BROWSABLE" />
+        <!-- Replace { scheme/host/path } with YOUR_APP_PACKAGE_NAME -->
         <data
-            android:scheme="unipassapp"
-            android:host="com.unipass.wallet"
+            android:scheme="{scheme}"
+            android:host="{host}"
             android:pathPattern="/*"
-            android:pathPrefix="/redirect" />
+            android:pathPrefix="/{path}" />
     </intent-filter>
 </activity>
 ```
