@@ -24,6 +24,11 @@ Session key 是指用户可以在应用端生成一把临时的密钥，UniPass 
 - 最大单笔交易限额
 - 单日累计交易限额
 
+:::warning Notice
+- 当前 session key 授权仅支持有效期限制（SDK 中默认为 7 天），被授权的 session key 可以直接转移用户资产
+- 当前 session key 功能仅用于试验性功能开发与测试，不可用于生产环境
+:::
+
 ## 初始化 session key 功能
 
 本功能仅针对 Popup SDK，关于 Popup SDK 的更多介绍请参考：[SDK 初始化](../popup-sdk/02-initialization.md)，[连接钱包参数配置](../popup-sdk/03-connect-wallet.md)
