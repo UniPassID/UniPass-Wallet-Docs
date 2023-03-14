@@ -9,20 +9,24 @@ UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https
 ### 主网
 
 - Ethereum
-- BSC（Binance Smart Chain）
+- BNB Chain
 - Polygon
-- Rangers protocol
+- Rangers Protocol
+- Arbitrum
 
 ### 测试网
 
-- Goerli（Ethereum testnet）
+- Goerli (Ethereum testnet)
 - BSC testnet
-- Mumbai（Polygon testnet）
-- Robin（Rangers testnet）
+- Mumbai (Polygon testnet)
+- Robin (Rangers testnet)
+- Arbitrum Goerli
 
 ## 未来将支持的链
 
-- Arbitrum
-- Optimism
-- Fantom
 - Avalanche
+- Optimism
+- KCC
+- OKC
+- Godwoken
+- Fantom
