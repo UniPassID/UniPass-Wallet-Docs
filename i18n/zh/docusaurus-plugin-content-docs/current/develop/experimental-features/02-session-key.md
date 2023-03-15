@@ -147,6 +147,7 @@ export interface IPermit {
 
 ```tsx
 import { CallTxBuilder } from "@unipasswallet/transaction-builders";
+import { RawMainExecuteCall } from "@unipasswallet/wallet";
 
 const nonce = await wallet.getNonce();
 const tx = new CallTxBuilder(
