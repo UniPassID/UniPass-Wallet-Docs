@@ -5,9 +5,10 @@ sidebar_position: 2
 # Session Key
 
 :::tip Notice
+
 - 本功能为试验性功能，目前仅在 UniPass 测试网可用
 - 本功能仅针对 Popup SDK
-:::
+  :::
 
 ## 背景介绍
 
@@ -25,9 +26,10 @@ Session key 是指用户可以在应用端生成一把临时的密钥，UniPass 
 - 单日累计交易限额
 
 :::warning Notice
+
 - 当前 session key 授权仅支持有效期限制（SDK 中默认为 7 天），被授权的 session key 可以直接转移用户资产
 - 当前 session key 功能仅用于试验性功能开发与测试，不可用于生产环境
-:::
+  :::
 
 ## 初始化 session key 功能
 
@@ -85,6 +87,13 @@ export interface UPAccount {
 ### 通过 `UPAccount` 获取 Wallet
 
 - `upAccount` : 从 login 获取的`UPAccount`信息
+- `relayerUrl`:
+  - eth: "[https://testnet.wallet.unipass.id/relayer-v2-eth](https://testnet.wallet.unipass.id/relayer-v2-eth)"
+  - polygon: "[https://testnet.wallet.unipass.id/relayer-v2-polygon](https://testnet.wallet.unipass.id/relayer-v2-polygon)"
+  - bsc: "[https://testnet.wallet.unipass.id/relayer-v2-bsc](https://testnet.wallet.unipass.id/relayer-v2-bsc)"
+  - rangers: "[https://testnet.wallet.unipass.id/relayer-v2-rangers](https://testnet.wallet.unipass.id/relayer-v2-rangers)"
+  - scroll: "[https://testnet.wallet.unipass.id/relayer-v2-scroll](https://testnet.wallet.unipass.id/relayer-v2-scroll)"
+  - arbitrum: "[https://testnet.wallet.unipass.id/relayer-v2-arbitrum](https://testnet.wallet.unipass.id/relayer-v2-arbitrum)"
 
 ```tsx
 import { Wallet } from "@unipasswallet/wallet";
@@ -95,7 +104,7 @@ import { TESTNET_UNIPASS_WALLET_CONTEXT } from "@unipasswallet/network";
 
 const provider = new providers.JsonRpcProvider("rpcUrl");
 const relayer = new RpcRelayer(
-  "https://testnet.wallet.unipass.vip/relayer-v2-goerli",
+  relayerUrl,
   TESTNET_UNIPASS_WALLET_CONTEXT,
   provider
 );
