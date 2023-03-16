@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # 快速开始
 
 | 更新版本 | 重大变更        | 更新日期   | 更新说明                                                                               |
@@ -21,33 +24,22 @@ sidebar_position: 1
 
 Popup SDK 是连接 UniPass Wallet 页面的 javascript SDK 工具包，提供了一系列的方法供第三方应用与 UniPass Wallet 进行交互。
 
-```mdx-code-block
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-```
-
-```mdx-code-block
 <Tabs>
 <TabItem value="npm">
-```
 
 ```bash
 npm install --save @unipasswallet/popup-sdk
 ```
 
-```mdx-code-block
 </TabItem>
 <TabItem value="yarn">
-```
 
 ```bash
 yarn add @unipasswallet/popup-sdk
 ```
 
-```mdx-code-block
 </TabItem>
 </Tabs>
-
 
 ## 相关资料
 

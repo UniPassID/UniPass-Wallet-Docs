@@ -78,6 +78,7 @@ const config = {
       },
     ],
     "docusaurus-plugin-sass",
+    "@docusaurus/plugin-ideal-image",
   ],
 
   themeConfig:

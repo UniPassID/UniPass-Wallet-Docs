@@ -33,3 +33,49 @@
   font-weight: 400;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  grid-gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box {
+  min-height: 33%;
+  border: 1px solid var(--ifm-color-gray-600);
+  border-radius: 14px;
+  padding-inline: 1em;
+  padding-top: 1.3em;
+  cursor: pointer;
+}
+
+.box:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.box:hover h1 {
+  color: var(--ifm-color-primary);
+}
+
+.box:hover p {
+  color: var(--ifm-color-primary);
+}
+
+@media only screen and (min-width: 660px) {
+  .boxContainer {
+    grid-template-columns: repeat(3, minmax(33%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .boxContainer {
+    grid-template-columns: repeat(2, minmax(50%, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .boxContainer {
+    grid-template-columns: repeat(3, minmax(33%, 1fr));
+  }
+}

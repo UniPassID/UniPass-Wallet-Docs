@@ -2,6 +2,11 @@
 sidebar_position: 1
 ---
 
+import Image from '@theme/IdealImage';
+import thumbnail_1 from './img/keyset-structure.png';
+import thumbnail_2 from './img/keys-type.png';
+import thumbnail_3 from './img/roles-type.png';
+
 # 密钥管理
 
 ## 账户结构
@@ -10,11 +15,15 @@ sidebar_position: 1
 
 在 UniPass Wallet 的智能合约中，用户是通过一系列具有角色权重的密钥来管理账户的。除了以安全多方计算（MPC）方案实现的 [Master key](/i18n/zh/docusaurus-plugin-content-docs/current/architecture/03-master-key.md) 外，用户还可以设置多种其他类型的密钥。每一个密钥都有一个对应的角色及权重。用户只有在集齐了总角色权重门限超过要求的密钥后，才可以获得该角色的授权。
 
-![keyset-structure.png](./img/keyset-structure.png)
+<p align="center">
+    <Image img={thumbnail_1} width="80%"/>
+</p>
 
 ## 密钥
 
-![keys-type.png](./img/keys-type.png)
+<p align="center">
+    <Image img={thumbnail_2} width="80%"/>
+</p>
 
 UniPass Wallet 的合约账户中支持用户设置多种类型的密钥。已经支持的密钥类型包括我们经常使用的外部地址，支持 EIP-1271 协议的合约账户。UniPass 的用户还可以使用邮箱来作为密钥。我们在链上部署的智能合约，可以通过 DKIM 来以密码学的手段验证用户对于一个互联网邮箱的所有权。在验证过程中，UniPass 采用了零知识证明技术，确保用户邮件信息的隐私安全。
 
@@ -22,7 +31,9 @@ UniPass Wallet 的合约账户中支持用户设置多种类型的密钥。已�
 
 ## 角色及权重
 
-![roles-type.png](./img/roles-type.png)
+<p align="center">
+    <Image img={thumbnail_3} width="80%"/>
+</p>
 
 密钥主要有三种角色：
 
