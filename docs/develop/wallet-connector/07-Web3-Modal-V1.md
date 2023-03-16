@@ -1,18 +1,34 @@
+---
+sidebar_position: 7
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Using Web3-Modal V1
 
-## Example
+## Demo
 
 A demo app for web3-modal-v1 is available [here](https://up-web3-modal-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-modal-v1-demo).
 
 ## Installation
 
+<Tabs>
+<TabItem value="npm">
+
 ```shell
-  npm install @unipasswallet/web3Modal @unipasswallet/ethereum-provider
+npm install @unipasswallet/web3Modal @unipasswallet/ethereum-provider
 ```
-or
+
+</TabItem>
+<TabItem value="yarn">
+
 ```shell
-  yarn add @unipasswallet/web3Modal @unipasswallet/ethereum-provider
+yarn add @unipasswallet/web3Modal @unipasswallet/ethereum-provider
 ```
+
+</TabItem>
+</Tabs>
 
 ## Parameters
 

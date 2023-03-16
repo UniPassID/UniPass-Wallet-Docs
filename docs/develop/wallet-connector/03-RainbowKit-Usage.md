@@ -1,18 +1,34 @@
+---
+sidebar_position: 3
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Using RainbowKit
 
-## Example
+## Demo
 
-A demo app for RainbowKit is available [HERE](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).
+A demo app for RainbowKit is available [here](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).
 
 ## Installation
 
+<Tabs>
+<TabItem value="npm">
+
 ```shell
-  npm install @unipasswallet/rainbowkit-plugin wagmi
+npm install @unipasswallet/rainbowkit-plugin wagmi
 ```
-or
+
+</TabItem>
+<TabItem value="yarn">
+
 ```shell
-  yarn add @unipasswallet/rainbowkit-plugin wagmi
+yarn add @unipasswallet/rainbowkit-plugin wagmi
 ```
+
+</TabItem>
+</Tabs>
 
 ## Parameters
 

@@ -1,18 +1,34 @@
+---
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Using Wagmi
 
-## Example
+## Demo
 
-A live demo for Wagmi with UniPass is available [HERE](https://up-wagmi-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/wagmi-connector-demo).
+A live demo for Wagmi with UniPass is available [here](https://up-wagmi-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/wagmi-connector-demo).
 
 ## Installation
 
+<Tabs>
+<TabItem value="npm">
+
 ```shell
-  npm install @unipasswallet/wagmi-connector wagmi
+npm install @unipasswallet/wagmi-connector wagmi
 ```
-or
+
+</TabItem>
+<TabItem value="yarn">
+
 ```shell
-  yarn add @unipasswallet/wagmi-connector wagmi
+yarn add @unipasswallet/wagmi-connector wagmi
 ```
+
+</TabItem>
+</Tabs>
 
 ## Parameters
 

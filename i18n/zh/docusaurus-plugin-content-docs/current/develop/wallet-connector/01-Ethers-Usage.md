@@ -1,4 +1,8 @@
-# Using ethers.js
+---
+sidebar_position: 1
+---
+
+# 使用 ethers.js
 
 ```ts
 import { UniPassProvider } from "@unipasswallet/ethereum-provider";
@@ -50,4 +54,4 @@ async function runTest() {
 
 ## 验签
 
-服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

@@ -1,20 +1,34 @@
+---
+sidebar_position: 4
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Using Web3-Onboard
 
-## Example
+## Demo
 
 A demo app for web3-onboard is available [here](https://up-web3-onboard-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-onboard-demo).
 
-### Installation
+## Installation
+
+<Tabs>
+<TabItem value="npm">
 
 ```shell
-npm i @web3-onboard/core @unipasswallet/web3-onboard
+npm install @web3-onboard/core @unipasswallet/web3-onboard
 ```
 
-or
+</TabItem>
+<TabItem value="yarn">
 
 ```shell
 yarn add @web3-onboard/core @unipasswallet/web3-onboard
 ```
+
+</TabItem>
+</Tabs>
 
 ## Parameters
 

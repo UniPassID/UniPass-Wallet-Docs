@@ -1,10 +1,17 @@
-# Using Web3-Onboard
+---
+sidebar_position: 4
+---
 
-## Example
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 使用 Web3-Onboard
+
+## Demo
 
 A demo app for web3-onboard is available [here](https://up-web3-onboard-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-onboard-demo).
 
-### Installation
+## 安装
 
 ```shell
 npm i @web3-onboard/core @unipasswallet/web3-onboard
@@ -16,7 +23,7 @@ or
 yarn add @web3-onboard/core @unipasswallet/web3-onboard
 ```
 
-## Parameters
+## 参数
 
 - `options.chainId` -- Default chainId.
 
@@ -26,7 +33,7 @@ yarn add @web3-onboard/core @unipasswallet/web3-onboard
 
 * `options.connect.rpcUrls` -- Config mainnet and testnet rpc URLs. In the local development environment, you don't need to fill in, this will use our default test URLs, but in the production environment, you need to fill in with your own rpc node url.
 
-## Usage
+## 用例
 
 ```typescript
 import Onboard from '@web3-onboard/core'
@@ -65,6 +72,6 @@ const onboard = Onboard({
 })
 ```
 
-## Verify signature
+## 验签
 
-For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

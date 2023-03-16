@@ -1,18 +1,34 @@
+---
+sidebar_position: 6
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Using Web3-React V6
 
-## Example
+## Demo
 
 A demo app for web3-react V6 is available [here](https://up-web3-react-v6-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/we3-react-v6-demo).
 
 ## Installation
 
+<Tabs>
+<TabItem value="npm">
+
 ```shell
-  npm install @unipasswallet/web3-react-v6-connector
+npm install @unipasswallet/web3-react-v6-connector
 ```
-or
+
+</TabItem>
+<TabItem value="yarn">
+
 ```shell
-  yarn add @unipasswallet/web3-react-v6-connector
+yarn add @unipasswallet/web3-react-v6-connector
 ```
+
+</TabItem>
+</Tabs>
 
 ## Parameters
 

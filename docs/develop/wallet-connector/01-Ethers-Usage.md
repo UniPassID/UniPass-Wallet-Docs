@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Using ethers.js
 
 ```ts
@@ -48,6 +52,6 @@ async function runTest() {
 }
 ```
 
-## 验签
+## Verify signature
 
-服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)
+For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).

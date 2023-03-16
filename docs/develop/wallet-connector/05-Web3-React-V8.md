@@ -1,18 +1,34 @@
+---
+sidebar_position: 5
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Using Web3-React V8
 
-## Example
+## Demo
 
 A demo app for web3-react V8 is available [here](https://up-web3-react-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-react-demo).
 
 ## Installation
 
+<Tabs>
+<TabItem value="npm">
+
 ```shell
-  npm install @unipasswallet/web3-react
+npm install @unipasswallet/web3-react
 ```
-or
+
+</TabItem>
+<TabItem value="yarn">
+
 ```shell
-  yarn add @unipasswallet/web3-react
+yarn add @unipasswallet/web3-react
 ```
+
+</TabItem>
+</Tabs>
 
 ## Parameters
 

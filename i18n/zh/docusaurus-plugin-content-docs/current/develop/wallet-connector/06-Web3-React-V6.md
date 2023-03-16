@@ -1,20 +1,36 @@
-# Using Web3-React V6
+---
+sidebar_position: 6
+---
 
-## Example
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 使用 Web3-React V6
+
+## Demo
 
 A demo app for web3-react V6 is available [here](https://up-web3-react-v6-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/we3-react-v6-demo).
 
-## Installation
+## 安装
+
+<Tabs>
+<TabItem value="npm">
 
 ```shell
-  npm install @unipasswallet/web3-react-v6-connector
-```
-or
-```shell
-  yarn add @unipasswallet/web3-react-v6-connector
+npm install @unipasswallet/web3-react-v6-connector
 ```
 
-## Parameters
+</TabItem>
+<TabItem value="yarn">
+
+```shell
+yarn add @unipasswallet/web3-react-v6-connector
+```
+
+</TabItem>
+</Tabs>
+
+## 参数
 
 * `options.connect.chainId` -- Default chainId.
 
@@ -24,7 +40,7 @@ or
 
 * `options.connect.rpcUrls` -- Config mainnet and testnet rpc URLs. In the local development environment, you don't need to fill in, this will use our default test URLs, but in the production environment, you need to fill in with your own rpc node url.
 
-## Usage
+## 用例
 
 ```ts
 import { providers } from "ethers";
@@ -78,6 +94,7 @@ const connect = async () => {
   }
 };
 ```
-## Verify signature
 
-For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).
+## 验签
+
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

@@ -1,20 +1,37 @@
-# Using RainbowKit
+---
+sidebar_position: 3
+---
 
-## Example
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-A demo app for RainbowKit is available [HERE](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).
+# 使用 RainbowKit
 
-## Installation
+## Demo
+
+A demo app for RainbowKit is available [here](https://up-rainbowkit-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/rainbowkit-demo).
+
+## 安装
+
+
+<Tabs>
+<TabItem value="npm">
 
 ```shell
-  npm install @unipasswallet/rainbowkit-plugin wagmi
-```
-or
-```shell
-  yarn add @unipasswallet/rainbowkit-plugin wagmi
+npm install @unipasswallet/rainbowkit-plugin wagmi
 ```
 
-## Parameters
+</TabItem>
+<TabItem value="yarn">
+
+```shell
+yarn add @unipasswallet/rainbowkit-plugin wagmi
+```
+
+</TabItem>
+</Tabs>
+
+## 参数
 
 * `chains` -- Chains supported by app. This is the same parameter as would be passed to other RainbowKit wallets..
 
@@ -28,7 +45,7 @@ or
 
 * `options.connect.rpcUrls` -- Config mainnet and testnet rpc URLs. In the local development environment, you don't need to fill in, this will use our default test URLs, but in the production environment, you need to fill in with your own rpc node url.
 
-## Usage
+## 用例
 
 ```ts
     import { configureChains, createClient, WagmiConfig } from "wagmi";
@@ -83,6 +100,6 @@ or
     });
 ```
 
-## Verify signature
+## 验签
 
-For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

@@ -1,20 +1,36 @@
-# Using Web3-Modal V1
+---
+sidebar_position: 7
+---
 
-## Example
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 使用 Web3-Modal V1
+
+## Demo
 
 A demo app for web3-modal-v1 is available [here](https://up-web3-modal-demo.vercel.app/), and source code is available too: [Demo Code](https://github.com/UniPassID/web3-modal-v1-demo).
 
-## Installation
+## 安装
+
+<Tabs>
+<TabItem value="npm">
 
 ```shell
-  npm install @unipasswallet/web3Modal @unipasswallet/ethereum-provider
-```
-or
-```shell
-  yarn add @unipasswallet/web3Modal @unipasswallet/ethereum-provider
+npm install @unipasswallet/web3Modal @unipasswallet/ethereum-provider
 ```
 
-## Parameters
+</TabItem>
+<TabItem value="yarn">
+
+```shell
+yarn add @unipasswallet/web3Modal @unipasswallet/ethereum-provider
+```
+
+</TabItem>
+</Tabs>
+
+## 参数
 
 * `options.connect.chainId` -- Default chainId.
 
@@ -24,7 +40,7 @@ or
 
 * `options.connect.rpcUrls` -- Config mainnet and testnet rpc URLs. In the local development environment, you don't need to fill in, this will use our default test URLs, but in the production environment, you need to fill in with your own rpc node url.
 
-## Usage
+## 用例
 
 ```ts
 import Web3Modal from "@unipasswallet/web3modal";
@@ -90,6 +106,6 @@ function App()  {
 }
 ```
 
-## Verify signature
+## 验签
 
-For how to verify the signature on server, please refer to [**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx).
+服务器端验签可参考：[**UniPass Verifying Messages**](../verifying-messages/01-unipass-verifying-messages.mdx)。

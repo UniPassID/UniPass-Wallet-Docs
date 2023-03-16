@@ -58,4 +58,3 @@ yarn add @unipasswallet/popup-sdk
 :::tip
 当前 Demo 调用的 UniPass Wallet 网址：[https://testnet.wallet.unipass.id/](https://testnet.wallet.unipass.id/login)
 :::
-```
