@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-import Container from '../../src/components/Container';
+import Container from '../../../../../src/components/Container';
 
 # UniPass Wallet SDKs
 
