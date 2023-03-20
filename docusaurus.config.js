@@ -51,8 +51,8 @@ const config = {
             {
               return `https://github.com/UniPassID/UniPass-Wallet-Docs/tree/main/docs/${docPath}`;
             }
-
-          }
+          },
+          routeBasePath: '/',
 
         },
         blog: {
@@ -90,20 +90,45 @@ const config = {
         logo: {
           alt: "UniPass Wallet Logo",
           src: "img/logo.svg",
-          href: "/docs/category/introduction" 
+          href: "/introduction/intro" 
         },
         items: [
+          // {
+          //   type: "doc",
+          //   docId: "introduction/intro",
+          //   position: "left",
+          //   label: "Tutorial",
+          // },
           {
-            type: "doc",
-            docId: "introduction/intro",
-            position: "left",
-            label: "Tutorial",
+            to: '/introduction/intro',
+            label: 'Document',
+            position: 'left',
           },
           // { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/UniPassID/UniPass-Wallet-Docs",
-            label: "GitHub",
+            to: '/develop/platforms',
+            label: 'SDK',
+            position: 'left',
+          },
+          {
+            href: 'https://twitter.com/UniPassID/',
+            className: 'header-twitter-link',
+            position: 'right',
+          },
+          {
+            href: "https://github.com/UniPassID/",
+            className: 'header-github-link',
             position: "right",
+          },
+          {
+            href: 'https://discord.gg/XaRMFW85Pg',
+            className: 'header-discord-link',
+            position: 'right',
+          },
+          {
+            href: 'mailto:contact@unipass.id',
+            className: 'header-email-link',
+            position: 'right',
           },
           {
             type: "localeDropdown",
@@ -111,6 +136,14 @@ const config = {
           },
         ],
       },
+      // announcementBar: {
+      //   id: 'support_us',
+      //   content:
+      //     'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="#">this survey</a>',
+      //   backgroundColor: '#fafbfc',
+      //   textColor: '#091E42',
+      //   isCloseable: true,
+      // },
       footer: {
         style: "dark",
         links: [
@@ -119,7 +152,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/category/develop",
+                to: "/develop/platforms",
               },
             ],
           },
@@ -154,7 +187,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} UniPass Wallet document, Built with ❤️.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UniPass Wallet Document, Built with ❤️.`,
       },
       prism: {
         theme: lightCodeTheme,

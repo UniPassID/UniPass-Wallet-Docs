@@ -86,15 +86,6 @@ items={[
 
 ## RPC URL
 
-### Mainnet
-
-| Chain Handle | nodeRPC URL                                    |
-| ------------ | ---------------------------------------------- |
-| **Ethereum** | https://node.wallet.unipass.id/eth-mainnet     |
-| **BSC**      | https://node.wallet.unipass.id/bsc-mainnet     |
-| **Polygon**  | https://node.wallet.unipass.id/polygon-mainnet |
-| **Rangers**  | https://node.wallet.unipass.id/rangers-mainnet |
-
 ### Testnet
 
 | Chain Handle                  | nodeRPC URL                                   |

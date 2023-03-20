@@ -16,13 +16,14 @@ When a user registers for a UniPass Wallet account, a smart contract is deployed
 Users manage their accounts in UniPass Wallet's smart contract via a sequence of keys with role weights. The user can set many different sorts of keys in addition to the [Master key](./03-master-key.md), which is implemented in a secure multi-party computation (MPC) scheme. Each key has a specific function and weight. Only after accumulating more weights than are necessary for that role can a user carry out the relevant actions permitted for that role.
 
 <p align="center">
-    <Image img={thumbnail_1} width="80%"/>
+    <Image img={thumbnail_1} width="80%" />
 </p>
+
 
 ## Keys and algorithms
 
 <p align="center">
-    <Image img={thumbnail_2} width="80%"/>
+    <Image img={thumbnail_2} width="80%" />
 </p>
 
 Different key types are supported by UniPass Wallet in the contract.

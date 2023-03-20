@@ -86,15 +86,6 @@ items={[
 
 ## RPC 配置
 
-### 主网
-
-| 链标识       | nodeRPC URL                                    |
-| ------------ | ---------------------------------------------- |
-| **Ethereum** | https://node.wallet.unipass.id/eth-mainnet     |
-| **BSC**      | https://node.wallet.unipass.id/bsc-mainnet     |
-| **Polygon**  | https://node.wallet.unipass.id/polygon-mainnet |
-| **Rangers**  | https://node.wallet.unipass.id/rangers-mainnet |
-
 ### 测试网
 
 | 链标识                        | nodeRPC URL                                   |
