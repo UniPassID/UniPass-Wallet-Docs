@@ -18,7 +18,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/introduction/intro">
+            to="/introduction/intro">
             UniPass Tutorial - 5min ⏱️
           </Link>
         </div>
@@ -29,7 +29,7 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
-  return <Redirect to='/docs/introduction/intro' />;
+  return <Redirect to='/introduction/intro' />;
 
   // return (
   //   <Layout
