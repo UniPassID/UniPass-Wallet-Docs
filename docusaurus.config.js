@@ -126,8 +126,8 @@ const config = {
             position: 'right',
           },
           {
-            href: 'mailto:contact@unipass.id',
-            className: 'header-email-link',
+            to: '/community-support',
+            className: 'header-contact-link',
             position: 'right',
           },
           {
