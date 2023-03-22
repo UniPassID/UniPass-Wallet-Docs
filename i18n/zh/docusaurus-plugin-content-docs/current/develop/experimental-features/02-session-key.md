@@ -110,7 +110,7 @@ const wallet = new Wallet({
 
 ### 通过 `UPAccount` 获取 session key permit
 
-- `sessionKeyEoaWallet` : `sessionKeyAddress` 的私钥生成的 EOA Wallet, 通常由`ethers.Wallet.createRandom()` 获取
+- `sessionKeyEoaWallet` : `sessionKeyAddress` 的私钥生成的 EOA Wallet 地址, 通常由`ethers.Wallet.createRandom()` 获取
 
 ```tsx
 import { SignType } from "@unipasswallet/keys";

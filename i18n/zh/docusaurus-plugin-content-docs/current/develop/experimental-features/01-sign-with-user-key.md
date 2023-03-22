@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 使用用户端密钥进行签名
+# 使用用户端密钥签名并衍生密钥
 
 :::tip Notice
 - 本功能为试验性功能，目前仅在 UniPass 测试网可用
@@ -74,7 +74,7 @@ export interface UPAccount {
 }
 ```
 
-## 通过 starkKeyInfo 生成 starkKey
+## 通过 `starkKeyInfo` 生成 `starkKey`
 
 ```jsx
 // usage of starkKeyInfo
