@@ -2,31 +2,35 @@
 sidebar_position: 1
 ---
 
-# Quick Start
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-| Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
-| -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.2.0   | 2023.03.06     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
+# Quick Start
 
 ## Requirements
 
- - react-native 0.60+
+`react-native 0.60+`
 
 ## Installation
 
-- ## Install
+### Install
 
-#### With npm:
+<Tabs>
+<TabItem value="npm">
 
-```
+```bash
 npm install @unipasswallet/react-native-sdk
 ```
 
-#### With Yarn
+</TabItem>
+<TabItem value="yarn">
 
-``` 
+```bash
 yarn add @unipasswallet/react-native-sdk
 ```
+
+</TabItem>
+</Tabs>
 
 On iOS, use CocoaPods to add the native RNAsyncStorage to your project:
 
@@ -35,14 +39,11 @@ cd ios
 npx pod-install
 ```
 
-- ## Enabling Deep Links
+### Enabling Deep Links
 
 #### Android
 
-3. Add UniPassActivity / Configure Deep Link
-
-Open your app's AndroidManifest.xml file and add UniPassActivity activity in your application, add deep link intent filter to UniPassActivity activity: 
-You can refer to the [android developer documents](https://developer.android.com/training/app-links/deep-linking)
+Open your app's AndroidManifest.xml file and add UniPassActivity activity in your application, add deep link intent filter to UniPassActivity activity. You can refer to the [android developer documents](https://developer.android.com/training/app-links/deep-linking)
 
 ```xml
 <activity
@@ -63,10 +64,14 @@ You can refer to the [android developer documents](https://developer.android.com
 </activity>
 ```
 
-- ## Then you can use UniPassSDK in your project:
+Then you can use UniPassSDK in your project:
 
 ```typescript
 import UniPassWallet from '@unipasswallet/react-native-sdk'
 ```
 
+## History Version
 
+| Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
+| -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.2.0   | 2023.03.06     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |

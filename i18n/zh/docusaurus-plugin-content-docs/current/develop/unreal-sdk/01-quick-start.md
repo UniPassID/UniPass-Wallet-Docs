@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # 快速开始
 
-| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                              |
-| -------- | ---------- | ---------------------------------- | ------------------------------------- |
-| v0.0.1   | 2022.12.09 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名/验签功能 |
-
 ## 相关资料
 
 - [Unreal SDK GitHub](https://github.com/UniPassID/Unipass-UE-SDK)
@@ -41,3 +37,9 @@ Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.i
 最后，打开 UE5 编辑器，打开 Menu → Edit → Plugins，开启 UnipassSDK 插件
 
 ![set up Unipass SDK](./img/unreal-setup.png)
+
+## 历史版本
+
+| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                              |
+| -------- | ---------- | ---------------------------------- | ------------------------------------- |
+| v0.0.1   | 2022.12.09 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名/验签功能 |

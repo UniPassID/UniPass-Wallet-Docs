@@ -42,20 +42,7 @@ Third-party applications can use `verifyMessageSignature` from the @unipasswalle
 
 In a series of JS SDKs provided by UniPass, custom message signing is eventually done by calling `UniPassPopupSDK.signMessage` in @unipasswallet/popup-sdk, with some differences in signing parameters. The SDKs for other platforms also adopt the same message signing mechanism.
 
-Therefore, need to check the signature according to the corresponding prefix and chain.
-
-| Package                          | prefix        | modifiable of prefix | chain              | modifiable of chain |
-| -------------------------------- | ------------- | -------------------- | ------------------ | ------------------- |
-| @unipasswallet/popup-sdk         | UniPassPrefix | ✅                   | AuthChain(Polygon) | ✅                  |
-| @unipasswallet/ethereum-provider | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
-| @unipasswallet/wagmi-connector   | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
-| @unipasswallet/web3-react        | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
-| @unipasswallet/web3-onboard      | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
-| Android SDK                      | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
-| iOS SDK                          | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
-| Flutter SDK                      | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
-| Unity SDK                        | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
-| Unreal SDK                       | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+Therefore, need to check the signature according to the corresponding prefix and chain. You can check the settings of each SDK below.
 
 For EIP712 `signTypedData` is the same as `signMessage`.
 
@@ -392,3 +379,18 @@ func TestVerifySignedTypeData(t *testing.T) {
 
 </TabItem>
 </Tabs>
+
+## Settings of SDKs
+
+| Package                          | prefix        | modifiable of prefix | chain              | modifiable of chain |
+| -------------------------------- | ------------- | -------------------- | ------------------ | ------------------- |
+| @unipasswallet/popup-sdk         | UniPassPrefix | ✅                   | AuthChain(Polygon) | ✅                  |
+| @unipasswallet/ethereum-provider | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| @unipasswallet/wagmi-connector   | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| @unipasswallet/web3-react        | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| @unipasswallet/web3-onboard      | EIP191Prefix  | ❌                   | Connected Chain    | ✅                  |
+| Android SDK                      | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| iOS SDK                          | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| Flutter SDK                      | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| Unity SDK                        | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |
+| Unreal SDK                       | UniPassPrefix | ❌                   | AuthChain(Polygon) | ❌                  |

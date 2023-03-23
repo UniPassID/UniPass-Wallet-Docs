@@ -4,12 +4,7 @@ sidebar_position: 1
 
 # Quick Start
 
-| Version | Last updated | UniPass Wallet Entry URL           | Upgrade Instructions                                                                                    |
-| ------- | ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| v0.0.3  | 2022.11.14   | https://testnet.wallet.unipass.id/ | Support Google login. Add the optional function of connect to return email. Add a prefix in signMessage |
-| v0.0.1  | 2022.10.12   | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify                                                              |
-
-## Reference
+## Source Code
 
 - [Flutter web SDK GitHub](https://github.com/UniPassID/unipass-flutter-web-sdk)
 - [Pub Dev](https://pub.dev/packages/unipass_web_sdk)
@@ -59,3 +54,10 @@ import 'package:unipass_web_sdk/unipass_web_sdk.dart';
 In the Android project, please check the network permissions has been enabled in your Manifest file.
 
 `<uses-permission android:name="android.permission.INTERNET" />`
+
+## History version
+
+| Version | Last updated | UniPass Wallet Entry URL           | Upgrade Instructions                                                                                    |
+| ------- | ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| v0.0.3  | 2022.11.14   | https://testnet.wallet.unipass.id/ | Support Google login. Add the optional function of connect to return email. Add a prefix in signMessage |
+| v0.0.1  | 2022.10.12   | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify                                                              |

@@ -4,11 +4,6 @@ sidebar_position: 1
 
 # 快速开始
 
-| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                                                                               |
-| -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.2   | 2022.11.14 | https://testnet.wallet.unipass.id/ | 支持 Google 第三方登录，增加连接钱包返回 Email 的可选功；signMessage 增加 unipass 前缀 |
-| v0.0.1   | 2022.10.28 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名/验签功能                                                  |
-
 ## 相关资料
 
 - [Unity SDK GitHub](https://github.com/UniPassID/unipass-unity-web-sdk)
@@ -52,3 +47,10 @@ Demo 工程中使用的 UniPass Wallet 域名: [https://testnet.wallet.unipass.i
 ```csharp
 using UnipassWallet;
 ```
+
+## 历史版本
+
+| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                                                                               |
+| -------- | ---------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.2   | 2022.11.14 | https://testnet.wallet.unipass.id/ | 支持 Google 第三方登录，增加连接钱包返回 Email 的可选功；signMessage 增加 unipass 前缀 |
+| v0.0.1   | 2022.10.28 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名/验签功能                                                  |

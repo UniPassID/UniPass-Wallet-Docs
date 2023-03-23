@@ -4,13 +4,6 @@ sidebar_position: 1
 
 # Quick Start
 
-| Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
-| -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.0.5   | 2023.02.10     | https://testnet.wallet.unipass.id/ | Fix invoke SDK failed immediately after opening app through code start process, such as URL Scheme.
-| v0.0.4   | 2023.02.07     | https://testnet.wallet.unipass.id/ | Move login parameter *connectType* to *loginOption*, and add more options like returnEmail, authorize etc to *loginOption*.
-| v0.0.3   | 2023.02.03     | https://testnet.wallet.unipass.id/ | Add option *deep* for logout. Website state won't be cleared when deep is set to false
-| v0.0.1   | 2023.01.14     | https://testnet.wallet.unipass.id/ | Add Login / Send Transaction / Sign Message / Logout methods
-
 ## Source Code
 
 Source code of the SDK can be found on [Github](https://github.com/UniPassID/UniPass-Swift-SDK).
@@ -44,4 +37,11 @@ pod install
 import UniPassSDK
 ```
 
+## History Version
 
+| Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
+| -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.5   | 2023.02.10     | https://testnet.wallet.unipass.id/ | Fix invoke SDK failed immediately after opening app through code start process, such as URL Scheme. |
+| v0.0.4   | 2023.02.07     | https://testnet.wallet.unipass.id/ | Move login parameter *connectType* to *loginOption*, and add more options like returnEmail, authorize etc to *loginOption*. |
+| v0.0.3   | 2023.02.03     | https://testnet.wallet.unipass.id/ | Add option *deep* for logout. Website state won't be cleared when deep is set to false |
+| v0.0.1   | 2023.01.14     | https://testnet.wallet.unipass.id/ | Add Login / Send Transaction / Sign Message / Logout methods |

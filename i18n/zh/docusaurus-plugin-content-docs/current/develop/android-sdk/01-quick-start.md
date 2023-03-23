@@ -4,20 +4,6 @@ sidebar_position: 1
 
 # 快速开始
 
-| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
-| -------- | ---------- | ---------------------------------- | --------------------------------  |
-| v0.0.13  | 2023.03.14     | https://testnet.wallet.unipass.id/ | 兼容性优化；移除对 web3j 的依赖；优化对 UnipassActivity 的处理 |
-| v0.0.12  | 2023.03.09     | https://testnet.wallet.unipass.id/ | 代码优化, 移除所有 lateinit 变量                                       |
-| v0.0.11  | 2023.02.07 | https://testnet.wallet.unipass.id/ | login 方法将 *connectType* 参数迁移到 *loginOption*, 并增加 returnEmail, authorize 等选项 |
-| v0.0.10  | 2023.02.06 | https://testnet.wallet.unipass.id/ | login 方法增加可选参数 *loginOption*  |
-| v0.0.9   | 2023.01.29 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 *deep*，设置为 false 时，登出时可以保留网页端登陆状态  |
-| v0.0.8   | 2023.01.29 | https://testnet.wallet.unipass.id/ | 支持 minifyEnable 构建    |
-| v0.0.7   | 2023.01.15 | https://testnet.wallet.unipass.id/ | 代码优化：用户 关闭浏览器/打断进程 时抛出中断异常   |
-| v0.0.6   | 2023.01.13 | https://testnet.wallet.unipass.id/ | 新增重载 API login, 支持可选链接方式。代码实现优化 | 
-| v0.0.5   | 2023.01.09 | https://testnet.wallet.unipass.id/ | 新增 UniPassActivity , 取消对 activity singleTop launchMode 的限制。UniPassSDKOptions 新增入参: activity |
-| v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名功能，登出 |
-
-
 ## 相关资料
 
 - [Android SDK Github](https://github.com/UniPassID/UniPass-Android-SDK)
@@ -100,3 +86,18 @@ import com.unipass.core.UniPassSDK
 ```
 
 请在您的 Manifest file 文件中查看网络权限是否开启： `<uses-permission android:name="android.permission.INTERNET" />`
+
+## 历史版本
+
+| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
+| -------- | ---------- | ---------------------------------- | --------------------------------  |
+| v0.0.13  | 2023.03.14     | https://testnet.wallet.unipass.id/ | 兼容性优化；移除对 web3j 的依赖；优化对 UnipassActivity 的处理 |
+| v0.0.12  | 2023.03.09     | https://testnet.wallet.unipass.id/ | 代码优化, 移除所有 lateinit 变量                                       |
+| v0.0.11  | 2023.02.07 | https://testnet.wallet.unipass.id/ | login 方法将 *connectType* 参数迁移到 *loginOption*, 并增加 returnEmail, authorize 等选项 |
+| v0.0.10  | 2023.02.06 | https://testnet.wallet.unipass.id/ | login 方法增加可选参数 *loginOption*  |
+| v0.0.9   | 2023.01.29 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 *deep*，设置为 false 时，登出时可以保留网页端登陆状态  |
+| v0.0.8   | 2023.01.29 | https://testnet.wallet.unipass.id/ | 支持 minifyEnable 构建    |
+| v0.0.7   | 2023.01.15 | https://testnet.wallet.unipass.id/ | 代码优化：用户 关闭浏览器/打断进程 时抛出中断异常   |
+| v0.0.6   | 2023.01.13 | https://testnet.wallet.unipass.id/ | 新增重载 API login, 支持可选链接方式。代码实现优化 | 
+| v0.0.5   | 2023.01.09 | https://testnet.wallet.unipass.id/ | 新增 UniPassActivity , 取消对 activity singleTop launchMode 的限制。UniPassSDKOptions 新增入参: activity |
+| v0.0.3   | 2023.01.04 | https://testnet.wallet.unipass.id/ | 支持连接钱包，转账代币，签名功能，登出 |

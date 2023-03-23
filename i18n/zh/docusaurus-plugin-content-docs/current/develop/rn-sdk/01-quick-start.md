@@ -2,11 +2,10 @@
 sidebar_position: 1
 ---
 
-# 快速开始
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-| 更新版本  | 更新日期   | 默认使用 Domain          | 更新说明                                                                   |
-| -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
-| v0.2.0   | 2023.03.06     | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support                                 |
+# 快速开始
 
 ## 环境依赖
 
@@ -14,19 +13,24 @@ sidebar_position: 1
 
 ## 安装和使用
 
-- ## 安装
+### 安装
 
-#### 通过 npm:
+<Tabs>
+<TabItem value="npm">
 
-```
+```bash
 npm install @unipasswallet/react-native-sdk
 ```
 
-#### 通过 Yarn
+</TabItem>
+<TabItem value="yarn">
 
-``` 
+```bash
 yarn add @unipasswallet/react-native-sdk
 ```
+
+</TabItem>
+</Tabs>
 
 在 IOS 场景中，可能需要使用 CocoaPods 来添加原生依赖到项目中:
 
@@ -35,7 +39,7 @@ cd ios
 npx pod-install
 ```
 
-- ## 开启深度链接
+### 开启深度链接
 
 #### Android
 
@@ -62,10 +66,14 @@ npx pod-install
 </activity>
 ```
 
-- ## 现在您可以使用 UniPassWalletSDK 在您的项目中:
+现在您可以使用 UniPassWalletSDK 在您的项目中:
 
 ```typescript
-import UniPassWallet from '@unipasswallet/react-native-sdk'
+import UniPassWallet from "@unipasswallet/react-native-sdk";
 ```
 
+## 历史版本
 
+| 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                                               |
+| -------- | ---------- | ---------------------------------- | ------------------------------------------------------ |
+| v0.2.0   | 2023.03.06 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message / Logout support |

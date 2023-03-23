@@ -4,12 +4,7 @@ sidebar_position: 1
 
 # Quick Start
 
-| Version | Last updated | UniPass Wallet Entry URL           | Upgrade Instructions                                                                                    |
-| ------- | ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| v0.0.2  | 2022.11.14   | https://testnet.wallet.unipass.id/ | Support Google login. Add the optional function of connect to return email. Add a prefix in signMessage |
-| v0.0.1  | 2022.10.28   | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify                                                              |
-
-## Reference
+## Source Code
 
 - [Unity SDK GitHub](https://github.com/UniPassID/unipass-unity-web-sdk)
 - [Demo Project](https://github.com/UniPassID/unipass-unity-web-sdk/blob/master/Example/unipass_demo.cs)
@@ -51,3 +46,10 @@ You can not load UniPass in Vuplex’s CanvasWebView, because UniPass uses the e
 ```csharp
 using UnipassWallet;
 ```
+
+## History Version
+
+| Version | Last updated | UniPass Wallet Entry URL           | Upgrade Instructions                                                                                    |
+| ------- | ------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| v0.0.2  | 2022.11.14   | https://testnet.wallet.unipass.id/ | Support Google login. Add the optional function of connect to return email. Add a prefix in signMessage |
+| v0.0.1  | 2022.10.28   | https://testnet.wallet.unipass.id/ | Connect / Transfer / Sign Message & Verify                                                              |

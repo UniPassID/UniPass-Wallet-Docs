@@ -38,24 +38,11 @@ UniPass Wallet 支持签署任意自定义消息。并且支持自定义签名�
 
 ## 验签
 
-第三方应用可以从 @unipasswallet/popup-utils 包中引入 `verifyMessageSignature` 来完成自定义消息验签，该方法同时支持 EOA 和合约钱包验签。
+第三方应用可以从 `@unipasswallet/popup-utils` 包中引入 `verifyMessageSignature` 来完成自定义消息验签，该方法同时支持 EOA 和合约钱包验签。
 
 在 UniPass 提供的一系列 JS SDK 中，最终都是通过调用 @unipasswallet/popup-sdk 中的 `UniPassPopupSDK.signMessage` 来进行自定义消息签名, 只是签名参数上有一些区别。其他平台的 SDK 也都采取了同样的消息签名机制。
 
-因此，在验签时需要根据对应的 prefix 和 chain 来完成验签。
-
-| Package                          | prefix        | prefix 可修改 | chain              | chain 可修改 |
-| -------------------------------- | ------------- | ------------- | ------------------ | ------------ |
-| @unipasswallet/popup-sdk         | UniPassPrefix | ✅            | AuthChain(Polygon) | ✅           |
-| @unipasswallet/ethereum-provider | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
-| @unipasswallet/wagmi-connector   | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
-| @unipasswallet/web3-react        | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
-| @unipasswallet/web3-onboard      | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
-| Android SDK                      | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
-| iOS SDK                          | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
-| Flutter SDK                      | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
-| Unity SDK                        | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
-| Unreal SDK                       | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
+因此，在验签时需要根据对应的 prefix 和 chain 来完成验签，您可以在底部查看各个 SDK 的设置。
 
 对于 EIP712 `signTypedData` 签名验签时 chain 的选取策略与 `signMessage` 一致。
 
@@ -391,3 +378,18 @@ func TestVerifySignedTypeData(t *testing.T) {
 
 </TabItem>
 </Tabs>
+
+## SDKs 配置
+
+| Package                          | prefix        | prefix 可修改 | chain              | chain 可修改 |
+| -------------------------------- | ------------- | ------------- | ------------------ | ------------ |
+| @unipasswallet/popup-sdk         | UniPassPrefix | ✅            | AuthChain(Polygon) | ✅           |
+| @unipasswallet/ethereum-provider | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
+| @unipasswallet/wagmi-connector   | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
+| @unipasswallet/web3-react        | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
+| @unipasswallet/web3-onboard      | EIP191Prefix  | ❌            | Connected Chain    | ✅           |
+| Android SDK                      | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
+| iOS SDK                          | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
+| Flutter SDK                      | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
+| Unity SDK                        | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |
+| Unreal SDK                       | UniPassPrefix | ❌            | AuthChain(Polygon) | ❌           |

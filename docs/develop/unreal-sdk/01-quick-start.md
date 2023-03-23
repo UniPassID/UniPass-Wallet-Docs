@@ -4,13 +4,7 @@ sidebar_position: 1
 
 # Quick Start
 
-
-| Version | Last updated | UniPass Wallet Entry URL | UPgrade Instruction |
-| --- | --- | --- | --- |
-| v0.0.1 | 2022.12.09 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message support |
-
-
-## Resources
+## Source Code
 
 - [Unreal SDK GitHub](https://github.com/UniPassID/Unipass-UE-SDK)
 
@@ -44,3 +38,9 @@ There are two ways to install UniPass SDK：
 Open UE5 Editor, navigate to `Menu → Edit → Plugins` , check the option to enable UniPassSDK.
 
 ![set up Unipass SDK](./img/unreal-setup.png)
+
+## History Version
+
+| Version | Last updated | UniPass Wallet Entry URL | UPgrade Instruction |
+| --- | --- | --- | --- |
+| v0.0.1 | 2022.12.09 | https://testnet.wallet.unipass.id/ | Add Connect / Transfer / Sign Message support |
