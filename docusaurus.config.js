@@ -126,7 +126,7 @@ const config = {
             position: 'right',
           },
           {
-            to: '/community-support',
+            to: '/community/overview',
             className: 'header-contact-link',
             position: 'right',
           },

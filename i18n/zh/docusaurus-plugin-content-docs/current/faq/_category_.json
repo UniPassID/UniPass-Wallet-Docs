@@ -2,7 +2,7 @@
   "label": "FAQ",
   "position": 4,
   "link": {
-    "type": "generated-index",
-    "slug": "/faq"
+    "type": "doc",
+    "id": "faq/faq"
   }
 }

@@ -43,12 +43,16 @@
     "message": "Architecture",
     "description": "The label for category Architecture in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.FAQ": {
-    "message": "FAQ",
-    "description": "The label for category FAQ in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Terms": {
     "message": "Terms",
     "description": "The label for category Terms in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Audits": {
+    "message": "Contract Audits",
+    "description": "The label for category Contract Audits in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Community": {
+    "message": "Community & Tech Support",
+    "description": "The label for category Community in sidebar tutorialSidebar"
   }
 }

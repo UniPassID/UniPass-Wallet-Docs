@@ -1,0 +1,8 @@
+{
+  "label": "Audits",
+  "position": 5,
+  "link": {
+    "type": "doc",
+    "id": "audits/overview"
+  }
+}

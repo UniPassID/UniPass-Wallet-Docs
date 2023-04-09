@@ -1,5 +1,5 @@
 ---
-position: 6
+sidebar_position: 1
 ---
 
 # Community & Tech Support
@@ -17,7 +17,7 @@ You can find UniPass on the following social media platforms, and feel free to i
 
 ## Tech Support
 
-Currently, we provide a range of [**SDKs**](./develop/platforms.md) that cover various application scenarios such as web, mobile, and game platforms. You can easily integrate UniPass using multiple methods.
+Currently, we provide a range of [**SDKs**](../develop/platforms.md) that cover various application scenarios such as web, mobile, and game platforms. You can easily integrate UniPass using multiple methods.
 
 UniPass is a free-to-use smart contract wallet that provides a seamless and gasless user experience. We also invite you to explore additional use cases for contract wallets with us.
 
