@@ -13,6 +13,8 @@ UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https
 - Polygon
 - Rangers Protocol
 - Arbitrum
+- Avalanche (C chain)
+- KCC
 
 ### 测试网
 
@@ -21,12 +23,13 @@ UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https
 - Mumbai (Polygon testnet)
 - Robin (Rangers testnet)
 - Arbitrum Goerli
+- Avalanche Fuji testnet
+- KCC testnet
 
 ## 未来将支持的链
 
-- Avalanche
 - Optimism
-- KCC
+- PlatON
 - OKC
 - Godwoken
 - Fantom

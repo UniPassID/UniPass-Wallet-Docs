@@ -13,6 +13,8 @@ UniPass Wallet supports all EVM-compatible chains and gives users the same addre
 - Polygon
 - Rangers Protocol
 - Arbitrum
+- Avalanche (C chain)
+- KCC
 
 ## TestNet
 
@@ -21,12 +23,13 @@ UniPass Wallet supports all EVM-compatible chains and gives users the same addre
 - Mumbai (Polygon testnet)
 - Robin (Rangers testnet)
 - Arbitrum Goerli
+- Avalanche Fuji testnet
+- KCC testnet
 
 ## Chains to support in the future
 
-- Avalanche
 - Optimism
-- KCC
+- PlatON
 - OKC
 - Godwoken
 - Fantom
