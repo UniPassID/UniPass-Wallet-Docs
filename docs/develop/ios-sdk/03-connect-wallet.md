@@ -25,11 +25,13 @@ public struct UniPassSDKLoginOption {
     public var connectType: ConnectType? = ConnectType.both
     public var authorize: Bool? = false
     public var returnEmail: Bool? = false
+    public var forceLogin: Bool? = false
     
-    public init(connectType: ConnectType?, authorize: Bool?, returnEmail: Bool?) {
+    public init(connectType: ConnectType?, authorize: Bool?, returnEmail: Bool?, forceLogin: Bool?) {
         self.connectType = connectType
         self.authorize = authorize
         self.returnEmail = returnEmail
+        self.forceLogin = forceLogin
     }
 }
 
@@ -52,7 +54,7 @@ public struct UniPassUserInfo: Codable {
             self.userIdLabel?.text = userinfo.address
         }, loginErrorBlock: { error in
             print("unipassSdk: Login failed ❎", error)
-        }, loginOption: UniPassSDKLoginOption(connectType: ConnectType.google, authorize: false, returnEmail: emailReturnSwitch?.isOn))
+        }, loginOption: UniPassSDKLoginOption(connectType: ConnectType.google, authorize: false, returnEmail: emailReturnSwitch?.isOn, forceLogin: forceLoginSwitch?.isOn))
     }
 ```
 

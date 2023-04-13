@@ -41,6 +41,8 @@ import UniPassSDK
 
 | Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
 | -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.7   | 2023.04.13     | https://testnet.wallet.unipass.id/ | Add *forceLogin* option for login api
+| v0.0.6   | 2023.03.28     | https://testnet.wallet.unipass.id/ | Fix switch user bug when sign-message and send-transaction
 | v0.0.5   | 2023.02.10     | https://testnet.wallet.unipass.id/ | Fix invoke SDK failed immediately after opening app through code start process, such as URL Scheme. |
 | v0.0.4   | 2023.02.07     | https://testnet.wallet.unipass.id/ | Move login parameter *connectType* to *loginOption*, and add more options like returnEmail, authorize etc to *loginOption*. |
 | v0.0.3   | 2023.02.03     | https://testnet.wallet.unipass.id/ | Add option *deep* for logout. Website state won't be cleared when deep is set to false |
