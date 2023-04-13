@@ -40,6 +40,8 @@ import UniPassSDK
 
 | 更新版本 | 更新日期   | 默认使用 URL                       | 更新说明                                                                                  |
 | -------- | ---------- | ---------------------------------- | ----------------------------------------------------------------------------------------- |
+| v0.0.7   | 2023.04.13     | https://testnet.wallet.unipass.id/ | login api 添加 forceLogin 参数，默认为 false |
+| v0.0.6   | 2023.03.28     | https://testnet.wallet.unipass.id/ | 修复当前登录用户与签名/交易时站点登录用户不一致时导致的问题       |
 | v0.0.5   | 2023.02.10 | https://testnet.wallet.unipass.id/ | 修复通过 URL Scheme 等冷启动方式打开应用后立刻调用 SDK 失败的 bug                         |
 | v0.0.4   | 2023.02.07 | https://testnet.wallet.unipass.id/ | login 方法将 _connectType_ 参数迁移到 _loginOption_, 并增加 returnEmail, authorize 等选项 |
 | v0.0.3   | 2023.02.03 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 _deep_，设置为 false 时，登出时可以保留网页端登陆状态             |

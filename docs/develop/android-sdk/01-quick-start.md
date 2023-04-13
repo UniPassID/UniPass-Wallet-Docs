@@ -112,6 +112,8 @@ import com.unipass.core.UniPassSDK
 
 | Version  | Last updated   | UniPass Wallet Entry URL           | UPgrade Instruction                                                                    |
 | -------- | -------------- | ---------------------------------- | -------------------------------------------------------------------------------------- |
+| v0.0.15  | 2023.04.13     | https://testnet.wallet.unipass.id/ | Add *forceLogin* option for login api                                                  |
+| v0.0.14  | 2023.03.28     | https://testnet.wallet.unipass.id/ | Fix switch user bug when sign-message and send-transaction                             |
 | v0.0.13  | 2023.03.14     | https://testnet.wallet.unipass.id/ | Compatibility optimization. Remove dependencies from web3j. Optimize the handling of UnipassActivity |
 | v0.0.12  | 2023.03.09     | https://testnet.wallet.unipass.id/ | Code optimization, remove all lateinit variables                                       |
 | v0.0.11  | 2023.02.07     | https://testnet.wallet.unipass.id/ | Move login parameter *connectType* to *loginOption*, and add more options like returnEmail, authorize etc to *loginOption*. |

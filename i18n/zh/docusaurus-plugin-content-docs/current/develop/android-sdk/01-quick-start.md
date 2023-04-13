@@ -91,8 +91,10 @@ import com.unipass.core.UniPassSDK
 
 | 更新版本 | 更新日期   | 默认使用 Domain                    | 更新说明                               |
 | -------- | ---------- | ---------------------------------- | --------------------------------  |
-| v0.0.13  | 2023.03.14     | https://testnet.wallet.unipass.id/ | 兼容性优化；移除对 web3j 的依赖；优化对 UnipassActivity 的处理 |
-| v0.0.12  | 2023.03.09     | https://testnet.wallet.unipass.id/ | 代码优化, 移除所有 lateinit 变量                                       |
+| v0.0.15  | 2023.04.13 | https://testnet.wallet.unipass.id/ | login api 添加 forceLogin 参数，默认为 false |
+| v0.0.14  | 2023.03.28 | https://testnet.wallet.unipass.id/ | 修复当前登录用户与签名/交易时站点登录用户不一致时导致的问题       |
+| v0.0.13  | 2023.03.14 | https://testnet.wallet.unipass.id/ | 兼容性优化；移除对 web3j 的依赖；优化对 UnipassActivity 的处理 |
+| v0.0.12  | 2023.03.09 | https://testnet.wallet.unipass.id/ | 代码优化, 移除所有 lateinit 变量                                       |
 | v0.0.11  | 2023.02.07 | https://testnet.wallet.unipass.id/ | login 方法将 *connectType* 参数迁移到 *loginOption*, 并增加 returnEmail, authorize 等选项 |
 | v0.0.10  | 2023.02.06 | https://testnet.wallet.unipass.id/ | login 方法增加可选参数 *loginOption*  |
 | v0.0.9   | 2023.01.29 | https://testnet.wallet.unipass.id/ | logout 方法增加可选参数 *deep*，设置为 false 时，登出时可以保留网页端登陆状态  |

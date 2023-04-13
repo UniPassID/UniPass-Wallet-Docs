@@ -10,6 +10,7 @@ UniPass 目前支持自定义登录选项设置, 包括下列选项:
 - `connectType`: 指定 UniPass 通过特定方式登录，目前提供的选项有 `google`, `email` 和 `both`. 默认值为 `both`, 表示允许支持的任意方式进行登录.
 - `authorize`: 如果设置为 `true`, UniPass 将会返回一个自动生成的 `Sign-in With Ethereum` 消息和对应的签名. 默认值为 `false`.
 - `returnEmail`: 如果设置为 `true`, UniPass 账户邮箱 email 将会返回. 默认值为 `false`.
+- `forceLogin`: 如果设置为 `true`, 用户总是需要进行登录流程来完成连接，即使之前已经在网页端登录.
 
 ## 相关类型定义
 

@@ -40,6 +40,7 @@ UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.i
 
 | Version | Breaking change     | Last updated | Upgrade Instructions                                                                                           |
 | ------- | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
+| v1.1.3 |                      | 2023.04.13    | login func add forceLogin param |
 | v1.1.2 |                      | 2023.02.24    | logout func add deep param, if deep is true, UniPass Wallet will logout too |
 | v1.1.1 |                      | 2023.02.14    | support arbitrum network |
 | v1.1.0 |                      | 2023.02.13    | add rpcUrls config for ethereum-provider |

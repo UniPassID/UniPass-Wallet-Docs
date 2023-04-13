@@ -10,6 +10,7 @@ UniPass currently supports customizing login options for `login` method, includi
 - `connectType`: indicate the provider used to login UniPass, including `google`, `email` and `both` options. The default value is `both`, indicating use any supported way to login UniPass.
 - `authorize`: if set to `true`, UniPass will return a auto generated `Sign-in With Ethereum` message, and a signature for the message. The default value is `false`.
 - `returnEmail`: if set to `true`, UniPass account `email` will be returned. The default value is `false`.
+- `forceLogin`: if set to `true`, user will always have to log in even if they have logged in to the site before.
 
 ## Type definitions
 
@@ -22,7 +23,8 @@ interface UnipassCallBack <T>{
 data class LoginOption (
     val connectType: ConnectType? = ConnectType.BOTH,
     val authorize: Boolean? = false,
-    val returnEmail: Boolean? = false
+    val returnEmail: Boolean? = false,
+    val forceLogin: Boolean? = false
 )
 
 class LoginOutput: BaseOutput(OutputType.Login) {
