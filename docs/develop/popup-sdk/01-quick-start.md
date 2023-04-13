@@ -40,7 +40,12 @@ UniPass Wallet entry URL used by current demo: [https://testnet.wallet.unipass.i
 
 | Version | Breaking change     | Last updated | Upgrade Instructions                                                                                           |
 | ------- | ------------------- | ------------ | -------------------------------------------------------------------------------------------------------------- |
-| v1.1.3 |                      | 2023.04.13    | login func add forceLogin param |
+| v1.1.8 |                      | 2023.04.13    | login func add forceLogin param |
+| v1.1.7 |                      | 2023.04.04    | Ethereum Provider added support for kcc and avax |
+| v1.1.6 |                      | 2023.03.30    | Add support for kcc and avax |
+| v1.1.5 |                      | 2023.03.28    | Clear useless console log |
+| v1.1.4 |                      | 2023.03.03    | New feature：Added tips float window when popover is blocked, which can be used to open popover by clicking |
+| v1.1.3 |                      | 2023.03.01    | Remove dependency of buffer^6.0.3 |
 | v1.1.2 |                      | 2023.02.24    | logout func add deep param, if deep is true, UniPass Wallet will logout too |
 | v1.1.1 |                      | 2023.02.14    | support arbitrum network |
 | v1.1.0 |                      | 2023.02.13    | add rpcUrls config for ethereum-provider |
