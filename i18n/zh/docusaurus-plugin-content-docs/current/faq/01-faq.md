@@ -34,7 +34,7 @@ Master key 是由 `client slice` 和 `server slice` 进行 MPC-TSS 计算后生�
 
 ### Master key 保存在哪里？
 
-`Client slice` 会在 client 端使用用户设置的密码（密码会进行 pbkdf2 处理）进行加密后，生成一个 keystore 文件。keystore 文件会保存在 UniPass 云端存储中，后续用户可将 keystore 存储至 Google Drive、iCloud 等第三方云盘或者下载至本地。
+`Client slice` 会在 client 端使用用户设置的密码（密码会进行 `scrypt` 处理）进行加密后，生成一个 keystore 文件。keystore 文件会保存在 UniPass 云端存储中，后续用户可将 keystore 存储至 Google Drive、iCloud 等第三方云盘或者下载至本地。
 
 `Server slice` 是每个账户独立生成的，并使用 AWS 的 HSM（Hardware Security Module）进行加密保存，由 UniPass 对用户进行 2FA 后才可以调用。
 

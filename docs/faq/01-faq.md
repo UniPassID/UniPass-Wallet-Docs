@@ -36,7 +36,7 @@ The master key is generated through MPC-TSS calculation by client and server sli
 
 ### Where is the master key stored?
 
-`client slice` creates a keystore file, which is encrypted with the user's password using pbkdf2 on the client side. This keystore file is stored in UniPass cloud storage and can be saved to third-party cloud drives or locally.
+`client slice` creates a keystore file, which is encrypted with the user's password using `scrypt` on the client side. This keystore file is stored in UniPass cloud storage and can be saved to third-party cloud drives or locally.
 
 `Server slices` are encrypted with AWS's HSM (Hardware Security Module) and produced independently for each account. UniPass can only access them with the user's 2FA.
 
