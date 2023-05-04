@@ -50,10 +50,6 @@ In summary, the master key's lack of a corresponding private key eliminates the 
 
 Relayers submit transactions and pay for gas on behalf of the user. They can't modify the operation in the user's signature.
 
-### Does only UniPass can run the relayer?
-
-UniPass will run a Relayer, but partners and anyone can also run one. We'll provide help with operation and maintenance if someone chooses to run it themselves.
-
 ### What is the principle and implementation of gasless?
 
 The [**Meta Transaction**](https://medium.com/coinmonks/ethereum-meta-transactions-101-de7f91884a06) method allows for a gasless experience.

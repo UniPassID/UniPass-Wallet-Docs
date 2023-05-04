@@ -14,9 +14,7 @@ UniPass 将会提供一个默认的 UniPass Relayer 节点。在早期 UniPass r
 
 ## 自定义 gas & gas 补贴
 
-UniPass relayer 是一个开源程序，因此第三方可以自行部署 relayer 节点，并自定义相关参数。
-
-第三方可以：
+第三方可以通过自定义 relayer 相关参数实现：
 
 - 选择官方代币作为交易 gas；
 - 可以设置交互合约白名单，当用户与白名单内特定的合约进行交互时，relayer 将自动帮助用户代付 gas；

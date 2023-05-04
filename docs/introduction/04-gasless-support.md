@@ -14,10 +14,8 @@ In the future, UniPass Relayer will consider SWAP protocol to achieve gas paymen
 
 ## Build your own relayer
 
-UniPass Relayer is an open-source program, so you can customize it deploy your own relayer node.
+You can achieve following features through customizing the relayer parameters:
 
-Below are what you can do:
-
-- Use the native token to pay gas fee
-- Set up whitelisted smart contracts, which the relayer will automatically pay the gas fee for the users interacting with them
+- Use the application token to pay gas fee
+- Set up whitelisted smart contracts, which the relayer will automatically pay the gas fee for those users
 - Set up tiered gas policy, like giving additional gas fee discount to new users
