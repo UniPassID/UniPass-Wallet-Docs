@@ -13,7 +13,7 @@
   },
   "link.item.label.Tutorial": {
     "message": "Tutorial",
-    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+    "description": "The label of footer link with label=Tutorial linking to /develop/platforms"
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
@@ -21,22 +21,26 @@
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discordapp.com/invite/docusaurus"
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/XaRMFW85Pg"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/UniPassID"
   },
   "link.item.label.Blog": {
     "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
+    "description": "The label of footer link with label=Blog linking to https://medium.com/unipass"
   },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/UniPassID/UniPass-Wallet-Docs"
   },
   "copyright": {
     "message": "Copyright © 2023 UniPass Wallet Document, Built with ❤️",
     "description": "The footer copyright"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/channel/UCJZ4GOghuCdxBazZXc4M41g"
   }
 }
