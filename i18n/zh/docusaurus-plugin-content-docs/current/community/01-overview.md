@@ -9,7 +9,6 @@ sidebar_position: 1
 您可以在以下社交媒体平台上找到 UniPass，非常欢迎与我们互动。
 
 * [**Twitter**](https://twitter.com/UniPassID)
-* [**Discord**](https://discord.gg/XaRMFW85Pg)
 * [**GitHub**](https://github.com/UniPassID)
 * [**Blog**](https://medium.com/unipass)
 * [**YouTube**](https://www.youtube.com/channel/UCJZ4GOghuCdxBazZXc4M41g/featured)
@@ -21,4 +20,4 @@ sidebar_position: 1
 
 您可以免费接入并使用 UniPass，享受智能合约钱包带来的免私钥和 Gasless 的用户体验。同时，欢迎和我们一起探索合约钱包更多的使用场景。
 
-如果您有意向接入 UniPass 或者需要任何技术支持，您可以通过 [**Email**](mailto:contact@unipass.id)、[**Discord**](https://discord.gg/XaRMFW85Pg)、[**Twitter**](https://twitter.com/UniPassID) 等渠道与我们联系。
+如果您有意向接入 UniPass 或者需要任何技术支持，您可以通过 [**Email**](mailto:contact@unipass.id)、[**Twitter**](https://twitter.com/UniPassID) 等渠道与我们联系。

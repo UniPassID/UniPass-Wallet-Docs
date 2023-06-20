@@ -59,4 +59,4 @@ Guardian 是账户的守护者。当账户内的密钥损毁或丢失，用户�
 
 当然，对于没有复杂的自定义需求的用户，UniPass Wallet 会综合考量用户账户的当前情况，如账上资产总量及注册时间，及用户目前所绑定的各类型的密钥，智能为用户推荐角色及权重设置，来实现安全便捷的密钥管理体验。
 
-基于 UniPass Wallet 的多类型密钥支持，及灵活的角色权重体系，开发者可以进行深度的自定义，以满足不同用户、不同场景的需求。欢迎通过 [Discord](https://discord.gg/XaRMFW85Pg)，[Twitter](https://twitter.com/UniPassID)，[Email](mailto:contact@unipass.id) 联系我们，与我们交流。
+基于 UniPass Wallet 的多类型密钥支持，及灵活的角色权重体系，开发者可以进行深度的自定义，以满足不同用户、不同场景的需求。欢迎通过 [Twitter](https://twitter.com/UniPassID)，[Email](mailto:contact@unipass.id) 联系我们，与我们交流。

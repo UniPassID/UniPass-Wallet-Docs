@@ -121,11 +121,6 @@ const config = {
             position: "right",
           },
           {
-            href: 'https://discord.gg/XaRMFW85Pg',
-            className: 'header-discord-link',
-            position: 'right',
-          },
-          {
             to: '/community/overview',
             className: 'header-contact-link',
             position: 'right',
@@ -162,10 +157,6 @@ const config = {
               {
                 label: "Twitter",
                 href: "https://twitter.com/UniPassID",
-              },
-              {
-                label: "Discord",
-                href: "https://discord.gg/XaRMFW85Pg",
               },
               {
                 label: "YouTube",
