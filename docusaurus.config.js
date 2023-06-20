@@ -4,6 +4,9 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+const fs = require('fs');
+const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "UniPass Docs",
@@ -53,7 +56,6 @@ const config = {
             }
           },
           routeBasePath: '/',
-
         },
         blog: {
           showReadingTime: true,
@@ -90,7 +92,7 @@ const config = {
         logo: {
           alt: "UniPass Wallet Logo",
           src: "img/logo.svg",
-          href: "/introduction/intro" 
+          href: "/"
         },
         items: [
           // {
@@ -109,6 +111,19 @@ const config = {
             to: '/develop/platforms',
             label: 'SDK',
             position: 'left',
+          },
+          {
+            label: 'SDKs',
+            type: 'dropdown',
+            position: 'left',
+            className: 'unipass-dropdown',
+            items: [
+              {
+                type: 'html',
+                value: sdksHTML,
+                className: 'unipass-dropdown',
+              },
+            ],
           },
           {
             href: 'https://twitter.com/UniPassID/',
