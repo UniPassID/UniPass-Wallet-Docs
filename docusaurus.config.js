@@ -86,6 +86,11 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true
+        }
+      },
       navbar: {
         title: "UniPass Wallet",
         hideOnScroll: true,
@@ -103,15 +108,16 @@ const config = {
           // },
           {
             to: '/introduction/intro',
+            docId: 'introduction',
             label: 'Document',
             position: 'left',
           },
           // { to: "/blog", label: "Blog", position: "left" },
-          {
-            to: '/develop/platforms',
-            label: 'SDK',
-            position: 'left',
-          },
+          // {
+          //   to: '/develop/introduction',
+          //   label: 'SDK',
+          //   position: 'left',
+          // },
           {
             label: 'SDKs',
             type: 'dropdown',
@@ -124,6 +130,12 @@ const config = {
                 className: 'unipass-dropdown',
               },
             ],
+          },
+          {
+            label: 'FAQ',
+            to: 'faq',
+            position: 'left',
+            // className: 'new-badge',
           },
           {
             href: 'https://twitter.com/UniPassID/',
@@ -162,7 +174,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/develop/platforms",
+                to: "/develop/introduction",
               },
             ],
           },

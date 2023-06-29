@@ -9,7 +9,7 @@ import styles from './index.module.css';
 import { Redirect } from '@docusaurus/router';
 import HeroSection from '../components/homepage/HeroSection';
 import SDKsSection from '../components/homepage/SDKsSection';
-import APIReferenceSection from '../components/homepage/APIReferenceSection';
+import APIReferenceSection from '../components/homepage/FaqSection';
 import CommunitySection from '../components/homepage/CommunitySection';
 import HomeFooter from '../components/homepage/HomeFooter';
 import ResourcesSection from '../components/homepage/ResourcesSection';

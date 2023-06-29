@@ -23,7 +23,7 @@ export default function APIReferenceSection() {
         <div className="flex-1">
           <h2 className="text-4xl">FAQ</h2>
           <p className="text-zinc-400">
-            Don&apos;t 
+            We have gathered some frequently asked questions about UniPass SDK 
           </p>
           <Link
             href="/faq/faq"
@@ -31,7 +31,7 @@ export default function APIReferenceSection() {
           >
             Have questions about UniPass SDK &rarr;
           </Link>
-          <ul className="mt-10 flex list-none flex-col gap-4 text-left lg:pl-0">
+          {/* <ul className="mt-10 flex list-none flex-col gap-4 text-left lg:pl-0">
             <li className="flex flex-col gap-1">
               <Link
                 href="/faq/faq"
@@ -46,17 +46,7 @@ export default function APIReferenceSection() {
                 Create a meeting for your organization
               </div>
             </li>
-          </ul>
-        </div>
-        <div className="flex flex-1 justify-end">
-          <ThemedImage
-            sources={{
-              light: '/static/landing-page/api-ref-light.png',
-              dark: '/static/landing-page/api-ref-dark.png',
-            }}
-            alt="API Reference Preview"
-            loading="lazy"
-          />
+          </ul> */}
         </div>
       </div>
     </section>

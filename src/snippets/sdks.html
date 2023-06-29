@@ -1,58 +1,59 @@
 <script>
-    function showMenu(menu) {
-      document.body.classList.remove('web', 'mobile', 'desktop', 'plugin');
-      document.body.classList.add(menu);
-    }
-  
-    window.showMenu = showMenu;
+  function showMenu(menu) {
+    document.body.classList.remove("web", "mobile", "desktop", "plugin");
+    document.body.classList.add(menu);
+  }
 
-    // window.location.href.
+  window.showMenu = showMenu;
 
-  </script>
-  <div class="sdks-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[768px]">
-    <div class="flex flex-col bg-secondary-800 p-4 lg:flex-row">
-      <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-6">
-        <a
-          data-dropdown-sdks-menu="web"
-          onfocus="document.body.setAttribute('data-sdk-menu', 'web')"
-          onmouseover="document.body.setAttribute('data-sdk-menu', 'web')"
-          class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
-          href="develop/popup-sdk/quick-start"
-        >
-          <div class="flex-shrink-0">
-            <img
-              src="/static/landing-page/sdk-icons/resources/web.svg"
-              class="h-6 w-6"
-            />
-          </div>
-          <div class="flex flex-col items-start justify-start gap-1">
-            <div class="text-base font-semibold">Custom Auth SDK</div>
-            <p class="mb-0 text-left text-sm text-text-400">
-              Get up and running on new features and techniques.
-            </p>
-          </div>
-        </a>
-        <a
-          data-dropdown-sdks-menu="mobile"
-          onfocus="document.body.setAttribute('data-sdk-menu', 'mobile')"
-          onmouseover="document.body.setAttribute('data-sdk-menu', 'mobile')"
-          class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
-          href="/develop/popup-sdk/quick-start"
-        >
-          <div class="flex-shrink-0">
-            <img
-              src="/static/landing-page/sdk-icons/resources/mobile.svg"
-              class="h-6 w-6"
-            />
-          </div>
-          <div class="flex flex-col items-start justify-start gap-1">
-            <div class="text-base font-semibold">Plug & Play SDK</div>
-            <p class="mb-0 text-left text-sm text-text-400">
-              Get up and running on new features and techniques.
-            </p>
-          </div>
-        </a>
-        <a
+  // window.location.href.
+</script>
+<div class="sdks-dropdown flex max-w-lg flex-col rounded-2xl lg:min-w-[768px]">
+  <div class="flex flex-col bg-secondary-800 p-4 lg:flex-row">
+    <div class="flex flex-1 flex-col gap-8 rounded-xl bg-secondary-1000 p-6">
+      <a
+        data-dropdown-sdks-menu="web"
+        onfocus="document.body.setAttribute('data-sdk-menu', 'web')"
+        onmouseover="document.body.setAttribute('data-sdk-menu', 'web')"
+        class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        href="/custom-auth/introduction"
+      >
+        <div class="flex-shrink-0">
+          <img
+            src="/static/landing-page/sdk-icons/resources/web.svg"
+            class="h-6 w-6"
+          />
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1">
+          <div class="text-base font-semibold">Custom Auth SDK</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            A non-UI SDK which allows complete customization of login and
+            signature.
+          </p>
+        </div>
+      </a>
+      <a
+        data-dropdown-sdks-menu="mobile"
+        onfocus="document.body.setAttribute('data-sdk-menu', 'mobile')"
+        onmouseover="document.body.setAttribute('data-sdk-menu', 'mobile')"
+        class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
+        href="/develop/introduction"
+      >
+        <div class="flex-shrink-0">
+          <img
+            src="/static/landing-page/sdk-icons/resources/mobile.svg"
+            class="h-6 w-6"
+          />
+        </div>
+        <div class="flex flex-col items-start justify-start gap-1">
+          <div class="text-base font-semibold">Plug & Play SDK</div>
+          <p class="mb-0 text-left text-sm text-text-400">
+            A decentralized SDK which provides Wallet UI and unified
+            non-custodial account management.
+          </p>
+        </div>
+      </a>
+      <!-- <a
           class="flex cursor-pointer items-start justify-start gap-2 border-none bg-transparent text-black dark:text-white"
           data-dropdown-sdks-menu="plugin"
           href="/"
@@ -71,83 +72,173 @@
               Get up and running on new features and techniques.
             </p>
           </div>
-        </a>
-      </div>
-      <div class="flex-1 p-6">
-        <div class="flex gap-2" data-dropdown-sdks="web">
-          <div class="flex-1">
-            <h3>SDKs</h3>
-  
-            <ul class="list-none pl-0">
-              <li>
-                <a href="/develop/popup-sdk/quick-start" class="sdk-link">
-                  <img src="/static/landing-page/sdk-icons/react.png" />
-                  Web
-                </a>
-              </li>
-              <li>
-                <a href="/develop/android-sdk/quick-start" class="sdk-link">
-                  <img src="/static/landing-page/sdk-icons/angular.png" />
-                  Android
-                </a>
-              </li>
-            </ul>
-          </div>
-  
-          <div class="flex-1">
-            <h3>Wallet Connector</h3>
-  
-            <ul class="list-none pl-0">
-              <li>
-                <a href="/develop/wallet-connector/RainbowKit-Usage" class="sdk-link">
-                  <img src="/static/landing-page/sdk-icons/js.png" />
-                  Rainbow Kit
-                </a>
-              </li>
-            </ul>
-          </div>
+        </a> -->
+    </div>
+    <div class="flex-1 p-6">
+      <div class="flex gap-2" data-dropdown-sdks="web">
+        <div class="flex-1">
+          <h3>Custom Auth SDK</h3>
+
+          <ul class="list-none pl-0">
+            <li>
+              <a href="/custom-auth/web-sdk/quick-start" class="sdk-link">
+                <img src="/static/landing-page/sdk-icons/react.png" />
+                Web
+              </a>
+            </li>
+          </ul>
         </div>
-  
-        <div class="flex flex-col gap-2" data-dropdown-sdks="mobile">
-          <div class="flex w-full gap-2">
+
+        <!-- <div class="flex-1">
+            <h3>Wallet Connector</h3>
+            <ul class="list-none pl-0">
+              <li>
+                <a href="/custom-auth/android-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/js.png" />
+                  COMING SOON
+                </a>
+              </li>
+            </ul>
+          </div> -->
+      </div>
+
+      <div class="flex w-full gap-2" data-dropdown-sdks="web">
+        <div class="mt-4 w-full rounded-lg bg-secondary-700 p-4">
+          <div class="mb-3 text-xs text-text-400">COMING SOON</div>
+          <div class="flex gap-2">
             <div class="flex-1">
-              <h3>Plug & Play SDK</h3>
               <ul class="list-none pl-0">
                 <li>
-                  <a href="/develop/popup-sdk/quick-start" class="sdk-link">
+                  <a href="#" class="sdk-link">
                     <img src="/static/landing-page/sdk-icons/react.png" />
-                    Web - Popup
-                  </a>
-                </li>
-                <li>
-                  <a href="/develop/android-sdk/quick-start" class="sdk-link">
-                    <img src="/static/landing-page/sdk-icons/flutter.png" />
                     Android
                   </a>
                 </li>
               </ul>
             </div>
             <div class="flex-1">
-              <h3>Wallet Connector</h3>
               <ul class="list-none pl-0">
                 <li>
-                  <a href="/plug-play/wagmi" class="sdk-link">
+                  <a href="#" class="sdk-link">
                     <img src="/static/landing-page/sdk-icons/react.png" />
-                    Wagmi
-                  </a>
-                </li>
-                <li>
-                  <a href="/develop/wallet-connector/RainbowKit-Usage" class="sdk-link">
-                    <img src="/static/landing-page/sdk-icons/flutter.png" />
-                    Rainbow Kit
+                    iOS
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-  
-        <div class="flex gap-2" data-dropdown-sdks="plugin">
+      </div>
+
+      <div class="flex flex-col gap-2" data-dropdown-sdks="mobile">
+        <div class="flex w-full gap-2">
+          <div class="flex-1">
+            <h3>Plug & Play SDK</h3>
+            <ul class="list-none pl-0">
+              <li>
+                <a href="/develop/popup-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/react.png" />
+                  Web - Popup
+                </a>
+              </li>
+              <li>
+                <a href="/develop/android-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Android
+                </a>
+              </li>
+              <li>
+                <a href="/develop/iOS-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  iOS
+                </a>
+              </li>
+              <li>
+                <a href="/develop/flutter-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Flutter
+                </a>
+              </li>
+              <li>
+                <a href="/develop/rn-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  React Native
+                </a>
+              </li>
+              <li>
+                <a href="/develop/unity-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Unity
+                </a>
+              </li>
+              <li>
+                <a href="/develop/unreal-sdk/quick-start" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Unreal
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <h3>Wallet Connector</h3>
+            <ul class="list-none pl-0">
+              <li>
+                <a href="/develop/wallet-connector/Wagmi" class="sdk-link">
+                  <img src="/static/landing-page/sdk-icons/react.png" />
+                  Wagmi
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/develop/wallet-connector/rainbowkit"
+                  class="sdk-link"
+                >
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Rainbow Kit
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/develop/wallet-connector/web3-onboard"
+                  class="sdk-link"
+                >
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Web3 Onboard
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/develop/wallet-connector/web3-react-v8"
+                  class="sdk-link"
+                >
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Web3 React V8
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/develop/wallet-connector/web3-react-v6"
+                  class="sdk-link"
+                >
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Web3 React V6
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/develop/wallet-connector/web3-modal-v1"
+                  class="sdk-link"
+                >
+                  <img src="/static/landing-page/sdk-icons/flutter.png" />
+                  Web3 Modal V1
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="flex gap-2" data-dropdown-sdks="plugin">
           <div class="flex-1">
             <h3>Core SDK</h3>
   
@@ -160,57 +251,11 @@
               </li>
             </ul>
           </div>
-        </div>
-        <!-- <div class="flex w-full gap-2">
-            <div class="mt-4 w-full rounded-lg bg-secondary-700 p-4">
-              <div class="mb-3 text-xs text-text-400">COMING SOON</div>
-  
-              <div class="flex gap-2">
-                <div class="flex-1">
-                  <ul class="list-none pl-0">
-                    <li>
-                      <a href="#" class="sdk-link">
-                        <img src="/static/landing-page/sdk-icons/react.png" />
-                        React Native
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sdk-link">
-                        <img src="/static/landing-page/sdk-icons/kotlin.png" />
-                        Android
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sdk-link">
-                        <img src="/static/landing-page/sdk-icons/swift.png" />
-                        iOS
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="flex-1">
-                  <ul class="list-none pl-0">
-                    <li>
-                      <a href="#" class="sdk-link">
-                        <img src="/static/landing-page/sdk-icons/react.png" />
-                        React Native
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="sdk-link">
-                        <img src="/static/landing-page/sdk-icons/swift.png" />
-                        iOS
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div> -->
-      </div>
+        </div> -->
     </div>
-  
-    <!-- <a
+  </div>
+
+  <!-- <a
       href="#"
       class="flex items-center justify-between bg-secondary-1000 p-6 text-current"
     >
@@ -229,5 +274,4 @@
       </div>
       <div>&rarr;</div>
     </a> -->
-  </div>
-  
+</div>

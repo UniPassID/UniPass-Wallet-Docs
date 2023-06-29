@@ -70,5 +70,65 @@
   "sidebar.tutorialSidebar.category.Architecture.link.generated-index.description": {
     "message": "深度解析 UniPass Wallet 核心架构。",
     "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.docs.category.Introduction": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar docs"
+  },
+  "sidebar.docs.category.Architecture": {
+    "message": "Architecture",
+    "description": "The label for category Architecture in sidebar docs"
+  },
+  "sidebar.docs.category.Terms": {
+    "message": "Terms",
+    "description": "The label for category Terms in sidebar docs"
+  },
+  "sidebar.sdk.category.Custom Auth SDK": {
+    "message": "Custom Auth SDK",
+    "description": "The label for category Custom Auth SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Web SDK": {
+    "message": "Web SDK",
+    "description": "The label for category Web SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Android SDK": {
+    "message": "Android SDK",
+    "description": "The label for category Android SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Plug & Play SDK": {
+    "message": "Plug & Play SDK",
+    "description": "The label for category Plug & Play SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Popup SDK": {
+    "message": "Popup SDK",
+    "description": "The label for category Popup SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.iOS SDK": {
+    "message": "iOS SDK",
+    "description": "The label for category iOS SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Flutter SDK": {
+    "message": "Flutter SDK",
+    "description": "The label for category Flutter SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.React Native SDK": {
+    "message": "React Native SDK",
+    "description": "The label for category React Native SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Unity SDK": {
+    "message": "Unity SDK",
+    "description": "The label for category Unity SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Unreal SDK": {
+    "message": "Unreal SDK",
+    "description": "The label for category Unreal SDK in sidebar sdk"
+  },
+  "sidebar.sdk.category.Wallet Connectors": {
+    "message": "Wallet Connectors",
+    "description": "The label for category Wallet Connectors in sidebar sdk"
+  },
+  "sidebar.sdk.category.Verify Message": {
+    "message": "Verify Message",
+    "description": "The label for category Verify Message in sidebar sdk"
   }
 }

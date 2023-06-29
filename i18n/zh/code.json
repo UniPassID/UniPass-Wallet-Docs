@@ -296,7 +296,7 @@
     "message": "出现错误，点击重试",
     "description": "When the image fails to load for unknown error"
   },
-  "sdksSection.support":{
+  "sdksSection.support": {
     "message": "放心交给我们"
   }
 }
