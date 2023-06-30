@@ -30,26 +30,8 @@ items={[
     url: `./ios-sdk/quick-start`
     },
     {
-    name: "Flutter SDK",
-    url: `./flutter-sdk/quick-start`
-    },
-    {
     name: "React Native SDK",
     url: `./rn-sdk/quick-start`
-    },
-    ]}
-/>
-
-### Game SDKs
-<Container
-items={[
-    {
-    name: "Unity SDK",
-    url: `./unity-sdk/quick-start`
-    },
-    {
-    name: "Unreal SDK",
-    url: `./unreal-sdk/quick-start`
     },
     ]}
 />

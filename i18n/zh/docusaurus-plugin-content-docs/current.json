@@ -19,18 +19,6 @@
     "message": "Popup SDK",
     "description": "The label for category Popup SDK in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Flutter": {
-    "message": "Flutter SDK",
-    "description": "The label for category Flutter SDK in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Unity": {
-    "message": "Unity SDK",
-    "description": "The label for category Unity SDK in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Unreal": {
-    "message": "Unreal SDK",
-    "description": "The label for category Unreal SDK in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Android": {
     "message": "Android SDK",
     "description": "The label for category Android SDK in sidebar tutorialSidebar"
@@ -42,6 +30,22 @@
   "sidebar.tutorialSidebar.category.RN": {
     "message": "ReactNative SDK",
     "description": "The label for category ReactNative SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Flutter": {
+    "message": "Flutter SDK (遗留版本)",
+    "description": "The label for category Flutter SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Unity": {
+    "message": "Unity SDK (遗留版本)",
+    "description": "The label for category Unity SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Unreal": {
+    "message": "Unreal SDK (遗留版本)",
+    "description": "The label for category Unreal SDK in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Experimental": {
+    "message": "试验性功能 (遗留版本)",
+    "description": "The label for category Unreal SDK in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Architecture": {
     "message": "核心架构",

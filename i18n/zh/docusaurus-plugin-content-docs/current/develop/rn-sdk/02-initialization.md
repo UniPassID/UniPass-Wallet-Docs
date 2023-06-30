@@ -2,9 +2,9 @@
 sidebar_position: 2
 ---
 
-# Initialization
+# 初始化
 
-## Creating a UniPassSDK instance
+## 创建 UniPassSDK 实例
 
 UniPassSDK 是一个单例模式，请使用 `getInstance` 初始化类或获取 uniPassWallet 实例
 
