@@ -49,45 +49,48 @@ yarn add @unipasswallet/wagmi-connector wagmi
 ```ts
   import { UniPassConnector } from "@unipasswallet/wagmi-connector'
 
+  const { chains, publicClient } = configureChains(
+    [goerli, polygonMumbai],
+    [publicProvider()]
+  );
+
   const unipass = new UniPassConnector({
     options: {
-      connect: {
-        chainId: 80001,
-        returnEmail: false,
-        appSettings: {
-          appName: "wagmi demo",
-          appIcon: "your icon url",
-          theme: UniPassTheme.dark,
-        },
-        rpcUrls: {
-          mainnet: "your eth mainnet rpc url",
-          polygon: "your polygon mainnet rpc url",
-          bscMainnet: "your bsc mainnet rpc url",
-          rangersMainnet: "your rangers mainnet rpc url",
-          arbitrumMainnet: "your arbitrum mainnet rpc url",
+      chainId: 80001,
+      returnEmail: false,
+      appSettings: {
+        appName: "wagmi demo",
+        appIcon: "your icon url",
+        theme: UniPassTheme.dark,
+      },
+      rpcUrls: {
+        mainnet: "your eth mainnet rpc url",
+        polygon: "your polygon mainnet rpc url",
+        bscMainnet: "your bsc mainnet rpc url",
+        rangersMainnet: "your rangers mainnet rpc url",
+        arbitrumMainnet: "your arbitrum mainnet rpc url",
 
-          polygonMumbai: "your polygon testnet rpc url",
-          goerli: "your goerli testnet rpc url",
-          bscTestnet: "your bsc testnet rpc url",
-          rangersRobin: "your rangers testnet rpc url",
-          arbitrumTestnet: "your arbitrum testnet rpc url",
-        },
+        polygonMumbai: "your polygon testnet rpc url",
+        goerli: "your goerli testnet rpc url",
+        bscTestnet: "your bsc testnet rpc url",
+        rangersRobin: "your rangers testnet rpc url",
+        arbitrumTestnet: "your arbitrum testnet rpc url",
       },
     },
   });
 
-  const connectors = [
-    unipass,
-    new MetaMaskConnector({
-      chains,
-    }),
-  ];
-  
-  const wagmiClient = createClient({
-    autoConnect: false,
-    connectors,
-    provider,
+  // Set up wagmi config
+  const config = createConfig({
+    autoConnect: true,
+    connectors: [
+      unipass,
+      new MetaMaskConnector({
+        chains,
+      }),
+    ],
+    publicClient,
   });
+  
 ```
 
 ## 验签
