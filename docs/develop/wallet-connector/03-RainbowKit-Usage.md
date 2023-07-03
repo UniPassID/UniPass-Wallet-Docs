@@ -47,7 +47,7 @@ yarn add @unipasswallet/rainbowkit-plugin wagmi
 ## Usage
 
 ```ts
-    import { configureChains, createClient, WagmiConfig } from "wagmi";
+    import { configureChains, createConfig, WagmiConfig } from "wagmi";
     import {
     optimismGoerli,
     arbitrumGoerli,
@@ -57,16 +57,19 @@ yarn add @unipasswallet/rainbowkit-plugin wagmi
     import { publicProvider } from "wagmi/providers/public";
     import { unipassWallet } from "@unipasswallet/rainbowkit-plugin";
 
+    const { chains, publicClient } = configureChains(
+        [goerli, polygonMumbai],
+        [publicProvider()]
+    );
+
     const connectors = connectorsForWallets([
         {
         groupName: "Recommended",
         wallets: [
             injectedWallet({ chains, shimDisconnect: true }),
-            metaMaskWallet({ chains, shimDisconnect: true }),
-            rainbowWallet({ chains }),
             unipassWallet({
             chains,
-            connect: {
+            options: {
                 chainId: polygonMumbai.id,
                 returnEmail: false,
                 appSettings: {
@@ -92,11 +95,17 @@ yarn add @unipasswallet/rainbowkit-plugin wagmi
         },
     ]);
 
-    const wagmiClient = createClient({
-        autoConnect: true,
-        connectors,
-        provider,
-    });
+  // Set up wagmi config
+  const config = createConfig({
+    autoConnect: true,
+    connectors: [
+      unipass,
+      new MetaMaskConnector({
+        chains,
+      }),
+    ],
+    publicClient,
+  });
 ```
 
 ## Verify signature
