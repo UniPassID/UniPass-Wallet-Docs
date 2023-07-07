@@ -10,7 +10,11 @@ import {
   FlutterIcon,
   UnityIcon,
   UnrealIcon,
-  RNIcon,
+  RainbowkitIcon,
+  ModalIcon,
+  WagmiIcon,
+  OnboardIcon,
+  ReactIcon,
 } from "../../icons";
 import Head from "@docusaurus/Head";
 import { useState } from "react";
@@ -87,8 +91,8 @@ export default function SDKsSection() {
       <div className="mx-auto max-w-7xl">
         <div className="unipass-badge">SDKs</div>
 
-        <div className="sticky top-14 z-20 -mt-4 flex flex-col items-center gap-6 bg-secondary-1000 py-6 lg:flex-row lg:justify-between lg:py-0">
-          {/* <h2 className="my-0 text-center font-jakarta lg:text-3xl">
+        {/* <div className="sticky top-14 z-20 -mt-4 flex flex-col items-center gap-6 bg-secondary-1000 py-6 lg:flex-row lg:justify-between lg:py-0">
+          <h2 className="my-0 text-center font-jakarta lg:text-3xl">
           <Translate id="sdksSection.support">We support your tech stack!</Translate>
           </h2>
 
@@ -98,34 +102,55 @@ export default function SDKsSection() {
               <Pill section="Plug & Play" />
               <Pill section="plugin" />
             </div>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
 
         <div
           className="sdk-section my-16 flex flex-col rounded-3xl bg-secondary-900 lg:flex-row"
           data-section="Custom Auth"
           id="Custom Auth"
         >
-          <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Custom Auth SDK</h3>
-            <p className="text-md leading-relaxed text-text-400 lg:max-w-md leading-7 pt-2">
-              A non-UI SDK which allows complete customization of login and
-              signature.
+          <div className="flex flex-[2] flex-col justify-center p-6 lg:pl-16 lg:text-left">
+            <h3 className="text-center text-4xl font-semibold">
+              Custom Auth SDK
+            </h3>
+            <p className="text-md pt-2 leading-7 text-text-400 lg:max-w-lg">
+              <Translate id="sdksSection.customIntro">
+                A non-UI SDK which supports customizable account management and
+                user interfaces.
+              </Translate>
               <ul>
-                <li>White-label & customizable UI</li>
-                <li>Customizable login methods</li>
-                <li>Silent signing</li>
-                <li>Gasless service</li>
+                <li>
+                  <Translate id="sdksSection.customFeature1">
+                    White-label & customizable UI
+                  </Translate>
+                </li>
+                <li>
+                  <Translate id="sdksSection.customFeature2">
+                    Customizable login methods
+                  </Translate>
+                </li>
+                <li>
+                  <Translate id="sdksSection.customFeature3">
+                    Silent signing
+                  </Translate>
+                </li>
+                <li>
+                  <Translate id="sdksSection.customFeature4">
+                    Gasless service
+                  </Translate>
+                </li>
               </ul>
             </p>
             <Link className="text-sm" href="custom-auth/introduction">
-              Know More &rarr;
+              <Translate id="sdksSection.knowMore">Know More</Translate> &rarr;
             </Link>
           </div>
           <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>SDKs</h4>
+            <h4>SDK</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Integrate with Custom Auth SDKs
+              <Translate id="sdksSection.integrate">Integrate with</Translate>{" "}
+              Custom Auth SDK
             </p>
             <div>
               <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
@@ -141,7 +166,7 @@ export default function SDKsSection() {
             <div className="mt-6 flex flex-1 flex-col justify-end">
               <div className="rounded-2xl bg-secondary-700 p-4 dark:bg-secondary-900">
                 <h5 className="text-center text-xs text-text-400">
-                  COMING SOON
+                  <Translate id="sdksSection.comingSoon">COMING SOON</Translate>
                 </h5>
                 <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
                   <li>
@@ -156,7 +181,9 @@ export default function SDKsSection() {
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
             <h4>Wallet Connectors</h4>
-            <p className="text-sm leading-relaxed text-text-400">Coming soon</p>
+            <p className="text-sm leading-relaxed text-text-400">
+              <Translate id="sdksSection.comingSoon">Coming soon</Translate>
+            </p>
             {/* <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
               <li>
                 <SDKLink
@@ -174,27 +201,48 @@ export default function SDKsSection() {
           data-section="Plug & Play"
           id="Plug & Play"
         >
-          <div className="flex flex-[2] flex-col justify-center p-6 text-center lg:pl-16 lg:text-left">
-            <h3 className="text-4xl font-semibold">Plug & Play SDK</h3>
-            <p className="text-md leading-relaxed text-text-400 lg:max-w-md leading-7 pt-2">
-              A decentralized SDK which provides Wallet UI and unified
-              non-custodial account management.
+          <div className="flex flex-[2] flex-col justify-center p-6 lg:pl-16 lg:text-left">
+            <h3 className="text-center text-4xl font-semibold">
+              Plug & Play SDK
+            </h3>
+            <p className="text-md pt-2 leading-7 text-text-400 lg:max-w-lg">
+              <Translate id="sdksSection.plugIntro">
+                A decentralized wallet SDK which provides wallet UI and unified
+                non-custodial account management.
+              </Translate>
               <ul>
-                <li>User-friendly & non-custodial accounts</li>
-                <li>Wallet UI included</li>
-                <li>Secure signing interface</li>
-                <li>Gasless service</li>
+                <li>
+                  <Translate id="sdksSection.plugFeature1">
+                    User-friendly & non-custodial accounts
+                  </Translate>
+                </li>
+                <li>
+                  <Translate id="sdksSection.plugFeature2">
+                    Wallet UI included
+                  </Translate>
+                </li>
+                <li>
+                  <Translate id="sdksSection.plugFeature3">
+                    Secure signing interface
+                  </Translate>
+                </li>
+                <li>
+                  <Translate id="sdksSection.plugFeature4">
+                    Gasless service
+                  </Translate>
+                </li>
               </ul>
             </p>
 
             <Link className="text-sm" href="develop/introduction">
-              Know More &rarr;
+              <Translate id="sdksSection.knowMore">Know More</Translate> &rarr;
             </Link>
           </div>
           <div className="flex flex-1 flex-col bg-secondary-800 p-6 px-8 lg:rounded-l-3xl">
-            <h4>SDKs</h4>
+            <h4>SDK</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Integrate with Plug & Play SDKs
+              <Translate id="sdksSection.integrate">Integrate with</Translate>{" "}
+              Plug & Play SDK
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
               <li>
@@ -220,16 +268,16 @@ export default function SDKsSection() {
               </li>
               <li>
                 <SDKLink
+                  href="develop/rn-sdk/quick-start"
+                  Icon={ReactIcon}
+                  label="React Native"
+                />
+              </li>
+              {/* <li>
+                <SDKLink
                   href="develop/flutter-sdk/quick-start"
                   Icon={FlutterIcon}
                   label="Flutter"
-                />
-              </li>
-              <li>
-                <SDKLink
-                  href="develop/rn-sdk/quick-start"
-                  Icon={RNIcon}
-                  label="React Native"
                 />
               </li>
               <li>
@@ -245,20 +293,57 @@ export default function SDKsSection() {
                   Icon={UnrealIcon}
                   label="Unreal"
                 />
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
             <h4>Wallet Connectors</h4>
             <p className="text-sm leading-relaxed text-text-400">
-              Build with wallet connectors
+              <Translate id="sdksSection.buildWithWC">
+                Build with wallet connectors
+              </Translate>
             </p>
             <ul className="flex list-none flex-col gap-2 pl-0">
               <li>
                 <SDKLink
+                  href="develop/wallet-connector/wagmi"
+                  Icon={WagmiIcon}
+                  label="Wagmi"
+                />
+              </li>
+              <li>
+                <SDKLink
                   href="develop/wallet-connector/rainbowkit"
-                  Icon={AndroidIcon}
+                  Icon={RainbowkitIcon}
                   label="Rainbow Kit"
+                />
+              </li>
+              <li>
+                <SDKLink
+                  href="develop/wallet-connector/web3-onboard"
+                  Icon={OnboardIcon}
+                  label="Web3 Onboard"
+                />
+              </li>
+              <li>
+                <SDKLink
+                  href="develop/wallet-connector/web3-react-v8"
+                  Icon={ReactIcon}
+                  label="Web3 React V8"
+                />
+              </li>
+              <li>
+                <SDKLink
+                  href="develop/wallet-connector/web3-react-v6"
+                  Icon={ReactIcon}
+                  label="Web3 React V6"
+                />
+              </li>
+              <li>
+                <SDKLink
+                  href="develop/wallet-connector/web3-modal-v1"
+                  Icon={ModalIcon}
+                  label="Web3 Modal V1"
                 />
               </li>
             </ul>

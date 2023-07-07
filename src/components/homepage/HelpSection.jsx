@@ -1,13 +1,13 @@
-import React from 'react';
-import Link from '@docusaurus/Link';
-import clsx from 'clsx';
+import React from "react";
+import Link from "@docusaurus/Link";
+import clsx from "clsx";
 
-export default function HelpSection({ className = '' }) {
+export default function HelpSection({ className = "" }) {
   return (
     <section className="px-4 pt-16">
       <div
         className={clsx(
-          'mx-auto max-w-7xl rounded-3xl bg-white p-4 py-10 text-black dark:bg-black dark:text-white lg:p-24 lg:py-20',
+          "mx-auto max-w-7xl rounded-3xl bg-white p-4 py-10 text-black dark:bg-black dark:text-white lg:p-24 lg:py-20",
           className
         )}
       >
@@ -16,7 +16,12 @@ export default function HelpSection({ className = '' }) {
         </h2>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <img src="/static/landing-page/calendar.svg" alt="Book a demo" width="48" height="48" />
+            <img
+              src="/static/landing-page/calendar.svg"
+              alt="Book a demo"
+              width="48"
+              height="48"
+            />
             <h3 className="my-3">Book a Demo</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
               Contact us for a demo. We are looking forward to connecting with
@@ -31,11 +36,16 @@ export default function HelpSection({ className = '' }) {
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <img src="/static/landing-page/customer.svg" alt="Support" width="48" height="48" />
+            <img
+              src="/static/landing-page/customer.svg"
+              alt="Support"
+              width="48"
+              height="48"
+            />
             <h3 className="my-3">Support</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
-              Expert support team is excited to help. Connect for
-              dedicated 1:1 support!
+              Expert support team is excited to help. Connect for dedicated 1:1
+              support!
             </p>
             <Link
               href="https://dyte.io/contact"
@@ -46,7 +56,12 @@ export default function HelpSection({ className = '' }) {
           </div>
 
           <div className="rounded-lg bg-zinc-100 p-6 dark:bg-zinc-900">
-            <img src="/static/landing-page/chat.svg" alt="FAQs" width="48" height="48" />
+            <img
+              src="/static/landing-page/chat.svg"
+              alt="FAQs"
+              width="48"
+              height="48"
+            />
             <h3 className="my-3">FAQs</h3>
             <p className="text-zinc-600 dark:text-zinc-400">
               Browse through our FAQs to find answers to commonly asked

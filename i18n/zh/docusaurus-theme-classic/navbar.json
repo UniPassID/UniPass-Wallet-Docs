@@ -1,6 +1,6 @@
 {
   "title": {
-    "message": "UniPass Wallet",
+    "message": "UniPass SDK",
     "description": "The title in the navbar"
   },
   "item.label.Tutorial": {
@@ -16,7 +16,7 @@
     "description": "Navbar item with label GitHub"
   },
   "item.label.Document": {
-    "message": "Document",
+    "message": "文档",
     "description": "Navbar item with label Document"
   },
   "item.label.SDK": {
@@ -26,5 +26,9 @@
   "item.label.SDKs": {
     "message": "SDKs",
     "description": "Navbar item with label SDKs"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
   }
 }

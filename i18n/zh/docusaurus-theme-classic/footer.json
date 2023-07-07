@@ -13,7 +13,7 @@
   },
   "link.item.label.Tutorial": {
     "message": "Tutorial",
-    "description": "The label of footer link with label=Tutorial linking to /develop/introduction"
+    "description": "The label of footer link with label=Tutorial linking to /custom-auth/introduction"
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
@@ -21,7 +21,7 @@
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/UniPassID"
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/UniPassWallet"
   },
   "link.item.label.Blog": {
     "message": "Blog",
@@ -32,7 +32,7 @@
     "description": "The label of footer link with label=GitHub linking to https://github.com/UniPassID/UniPass-Wallet-Docs"
   },
   "copyright": {
-    "message": "Copyright © 2023 UniPass Wallet Document, Built with ❤️",
+    "message": "Copyright © 2023 UniPass SDK Document, Built with ❤️",
     "description": "The footer copyright"
   },
   "link.item.label.YouTube": {

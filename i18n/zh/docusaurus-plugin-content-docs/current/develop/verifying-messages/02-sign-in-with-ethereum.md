@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Sign-in With Ethereum
+# Sign-in With Ethereum 验签
 
 如果在连接 UniPass Wallet 时，设置 `authorize` = `true`，将会获得自动生成的 `Sign-in With Ethereum` 消息和对应的签名，该消息和签名可以通过 [siwe](https://github.com/spruceid/siwe) 包来完成验证。
 

@@ -201,7 +201,7 @@ export function FlutterIcon(props: ComponentProps<"svg">) {
   );
 }
 
-export function RNIcon(props: ComponentProps<"svg">) {
+export function ReactIcon(props: ComponentProps<"svg">) {
   return (
     <svg
       width="32"
@@ -277,6 +277,297 @@ export function UnrealIcon(props: ComponentProps<"svg">) {
       </g>
       <defs>
         <clipPath id="clip0_3_44">
+          <rect width="32" height="32" rx="4" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function WagmiIcon(props: ComponentProps<"svg">) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_27_41)">
+        <rect width="32" height="32" fill="black" />
+        <g clip-path="url(#clip1_27_41)">
+          <path
+            d="M30 13.5989C30 13.9297 29.7318 14.1979 29.4011 14.1979C29.0703 14.1979 28.8021 13.9297 28.8021 13.5989C28.8021 13.2682 29.0703 13 29.4011 13C29.7318 13 30 13.2682 30 13.5989Z"
+            fill="white"
+          />
+          <path
+            d="M22.6631 18.2406C22.9112 18.2406 23.1123 18.0396 23.1123 17.7914V15.9947C23.1123 15.7466 23.3134 15.5455 23.5615 15.5455H24.4599C24.708 15.5455 24.9091 15.7466 24.9091 15.9947V17.7914C24.9091 18.0396 25.1102 18.2406 25.3583 18.2406C25.6064 18.2406 25.8075 18.0396 25.8075 17.7914V15.9947C25.8075 15.7466 26.0086 15.5455 26.2567 15.5455H27.1551C27.4032 15.5455 27.6043 15.7466 27.6043 15.9947V17.7914C27.6043 18.0396 27.8054 18.2406 28.0535 18.2406H29.4011C29.6492 18.2406 29.8503 18.0396 29.8503 17.7914V15.0963C29.8503 14.8482 29.6492 14.6471 29.4011 14.6471C29.153 14.6471 28.9519 14.8482 28.9519 15.0963V17.1177C28.9519 17.2417 28.8513 17.3423 28.7273 17.3423C28.6032 17.3423 28.5027 17.2417 28.5027 17.1177V15.0963C28.5027 14.8482 28.3016 14.6471 28.0535 14.6471H22.6631C22.415 14.6471 22.2139 14.8482 22.2139 15.0963V17.7914C22.2139 18.0396 22.415 18.2406 22.6631 18.2406Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3.34759 17.3423C3.09951 17.3423 2.8984 17.1411 2.8984 16.8931V15.0963C2.8984 14.8482 2.69728 14.6471 2.4492 14.6471C2.20111 14.6471 2 14.8482 2 15.0963V17.7914C2 18.0396 2.20111 18.2406 2.4492 18.2406H7.83957C8.08768 18.2406 8.28877 18.0396 8.28877 17.7914V15.9947C8.28877 15.7466 8.48986 15.5455 8.73797 15.5455H13.9037C14.0278 15.5455 14.1283 15.646 14.1283 15.7701C14.1283 15.8941 14.0278 15.9947 13.9037 15.9947H9.18717C8.93906 15.9947 8.73797 16.1958 8.73797 16.4439V17.7914C8.73797 18.0396 8.93906 18.2406 9.18717 18.2406H14.5775C14.8256 18.2406 15.0267 18.0396 15.0267 17.7914V15.0963C15.0267 14.8482 14.8256 14.6471 14.5775 14.6471H7.83957C7.59147 14.6471 7.39037 14.8482 7.39037 15.0963V16.8931C7.39037 17.1411 7.18928 17.3423 6.94118 17.3423H6.04278C5.79469 17.3423 5.59358 17.1411 5.59358 16.8931V15.0963C5.59358 14.8482 5.39247 14.6471 5.14439 14.6471C4.8963 14.6471 4.69519 14.8482 4.69519 15.0963V16.8931C4.69519 17.1411 4.49408 17.3423 4.24599 17.3423H3.34759ZM14.1283 17.1177C14.1283 17.2417 14.0278 17.3423 13.9037 17.3423H9.86096C9.73693 17.3423 9.63636 17.2417 9.63636 17.1177C9.63636 16.9936 9.73693 16.8931 9.86096 16.8931H13.9037C14.0278 16.8931 14.1283 16.9936 14.1283 17.1177Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.4759 17.7914C15.4759 18.0396 15.677 18.2406 15.9251 18.2406H20.6417C20.7657 18.2406 20.8663 18.3412 20.8663 18.4652C20.8663 18.5893 20.7657 18.6898 20.6417 18.6898H15.9251C15.677 18.6898 15.4759 18.8909 15.4759 19.139C15.4759 19.3871 15.677 19.5882 15.9251 19.5882H21.3155C21.5636 19.5882 21.7647 19.3871 21.7647 19.139V15.0963C21.7647 14.8482 21.5636 14.6471 21.3155 14.6471H15.9251C15.677 14.6471 15.4759 14.8482 15.4759 15.0963V17.7914ZM16.8235 15.5455C16.5754 15.5455 16.3743 15.7466 16.3743 15.9947V16.8931C16.3743 17.1411 16.5754 17.3423 16.8235 17.3423H20.4171C20.6652 17.3423 20.8663 17.1411 20.8663 16.8931V15.9947C20.8663 15.7466 20.6652 15.5455 20.4171 15.5455H16.8235Z"
+            fill="white"
+          />
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_27_41">
+          <rect width="32" height="32" rx="4" fill="white" />
+        </clipPath>
+        <clipPath id="clip1_27_41">
+          <rect
+            width="28"
+            height="6.58824"
+            fill="white"
+            transform="translate(2 13)"
+          />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function RainbowkitIcon(props: ComponentProps<"svg">) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_27_2)">
+        <rect width="32" height="32" fill="black" />
+        <path
+          d="M5 9.95H6.65C15.1552 9.95 22.05 16.8448 22.05 25.35V27H25.35C26.2613 27 27 26.2613 27 25.35C27 14.111 17.889 5 6.65 5C5.73873 5 5 5.73873 5 6.65V9.95Z"
+          fill="url(#paint0_radial_27_2)"
+        />
+        <path
+          d="M22.6 25.35H27C27 26.2613 26.2612 27 25.35 27H22.6V25.35Z"
+          fill="url(#paint1_linear_27_2)"
+        />
+        <path
+          d="M6.65 5L6.65 9.4H5L5 6.65C5 5.73873 5.73873 5 6.65 5Z"
+          fill="url(#paint2_linear_27_2)"
+        />
+        <path
+          d="M5 9.40002H6.65C15.4589 9.40002 22.6 16.5411 22.6 25.35V27H17.65V25.35C17.65 19.2749 12.7251 14.35 6.65 14.35H5V9.40002Z"
+          fill="url(#paint3_radial_27_2)"
+        />
+        <path
+          d="M18.2 25.35H22.6V27H18.2V25.35Z"
+          fill="url(#paint4_linear_27_2)"
+        />
+        <path
+          d="M5 13.8L5 9.40002L6.65 9.40002L6.65 13.8H5Z"
+          fill="url(#paint5_linear_27_2)"
+        />
+        <path
+          d="M5 16.55C5 17.4613 5.73873 18.2 6.65 18.2C10.5988 18.2 13.8 21.4012 13.8 25.35C13.8 26.2613 14.5387 27 15.45 27H18.2V25.35C18.2 18.9711 13.0289 13.8 6.65 13.8H5V16.55Z"
+          fill="url(#paint6_radial_27_2)"
+        />
+        <path
+          d="M13.8 25.35H18.2V27H15.45C14.5387 27 13.8 26.2613 13.8 25.35Z"
+          fill="url(#paint7_radial_27_2)"
+        />
+        <path
+          d="M6.65 18.2C5.73873 18.2 5 17.4613 5 16.55L5 13.8L6.65 13.8L6.65 18.2Z"
+          fill="url(#paint8_radial_27_2)"
+        />
+      </g>
+      <defs>
+        <radialGradient
+          id="paint0_radial_27_2"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(6.65 25.35) rotate(-90) scale(20.35)"
+        >
+          <stop offset="0.770277" stop-color="#FF4000" />
+          <stop offset="1" stop-color="#8754C9" />
+        </radialGradient>
+        <linearGradient
+          id="paint1_linear_27_2"
+          x1="22.325"
+          y1="26.175"
+          x2="27"
+          y2="26.175"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FF4000" />
+          <stop offset="1" stop-color="#8754C9" />
+        </linearGradient>
+        <linearGradient
+          id="paint2_linear_27_2"
+          x1="5.825"
+          y1="5"
+          x2="5.825"
+          y2="9.675"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#8754C9" />
+          <stop offset="1" stop-color="#FF4000" />
+        </linearGradient>
+        <radialGradient
+          id="paint3_radial_27_2"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(6.65 25.35) rotate(-90) scale(15.95)"
+        >
+          <stop offset="0.723929" stop-color="#FFF700" />
+          <stop offset="1" stop-color="#FF9901" />
+        </radialGradient>
+        <linearGradient
+          id="paint4_linear_27_2"
+          x1="18.2"
+          y1="26.175"
+          x2="22.6"
+          y2="26.175"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FFF700" />
+          <stop offset="1" stop-color="#FF9901" />
+        </linearGradient>
+        <linearGradient
+          id="paint5_linear_27_2"
+          x1="5.825"
+          y1="13.8"
+          x2="5.825"
+          y2="9.40002"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FFF700" />
+          <stop offset="1" stop-color="#FF9901" />
+        </linearGradient>
+        <radialGradient
+          id="paint6_radial_27_2"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(6.65 25.35) rotate(-90) scale(11.55)"
+        >
+          <stop offset="0.59513" stop-color="#00AAFF" />
+          <stop offset="1" stop-color="#01DA40" />
+        </radialGradient>
+        <radialGradient
+          id="paint7_radial_27_2"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(13.525 26.175) scale(4.675 12.4667)"
+        >
+          <stop stop-color="#00AAFF" />
+          <stop offset="1" stop-color="#01DA40" />
+        </radialGradient>
+        <radialGradient
+          id="paint8_radial_27_2"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(5.825 18.475) rotate(-90) scale(4.675 88.6518)"
+        >
+          <stop stop-color="#00AAFF" />
+          <stop offset="1" stop-color="#01DA40" />
+        </radialGradient>
+        <clipPath id="clip0_27_2">
+          <rect width="32" height="32" rx="4" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function OnboardIcon(props: ComponentProps<"svg">) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_27_54)">
+        <rect width="32" height="32" fill="black" />
+        <path
+          d="M16.1851 21.4943L13 16.0114H19.3475L22.5326 21.4943H16.1851Z"
+          fill="white"
+        />
+        <path
+          d="M19.3475 16.0114H13L16.1851 10.5057H22.5326L19.3475 16.0114Z"
+          fill="url(#paint0_linear_27_54)"
+        />
+        <path
+          d="M20.6949 16.0114L17.5326 10.5057H11.1851L8 5H20.6949L27.0424 16.0114H20.6949Z"
+          fill="white"
+        />
+        <path
+          d="M20.6949 27H8L11.1851 21.4943H17.5326L20.6949 16.0114H27.0424L20.6949 27Z"
+          fill="url(#paint1_linear_27_54)"
+        />
+      </g>
+      <defs>
+        <linearGradient
+          id="paint0_linear_27_54"
+          x1="13.003"
+          y1="13.2531"
+          x2="22.5252"
+          y2="13.2531"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#55CCFE" />
+          <stop offset="1" stop-color="#5E93EF" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_27_54"
+          x1="8.00298"
+          y1="21.4994"
+          x2="27.0475"
+          y2="21.4994"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#55CCFE" />
+          <stop offset="1" stop-color="#5E93EF" />
+        </linearGradient>
+        <clipPath id="clip0_27_54">
+          <rect width="32" height="32" rx="4" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+export function ModalIcon(props: ComponentProps<"svg">) {
+  return (
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g clip-path="url(#clip0_27_15)">
+        <rect width="32" height="32" fill="black" />
+        <path
+          d="M8.91617 11.8738C12.8289 8.04208 19.1711 8.04208 23.0889 11.8738L23.5596 12.3344C23.757 12.5267 23.757 12.8355 23.5596 13.0278L21.95 14.6071C21.8538 14.7033 21.6919 14.7033 21.5957 14.6071L20.9478 13.9744C18.2195 11.3018 13.7906 11.3018 11.0623 13.9744L10.3689 14.6526C10.2727 14.7488 10.1107 14.7488 10.0146 14.6526L8.39987 13.0734C8.20247 12.881 8.20247 12.5723 8.39987 12.3799L8.91617 11.8738ZM26.4195 15.1335L27.8519 16.5356C28.0494 16.7279 28.0494 17.0367 27.8519 17.229L21.3882 23.5612C21.1908 23.7536 20.8769 23.7536 20.6795 23.5612L16.0886 19.0664C16.038 19.0209 15.962 19.0209 15.9114 19.0664L11.3255 23.5612C11.1281 23.7536 10.8143 23.7536 10.6169 23.5612L4.14805 17.2341C3.95065 17.0418 3.95065 16.733 4.14805 16.5407L5.58051 15.1386C5.77792 14.9462 6.09174 14.9462 6.28915 15.1386L10.8801 19.6333C10.9307 19.6789 11.0066 19.6789 11.0573 19.6333L15.6431 15.1386C15.8406 14.9462 16.1544 14.9462 16.3518 15.1386L20.9427 19.6333C20.9934 19.6789 21.0693 19.6789 21.1199 19.6333L25.7108 15.1386C25.9032 14.9412 26.2221 14.9412 26.4195 15.1335Z"
+          fill="white"
+        />
+      </g>
+      <defs>
+        <clipPath id="clip0_27_15">
           <rect width="32" height="32" rx="4" fill="white" />
         </clipPath>
       </defs>

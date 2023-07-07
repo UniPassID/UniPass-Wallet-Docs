@@ -15,6 +15,7 @@ import HomeFooter from '../components/homepage/HomeFooter';
 import ResourcesSection from '../components/homepage/ResourcesSection';
 import HelpSection from '../components/homepage/HelpSection';
 import Head from '@docusaurus/Head';
+import '../css/custom.css'
 
 
 // function HomepageHeader() {

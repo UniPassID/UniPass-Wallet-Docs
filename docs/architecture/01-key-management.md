@@ -64,4 +64,4 @@ A key may be given to a single role or several roles. A key is given a commensur
 
 Of course, for users who do not have complicated customization needs. UniPass Wallet will naturally take into account the user's current account situation, including the total amount of assets on the account and the registration time, as well as the various types of keys the user currently has bound, and intelligently recommend roles and weight settings for the user to achieve a secure and practical key management experience.
 
-Developers can create intricate customizations based on UniPass Wallet's support for multiple key types and adaptable role weighting system to cater to the needs of various users and scenarios. Please feel free to get in touch with us through [Twitter](https://twitter.com/UniPassID), [Email](mailto:contact@unipass.id).
+Developers can create intricate customizations based on UniPass Wallet's support for multiple key types and adaptable role weighting system to cater to the needs of various users and scenarios. Please feel free to get in touch with us through [Twitter](https://twitter.com/UniPassWallet), [Email](mailto:contact@unipass.id).

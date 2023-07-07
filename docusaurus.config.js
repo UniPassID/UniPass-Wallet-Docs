@@ -10,7 +10,7 @@ const sdksHTML = fs.readFileSync('./src/snippets/sdks.html', 'utf-8');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "UniPass Docs",
-  tagline: "UniPass Wallet is cool",
+  tagline: "UniPass SDK is cool",
   url: "https://docs.wallet.unipass.id",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -92,10 +92,10 @@ const config = {
         }
       },
       navbar: {
-        title: "UniPass Wallet",
+        title: "UniPass SDK",
         hideOnScroll: true,
         logo: {
-          alt: "UniPass Wallet Logo",
+          alt: "UniPass Logo",
           src: "img/logo.svg",
           href: "/"
         },
@@ -131,14 +131,20 @@ const config = {
               },
             ],
           },
+          // {
+          //   type: 'custom-myAwesomeNavbarItem', 
+          //   position: "left",
+          //   itemProp: 44, 
+          //   anotherProp: "xyz"
+          // },
+          // {
+          //   label: 'FAQ',
+          //   to: 'faq',
+          //   position: 'left',
+          //   // className: 'new-badge',
+          // },
           {
-            label: 'FAQ',
-            to: 'faq',
-            position: 'left',
-            // className: 'new-badge',
-          },
-          {
-            href: 'https://twitter.com/UniPassID/',
+            href: 'https://twitter.com/UniPassWallet/',
             className: 'header-twitter-link',
             position: 'right',
           },
@@ -174,7 +180,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/develop/introduction",
+                to: "/custom-auth/introduction",
               },
             ],
           },
@@ -183,7 +189,7 @@ const config = {
             items: [
               {
                 label: "Twitter",
-                href: "https://twitter.com/UniPassID",
+                href: "https://twitter.com/UniPassWallet",
               },
               {
                 label: "YouTube",
@@ -205,7 +211,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} UniPass Wallet Document, Built with ❤️.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UniPass SDK Document, Built with ❤️.`,
       },
       prism: {
         theme: lightCodeTheme,

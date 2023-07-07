@@ -8,7 +8,9 @@ import Container from '../../src/components/Container';
 
 UniPass Wallet provides a variety of platform SDKs to make it simple for applications to access it across many platforms.
 
-### Web SDKs
+
+## Pulg & Play SDKs
+**Web SDKs**
 <Container
 items={[
     {
@@ -18,7 +20,7 @@ items={[
     ]}
 />
 
-### Mobile SDKs
+**Mobile SDKs**
 <Container
 items={[
     {
@@ -36,7 +38,7 @@ items={[
     ]}
 />
 
-### Wallet Connectors
+**Wallet Connectors**
 <Container
 items={[
     {
@@ -60,7 +62,7 @@ items={[
     url: `./wallet-connector/web3-react-v6`
     },
     {
-    name: "Web3 Modal",
+    name: "Web3 Modal V1",
     url: `./wallet-connector/web3-modal-v1`
     },
     ]}

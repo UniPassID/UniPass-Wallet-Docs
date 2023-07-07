@@ -128,7 +128,19 @@
     "description": "The label for category Wallet Connectors in sidebar sdk"
   },
   "sidebar.sdk.category.Verify Message": {
-    "message": "Verify Message",
+    "message": "验签",
     "description": "The label for category Verify Message in sidebar sdk"
+  },
+  "sidebar.sdk.category.Flutter SDK (Legacy)": {
+    "message": "Flutter SDK (暂停维护)",
+    "description": "The label for category Flutter SDK (Legacy) in sidebar sdk"
+  },
+  "sidebar.sdk.category.Unity SDK (Legacy)": {
+    "message": "Unity SDK (暂停维护)",
+    "description": "The label for category Unity SDK (Legacy) in sidebar sdk"
+  },
+  "sidebar.sdk.category.Unreal SDK (Legacy)": {
+    "message": "Unreal SDK (暂停维护)",
+    "description": "The label for category Unreal SDK (Legacy) in sidebar sdk"
   }
 }
