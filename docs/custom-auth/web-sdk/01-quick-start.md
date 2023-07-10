@@ -2,4 +2,42 @@
 sidebar_position: 1
 ---
 
-# Custom Auth Web SDK
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# Quick Start
+
+## Install SDK
+
+<Tabs>
+<TabItem value="npm">
+
+```bash
+npm install @unipasswallet/smart-account@0.1.0-alpha.15
+```
+</TabItem>
+
+<TabItem value="yarn">
+
+```bash
+yarn add @unipasswallet/smart-account@0.1.0-alpha.15
+```
+</TabItem>
+
+
+<TabItem value="pnpm">
+
+```bash
+pnpm add @unipasswallet/smart-account@0.1.0-alpha.15
+```
+</TabItem>
+</Tabs>
+
+### Local Testing Url
+
+Please use `localhost` as testing url, instead of `127.0.0.1`.
+
+## Source Code
+* [Online Demo](https://up-smart-account-demo.vercel.app/)
+* [Demo code](https://github.com/UniPassID/smart-account-sdk-demo)

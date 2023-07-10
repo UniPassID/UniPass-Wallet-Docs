@@ -299,64 +299,64 @@
   "sdksSection.support": {
     "message": "放心交给我们"
   },
-  "sdksSection.customIntro":{
+  "sdksSection.customIntro": {
     "message": "Non-UI SDK，支持自定义账户管理和用户界面。"
   },
-  "sdksSection.customFeature1":{
+  "sdksSection.customFeature1": {
     "message": "白标 & 可自定义 UI"
   },
-  "sdksSection.customFeature2":{
+  "sdksSection.customFeature2": {
     "message": "可自定义登录方式"
   },
-  "sdksSection.customFeature3":{
+  "sdksSection.customFeature3": {
     "message": "静默签名"
   },
-  "sdksSection.customFeature4":{
+  "sdksSection.customFeature4": {
     "message": "Gasless 服务"
   },
-  "sdksSection.knowMore":{
+  "sdksSection.knowMore": {
     "message": "了解更多"
   },
-  "sdksSection.plugIntro":{
+  "sdksSection.plugIntro": {
     "message": "去中心化钱包 SDK，提供钱包界面和统一的非托管账户管理。"
   },
-  "sdksSection.plugFeature1":{
+  "sdksSection.plugFeature1": {
     "message": "用户友好 & 非托管账户"
   },
-  "sdksSection.plugFeature2":{
+  "sdksSection.plugFeature2": {
     "message": "内含钱包 UI"
   },
-  "sdksSection.plugFeature3":{
+  "sdksSection.plugFeature3": {
     "message": "安全的签名界面"
   },
-  "sdksSection.plugFeature4":{
+  "sdksSection.plugFeature4": {
     "message": "Gasless 服务"
   },
-  "sdksSection.integrate":{
+  "sdksSection.integrate": {
     "message": "集成"
   },
-  "sdksSection.buildWithWC":{
+  "sdksSection.buildWithWC": {
     "message": "基于 wallet connectors 构建"
   },
-  "sdksSection.comingSoon":{
+  "sdksSection.comingSoon": {
     "message": "即将推出"
   },
-  "faqSection.faq":{
+  "faqSection.faq": {
     "message": "常见问题"
   },
-  "faqSection.faqIntro":{
+  "faqSection.faqIntro": {
     "message": "我们收集并整理了一些关于 UniPass SDK 的常见问题"
   },
-  "faqSection.faqLink":{
+  "faqSection.faqLink": {
     "message": "有问题？先来这里找找"
   },
-  "heroSection.title":{
+  "heroSection.title": {
     "message": "使用 UniPass SDK 构建"
   },
-  "heroSection.subTitle":{
+  "heroSection.subTitle": {
     "message": "UniPass SDK 基于智能合约钱包提供 seedless 和 gasless 的用户体验。"
   },
-  "heroSection.start":{
+  "heroSection.start": {
     "message": "开始构建"
   }
 }

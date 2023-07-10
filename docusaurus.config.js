@@ -112,12 +112,6 @@ const config = {
             label: 'Document',
             position: 'left',
           },
-          // { to: "/blog", label: "Blog", position: "left" },
-          // {
-          //   to: '/develop/introduction',
-          //   label: 'SDK',
-          //   position: 'left',
-          // },
           {
             label: 'SDKs',
             type: 'dropdown',
@@ -131,6 +125,12 @@ const config = {
               },
             ],
           },
+          // { to: "/blog", label: "Blog", position: "left" },
+          // {
+          //   to: '/develop/introduction',
+          //   label: 'SDK',
+          //   position: 'left',
+          // },
           // {
           //   type: 'custom-myAwesomeNavbarItem', 
           //   position: "left",

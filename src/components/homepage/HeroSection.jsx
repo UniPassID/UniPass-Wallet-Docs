@@ -22,7 +22,7 @@ export default function HeroSection() {
               on smart contract wallet.
             </Translate>
           </p>
-          <div className="mt-8 flex flex-col gap-4 lg:flex-row">
+          <div className="mt-8 mb-8 flex flex-col gap-4 lg:flex-row">
             <Link
               href="/custom-auth/introduction"
               className="rounded-sm bg-primary px-12 py-2.5 text-center font-semibold text-white hover:text-white"

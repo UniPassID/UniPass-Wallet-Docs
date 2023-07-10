@@ -23,7 +23,7 @@ Users can skip setting a guardian when creating an account for the first time. T
 - Master key, with the permissions `Owner: 60` and `Operator: 100`. Users utilize this key for daily asset transfers and contract calls.
 
 - Guardian email, with the permissions `Guardian: 50`. The guardian email enables users to send emails via Register and Guardian email to start social recovery when the master key is lost to update the keys in the account.
-  :::
+:::
 
 In this case:
 
