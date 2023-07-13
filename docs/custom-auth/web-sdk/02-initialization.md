@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Initialize Smart Account
 
+## Initialize `SmartAccount`
+
 ```tsx
 import { SmartAccount } from "@unipasswallet/smart-account";
 
@@ -30,7 +32,7 @@ const smartAccount = new SmartAccount({
 	}],
 });
 
-await smartAccount.init({ chainId }); // init with active chain id. Notice that the chainId must be included in the `rpcUrlList`.
+await smartAccount.init({ chainId }); // init with active chain id. Notice that the chainId must be included in the `chainOptions`.
 ```
 
 :::tip
@@ -52,9 +54,9 @@ The instance of `SmartAccount` returns the following functions:
 - `signMessage()`: returns the signature using personal sign
 - `signTypedData()`: returns the signature using sign typed data
 
-### Get Smart Account Info
+## Get Info of `SmartAccount`
 
-#### `getAddress()`
+### `getAddress()`
 
 This returns the address of your smart account.
 
@@ -62,7 +64,7 @@ This returns the address of your smart account.
 const address = await smartAccount.getAddress();
 ```
 
-#### `isDeployed()` 
+### `isDeployed()` 
 
 This returns the result whether your smart account is deployed in current chain.
 
@@ -70,7 +72,7 @@ This returns the result whether your smart account is deployed in current chain.
 const isDeployed = await smartAccount.isDeployed();
 ```
 
-#### `getProvider()`
+### `getProvider()`
 
 This returns current provider that your smart account is using.
 
@@ -78,7 +80,7 @@ This returns current provider that your smart account is using.
 const provider = smartAccount.getProvider();
 ```
 
-#### `getChainId()`
+### `getChainId()`
 
 This returns current chain of your smart account.
 
@@ -86,15 +88,15 @@ This returns current chain of your smart account.
 const chainId = smartAccount.getChainId();
 ```
 
-#### `switchChain()`
+### `switchChain()`
 
 Switch active chain and returns smart account with new chain.
 
 ```tsx
-smartAccount = await smartAccount.switchChain(chainId); // Notice that chainId must be included in the `rpcUrlList`
+smartAccount = await smartAccount.switchChain(chainId); // Notice that chainId must be included in the `chainOptions`
 ```
 
-#### `destroy()`
+### `destroy()`
 
 Clear current logged in account.
 

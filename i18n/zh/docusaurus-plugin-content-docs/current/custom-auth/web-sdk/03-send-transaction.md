@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-# 发交易
+# 发送交易
 
-### Step1: 生成交易
+## Step1: 生成交易
 
 ```jsx
 const tx = {
@@ -14,7 +14,7 @@ const tx = {
 };
 ```
 
-### Step2: 通过 `simulateTransaction()` 获取手续费选项
+## Step2: 通过 `simulateTransaction()` 获取手续费选项
 
 ```jsx
 const {
@@ -23,7 +23,7 @@ const {
 } = await smartAccount.simulateTransaction(tx);
 ```
 
-### Step3:  应用验证手续费代币是否足够
+## Step3: 应用侧验证手续费代币是否足够
 
 ```jsx
 import { constants } from "ethers";
@@ -60,7 +60,7 @@ if (isFeeRequired) {
 请注意，如果交易中涉及到手续费代币，验证结果可能不准确。
 :::
 
-### Step4: 指定手续费代币并发送交易
+## Step4: 指定手续费代币并发送交易
 
 ```jsx
 if (isFeeRequired) {

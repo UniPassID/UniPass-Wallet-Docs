@@ -142,5 +142,9 @@
   "sidebar.sdk.category.Unreal SDK (Legacy)": {
     "message": "Unreal SDK (暂停维护)",
     "description": "The label for category Unreal SDK (Legacy) in sidebar sdk"
+  },
+  "sidebar.sdk.category.Init Master Key": {
+    "message": "设置 Master Key",
+    "description": "The label for category Init Master Key in sidebar sdk"
   }
 }

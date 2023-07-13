@@ -4,7 +4,7 @@ sidebar_position: 1
 
 import Container from '../../../../../src/components/Container';
 
-# 介绍
+# Plug & Play SDK 介绍
 
 UniPass Wallet 将提供多平台的 SDK，方便应用方在各种平台上都可以便捷地接入 UniPass Wallet。
 

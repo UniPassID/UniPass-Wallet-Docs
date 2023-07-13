@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Send Transaction
 
-### Step1: Generate Transaction
+## Step1: Generate Transaction
 
 ```jsx
 const tx = {
@@ -14,7 +14,7 @@ const tx = {
 };
 ```
 
-### Step2: Get Fee Options and Consumption through `simulateTransaction()`
+## Step2: Get Fee Options and Consumption through `simulateTransaction()`
 
 ```jsx
 const {
@@ -23,7 +23,7 @@ const {
 } = await smartAccount.simulateTransaction(tx);
 ```
 
-### Step3: **Validate Whether Fee is Sufficient**
+## Step3: **Validate Whether Fee is Sufficient**
 
 ```jsx
 import { constants } from "ethers";
@@ -60,7 +60,7 @@ if (isFeeRequired) {
 Notice that if there is a transaction involving fee tokens, the validating result may not be accurate.
 :::
 
-### Step4: Select Fee Option and Send Transaction
+## Step4: Select Fee Option and Send Transaction
 
 ```jsx
 if (isFeeRequired) {
