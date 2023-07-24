@@ -6,16 +6,26 @@ sidebar_position: 1
 
 The Custom Auth SDK is a non-UI SDK based on the UniPass contract. By integrating the Custom Auth SDK, developers can easily assist users in creating and using smart contract wallet (which we prefer to call **Smart Wallet** or **Smart Account**). Additionally, developers have the flexibility to choose different key management solutions and customize registration/login and signature/send transaction pages based on their application's requirements.
 
-* **Creating Smart Wallet**: The Custom Auth SDK can integrate with popular identity authentication solutions and EOA wallets, allowing you to effortlessly create smart wallet for both Web2 and Web3 users.
+Custom Auth SDK can provide the following features:
 
-* **Using Smart Wallet**: In addition to providing basic signing and transaction functionality, the Custom Auth SDK offers special features based on smart wallet, such as batch transactions, Gasless services, wallet ownership transfer, social recovery, and more.
+* **Create and Manage Smart Wallets**:
+    - Easily create and manage smart wallets with support for various key management schemes.
+    - Integrate with EOA wallets or popular identity authentication solutions to support Web3 users.
+    - Support social logins through integration with wallet services like Web3Auth and Magic Link.
+    - Provide a customized integration solution based on JWT Token, making interactions with wallet services like Web3Auth more straightforward.
 
-* **Customizing UI**
-    * Customizing user registration/login flows
-        * Customizing user registration/login methods
-        * Generating smart wallet for existing Web2 users while maintaining the app's original user flow
-    * Customizing signature and send transaction pages
-        * Supporting silent signing
+* **Using Smart Wallets**:
+    - Provide basic signing and transaction verification functionality.
+    - Offer special features based on smart wallets, such as batch transactions, Gasless services, wallet ownership transfer, and social recovery.
+
+* **Customizable UI**:
+    - Customize user registration/login flows:
+        - Customize user registration/login methods.
+        - Integrate with the existing user flow for Web2 users to generate smart wallets.
+    - Customize signature/transaction pages, support silent signing.
+
+* **Multi-Platform Integration**:
+    - SDKs will be available for Web, Android, and iOS platforms, ensuring seamless integration into various applications.
 
 ## How to integrate the Custom Auth SDK
 

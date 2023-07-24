@@ -6,13 +6,23 @@ import Container from '../../../../../src/components/Container';
 
 # Plug & Play SDK 介绍
 
-Plug & Play SDK 是一套基于 UniPass 合约的 with-UI SDK。 
+Plug & Play SDK 是一套基于 UniPass 合约的 with-UI SDK, 这里的 with-UI 指的是 UniPass Wallet.
 
-我们基于 UniPass 合约实现了一个低门槛的支持邮件社交恢复的非托管智能合约钱包解决方案。
+UniPass Wallet 是我们基于 UniPass 合约实现的一个低门槛的，支持邮件社交恢复的，非托管的智能合约钱包。
 
+通过接入 Plug & Play SDK，开发者可以直接调用 UniPass Wallet 的界面，引导用户通过邮箱或者 Google 第三方登录来创建和使用智能合约钱包（此时你可以将 UniPass Wallet 视为一个网页版的智能合约钱包）。
 
+Plug & Play SDK 可以提供以下功能：
 
-UniPass Wallet 将提供多平台的 SDK，方便应用方在各种平台上都可以便捷地接入 UniPass Wallet。
+* **创建和使用智能钱包**：
+    - 低门槛的用户流程。直接唤起 UniPass Wallet 界面，用户可以通过邮箱或者 Google、Apple ID 创建智能钱包；
+    - 非托管的智能钱包。使用 MPC 作为智能钱包管理密钥，并支持通过 OpenID 和 DKIM 邮件进行社交恢复；
+    - 内含钱包 UI。提供 Wallet 资产展示和转账 UI，提供安全的签名和发交易界面；
+    - 基于智能钱包的特殊功能。提供批量交易，Gasless 服务，社交恢复等等。
+
+* **多平台接入**：
+    - 支持多平台，包括 Web、Android、iOS 和 React Native，适用于不同的应用环境；
+    - 适配 Rainbow Kit、Web3 Onboard、Web3 React、Web3 Modal 等主流 Wallet Connectors，可快速集成。
 
 ### Web SDKs
 <Container

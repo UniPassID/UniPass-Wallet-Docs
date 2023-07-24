@@ -6,8 +6,23 @@ import Container from '../../src/components/Container';
 
 # Introduction of Plug & Play SDK
 
-UniPass Wallet provides a variety of platform SDKs to make it simple for applications to access it across many platforms.
+The Plug & Play SDK is a with-UI SDK based on the UniPass contract, where the with-UI refers to the UniPass Wallet.
 
+UniPass Wallet is a user-friendly, non-custodial smart contract wallet with support for social recovery, built on top of the UniPass contract.
+
+By integrating the Plug & Play SDK, developers can directly access the UniPass Wallet interface, guiding users to create and use smart contract wallets through email or Google third-party login (at this point, you can consider UniPass Wallet as a web-based smart contract wallet).
+
+The Plug & Play SDK can provide the following features:
+
+* **Creating and Using Smart Wallets**:
+    - Low barrier for users. Users can directly invoke the UniPass Wallet interface and create smart contract wallets through email or Google, Apple ID login.
+    - Non-custodial smart wallets. Utilize MPC as the smart wallet management key and support social recovery through OpenID and DKIM emails.
+    - Built-in Wallet UI. Provide Wallet asset display and transfer UI, with secure signing and transaction interfaces.
+    - Special features based on smart wallets. Provide batch transactions, Gasless services, social recovery, and more.
+
+* **Multi-Platform Integration**:
+    - Support for multiple platforms, including Web, Android, iOS, and React Native, suitable for different application environments.
+    - Compatible with popular Wallet Connectors like Rainbow Kit, Web3 Onboard, Web3 React, and Web3 Modal, enabling rapid integration.
 
 ## Pulg & Play SDKs
 **Web SDKs**
