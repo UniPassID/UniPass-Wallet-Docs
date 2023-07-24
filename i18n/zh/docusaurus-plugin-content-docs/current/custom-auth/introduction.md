@@ -33,8 +33,10 @@ Custom Auth SDK 是一套基于 UniPass 合约的 non-UI SDK。通过接入 Cust
 
     你可以通过连接 MetaMask 或者 WalletConnect 获取到用户的 EOA 地址，然后通过 Custom Auth SDK 为其创建智能钱包。
 
-    * [**MetaMask**](./init-master-key/01-eoa.md/#从-metamask-初始化-singer)
-    * **WalletConnect** (即将推出)
+    |**EOA 钱包**|**平台**|
+    |--|--|
+    |**MetaMask**|[**Web**](./web-sdk/init-master-key/01-eoa.md/#init-master-key-from-metamask)|
+    |**WalletConnect** (即将推出)||
 
 * **钱包服务**
 
@@ -44,7 +46,9 @@ Custom Auth SDK 是一套基于 UniPass 合约的 non-UI SDK。通过接入 Cust
 
     将这些钱包解决方案与 Custom Auth SDK 结合，既可以实现低门槛的用户流程，又可以享受智能钱包提供的 gasless，批量交易等服务。
 
-    * [**Web3Auth**](./init-master-key/02-waas.md/#将钱包服务作为-master-key)
+    |**钱包服务**|**平台**|
+    |--|--|
+    |**Web3Auth**|[**Web**](./web-sdk/init-master-key/02-waas.md/#init-master-key-from-web3auth)|
 
 :::tip tip
 虽然钱包服务同 EOA 钱包一样，提供的也是一个 EOA 地址，但是因为接入方式略区别于 EOA 钱包，因此分开介绍。

@@ -33,8 +33,10 @@ You have the freedom to choose the master key solution based on your application
 
     You can obtain the user's EOA address by connecting MetaMask or WalletConnect, and then use the Custom Auth SDK to create a smart wallet.
 
-    * [**MetaMask**](./init-master-key/01-eoa.md/#init-master-key-from-metamask)
-    * **WalletConnect** (coming soon)
+    |**EOA Wallet**|**Platforms**|
+    |--|--|
+    |**MetaMask**|[**Web**](./web-sdk/init-master-key/01-eoa.md/#init-master-key-from-metamask)|
+    |**WalletConnect** (coming soon)||
 
 * **Wallet Services**
 
@@ -44,8 +46,10 @@ You have the freedom to choose the master key solution based on your application
 
     By combining these wallet solutions with the Custom Auth SDK, you can achieve a user-friendly onboarding process while enjoying additional features provided by smart wallet, such as gasless services and batch transactions.
 
-    * [**Web3Auth**](./init-master-key/02-waas.md/#init-master-key-from-web3auth)
-
+    |**Wallet Service**|**Platforms**|
+    |--|--|
+    |**Web3Auth**|[**Web**](./web-sdk/init-master-key/02-waas.md/#init-master-key-from-web3auth)|
+    
 :::tip
 Although wallet services also provide an EOA address as EOA wallets, they are introduced separately due to their integration approach being slightly different from EOA wallets.
 :::

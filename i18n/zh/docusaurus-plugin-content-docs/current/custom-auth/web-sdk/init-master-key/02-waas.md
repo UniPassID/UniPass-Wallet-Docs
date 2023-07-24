@@ -10,7 +10,7 @@ Master key 是签名消息和交易的 singer，需要从钱包服务获取 `sig
 
 在集成 Custom Auth SDK 之前，您需要首先创建一个 Web3Auth 项目，这里是一个简要的[教程](#how-to-create-a-web3auth-project)。
 
-### 选择[Web3Auth Single Factor Auth SDK](https://web3auth.io/docs/sdk/core-kit/sfa/)（可自定义 UI）
+### 选择 [Web3Auth Single Factor Auth SDK](https://web3auth.io/docs/sdk/core-kit/sfa/)（可自定义 UI）
 
 如果您需要集成自己的社交登录，如 Google，并且想要进行完全的 UI 自定义，您可以选择 Web3Auth 的单因素认证 SDK 来与 Custom Auth SDK 集成。
 
@@ -57,7 +57,7 @@ if (web3authProvider) {
 :::
 
 
-### 选择 Web3Auth Modal SDK（使用 Web3Auth 的 UI）
+### 选择 [Web3Auth Modal SDK](https://web3auth.io/docs/sdk/pnp/web/modal/)（使用 Web3Auth 的 UI）
 
 如果您不希望自己集成 Google 等社交登录，并且愿意使用 Web3Auth 提供的 UI，您可以选择 Web3Auth 的 Modal 来与 Custom Auth SDK 集成。
 

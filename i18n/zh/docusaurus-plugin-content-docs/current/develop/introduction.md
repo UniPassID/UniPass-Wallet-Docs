@@ -6,6 +6,12 @@ import Container from '../../../../../src/components/Container';
 
 # Plug & Play SDK 介绍
 
+Plug & Play SDK 是一套基于 UniPass 合约的 with-UI SDK。 
+
+我们基于 UniPass 合约实现了一个低门槛的支持邮件社交恢复的非托管智能合约钱包解决方案。
+
+
+
 UniPass Wallet 将提供多平台的 SDK，方便应用方在各种平台上都可以便捷地接入 UniPass Wallet。
 
 ### Web SDKs
