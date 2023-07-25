@@ -146,5 +146,13 @@
   "sidebar.sdk.category.Init Master Key": {
     "message": "设置 Master Key",
     "description": "The label for category Init Master Key in sidebar sdk"
+  },
+  "sidebar.docs.category.UniPass Wallet": {
+    "message": "UniPass Wallet",
+    "description": "The label for category UniPass Wallet in sidebar docs"
+  },
+  "sidebar.docs.category.UniPass Contract": {
+    "message": "UniPass 合约",
+    "description": "The label for category UniPass Contract in sidebar docs"
   }
 }

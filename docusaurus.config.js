@@ -100,14 +100,8 @@ const config = {
           href: "/"
         },
         items: [
-          // {
-          //   type: "doc",
-          //   docId: "introduction/intro",
-          //   position: "left",
-          //   label: "Tutorial",
-          // },
           {
-            to: '/introduction/intro',
+            to: '/contract/intro',
             docId: 'introduction',
             label: 'Document',
             position: 'left',

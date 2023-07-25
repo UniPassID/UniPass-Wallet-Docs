@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 ---
 
-# 多链支持
+# Multi-chain Support
 
-UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https://eips.ethereum.org/EIPS/eip-2470) 保持多链同一钱包地址。目前支持的链如下：
+UniPass Wallet supports all EVM-compatible chains and gives users the same address across all chains using [**EIP-2470**](https://eips.ethereum.org/EIPS/eip-2470). Currently supported chains are:
 
-### 主网
+## MainNet
 
 - Ethereum
 - BNB Chain
@@ -18,7 +18,7 @@ UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https
 - PlatON
 - OKC
 
-### 测试网
+## TestNet
 
 - Goerli (Ethereum testnet)
 - BSC testnet
@@ -31,7 +31,7 @@ UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https
 - PlatON testnet
 - Scroll
 
-## 未来将支持的链
+## Chains to support in the future
 
 - Optimism
 - Godwoken
