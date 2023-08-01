@@ -216,7 +216,8 @@ const config = {
           'csharp',
           'dart',
           'java',
-          'swift'
+          'swift',
+          'kotlin'
         ]
       },
       colorMode: {

@@ -161,6 +161,13 @@ export default function SDKsSection() {
                     label="Web"
                   />
                 </li>
+                <li>
+                  <SDKLink
+                    href="custom-auth/android-sdk/quick-start"
+                    Icon={AndroidIcon}
+                    label="Android"
+                  />
+                </li>
               </ul>
             </div>
             <div className="mt-6 flex flex-1 flex-col justify-end">
@@ -169,9 +176,6 @@ export default function SDKsSection() {
                   <Translate id="sdksSection.comingSoon">COMING SOON</Translate>
                 </h5>
                 <ul className="mb-0 flex list-none flex-col gap-2 pl-0">
-                  <li>
-                    <SDKLink Icon={AndroidIcon} label="Android" />
-                  </li>
                   <li>
                     <SDKLink Icon={iOSIcon} label="iOS" />
                   </li>

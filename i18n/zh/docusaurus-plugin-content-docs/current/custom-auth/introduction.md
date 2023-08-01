@@ -75,7 +75,7 @@ Custom Auth SDK 可以提供以下功能：
 在确定并初始化 master key 后，就可以接入 Custom Auth SDK 了。我们提供了 Web，Android，iOS 平台的 SDK。
 
 * [**Web**](./web-sdk/01-quick-start.md)
-* **Android** (即将推出) 
+* [**Android**](./android-sdk/01-quick-start.md) 
 * **iOS** (即将推出)
 
 ---

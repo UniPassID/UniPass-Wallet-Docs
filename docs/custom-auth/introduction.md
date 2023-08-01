@@ -75,7 +75,7 @@ Although wallet services also provide an EOA address as EOA wallets, they are in
 Once you have determined and initialized the master key, you can proceed with integrating the Custom Auth SDK. We provide SDKs for the Web, Android, and iOS platforms.
 
 * [**Web**](./web-sdk/01-quick-start.md)
-* **Android** (coming soon)
+* [**Android**](./android-sdk/01-quick-start.md)
 * **iOS** (coming soon)
 
 ---

@@ -11,7 +11,7 @@ import { SmartAccount } from "@unipasswallet/smart-account";
 
 /**
  * export type SmartAccountOptions = {
- *  appId: string;                             // appId registered From Backend
+ *  appId: string;                             // appId registered From UniPass Dashboard
  *  masterKeySigner: Signer;                   // Got Master Key Signer
  *  chainOptions: {                            // Chain Options
  *    chainId: number;

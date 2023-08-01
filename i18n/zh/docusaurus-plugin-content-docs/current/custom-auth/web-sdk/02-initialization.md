@@ -11,7 +11,7 @@ import { SmartAccount } from "@unipasswallet/smart-account";
 
 /**
  * export type SmartAccountOptions = {
- *  appId: string;                             // appId registered From Backend
+ *  appId: string;                             // appId registered From UniPass Dashboard
  *  masterKeySigner: Signer;                   // Got Master Key Signer
  *  chainOptions: {                            // Chain Options
  *    chainId: number;
@@ -59,6 +59,7 @@ await smartAccount.init({ chainId }); // init with active chain id. Notice that 
 ## 获取 `SmartAccount` 的信息
 
 ### `getAddress()`
+
 返回 SmartAccount 的地址。
 
 ```tsx
@@ -66,6 +67,7 @@ const address = await smartAccount.getAddress();
 ```
 
 ### `isDeployed()`
+
 返回当前链上 SmartAccount 是否已部署。
 
 ```tsx
@@ -73,6 +75,7 @@ const isDeployed = await smartAccount.isDeployed();
 ```
 
 ### `getProvider()`
+
 返回 SmartAccount 当前使用的提供者。
 
 ```tsx
@@ -80,6 +83,7 @@ const provider = smartAccount.getProvider();
 ```
 
 ### `getChainId()`
+
 返回 SmartAccount 当前的链 ID。
 
 ```tsx
@@ -87,13 +91,15 @@ const chainId = smartAccount.getChainId();
 ```
 
 ### `switchChain()`
-切换链，并返回具有新链的 SmartAccount 。
+
+切换链，并返回具有新链的 SmartAccount。
 
 ```tsx
 smartAccount = await smartAccount.switchChain(chainId); // 注意：chainId 必须包含在 `chainOptions` 中
 ```
 
 ### `destroy()`
+
 清除当前登录的账户。
 
 ```tsx
