@@ -13,7 +13,7 @@ sidebar_position: 1
 
 In L2 transaction modes such as StarkEx and zkLink, users need to bind an L2 key (named StarkKey or pubKeyHash) by signing message with an L1 account. 
 
-However, considering that the [master key](https://www.notion.so/architecture/03-master-key.md) used by UniPass users on the L1 layer is an MPC key, directly using the signature of the MPC key to derive the L2 key would allow the UniPass server to obtain the signature, which would affect the security of the L2 key.
+However, considering that the [master key](../../wallet/03-master-key.md) used by UniPass users on the L1 layer is an MPC key, directly using the signature of the MPC key to derive the L2 key would allow the UniPass server to obtain the signature, which would affect the security of the L2 key.
 
 > The two secret shares of the MPC key are:
 >

@@ -31,4 +31,4 @@ In this case:
 - When the master key is lost:
   - The register email can start an account recovery with a time lock by sending an email to update the master key in the account.
   - If the Register email and Guardian email both start the account recovery can instantly update the Master key in the account without time lock.
-  - More details >> [**Email Recovery**](../introduction/02-email-recovery.md)
+  - More details >> [**Email Recovery**](../wallet/04-email-recovery.md)

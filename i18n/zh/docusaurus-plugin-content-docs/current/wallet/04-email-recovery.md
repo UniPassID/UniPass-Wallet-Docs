@@ -24,7 +24,7 @@ sidebar_position: 4
 
 除了可以设置您自己的邮箱作为守护者邮箱，您还可以将亲人、朋友或者其他您信任的人设置为您账户的守护者。他们只需要提供一个邮箱地址，就可以成为您的 UniPass 账户的守护者，并在您需要账户恢复的时候，通过发送邮件协助您完成账户的社交恢复。
 
-UniPass Contract 在守护者管理层设置有权重系统，用户可以自定义各个守护者邮箱的权重系数，满足各种定制化需求。了解更多 >> [**角色及权重**](/i18n/zh/docusaurus-plugin-content-docs/current/architecture/01-key-management.md)
+UniPass Contract 在守护者管理层设置有权重系统，用户可以自定义各个守护者邮箱的权重系数，满足各种定制化需求。了解更多 >> [**角色及权重**](../contract/02-key-management.md)
 
 
 :::tip 高级使用指南：

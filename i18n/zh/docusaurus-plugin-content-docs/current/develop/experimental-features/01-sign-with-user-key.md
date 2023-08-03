@@ -13,7 +13,7 @@ sidebar_position: 1
 
 在 StarkEx，zkLink 等 L2 交易模式中，需要用户使用 L1 层的账户通过签名绑定一个 L2 层的密钥（叫做 StarkKey 或 pubKeyHash）。
 
-但考虑到 UniPass 用户在 L1 层使用的 [master key](../../architecture/03-master-key.md) 是一把 MPC key，此时如果直接使用 MPC key 的签名衍生 L2 层密钥的话，会导致 UniPass 服务器也可以获得此签名结果，这会影响 L2 层密钥的安全性。
+但考虑到 UniPass Wallet 用户在 L1 层使用的 [master key](../../wallet/03-master-key.md) 是一把 MPC key，此时如果直接使用 MPC key 的签名衍生 L2 层密钥的话，会导致 UniPass 服务器也可以获得此签名结果，这会影响 L2 层密钥的安全性。
 
 > MPC key 的 2 个密钥分片分别是：
 >

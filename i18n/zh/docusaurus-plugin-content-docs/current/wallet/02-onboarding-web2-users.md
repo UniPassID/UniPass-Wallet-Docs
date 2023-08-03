@@ -31,4 +31,4 @@ sidebar_position: 2
 - 当 Master key 丢失时:
   - Register email 可以通过发送邮件发起带时间锁的账户恢复，从而更新账户内的 Master key。
   - Register email 和 Guardian email 共同发起不带时间锁的账户恢复，从而即时更新账户内的 Master key。
-  - 详情参考 >> [**邮件社交恢复**](../introduction/02-email-recovery.md)
+  - 详情参考 >> [**邮件社交恢复**](../wallet/04-email-recovery.md)
