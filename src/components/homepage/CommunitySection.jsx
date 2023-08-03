@@ -18,19 +18,19 @@ export default function CommunitySection() {
         <div className="flex w-full flex-col items-center justify-center gap-2 text-sm font-semibold lg:flex-row lg:gap-8">
           <Link
             className="flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
-            href="https://community.dyte.io"
+            href="https://twitter.com/UniPassWallet"
           >
             <DiscordIcon className="h-6 w-6" /> Discord &rarr;
           </Link>
           <Link
             className="flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
-            href="https://twitter.com/dyte_io"
+            href="https://twitter.com/UniPassWallet"
           >
             <Twitter className="h-5 w-5" /> Twitter &rarr;
           </Link>
           <Link
             className="flex w-full items-center justify-center gap-2 rounded-sm border border-solid border-primary-100 bg-primary-100/10 px-2 py-2 text-primary-100 lg:w-auto"
-            href="https://www.linkedin.com/company/dyteio"
+            href="https://twitter.com/UniPassWallet"
           >
             <Linkedin className="h-5 w-5" /> LinkedIn &rarr;
           </Link>

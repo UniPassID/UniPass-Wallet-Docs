@@ -64,9 +64,7 @@ export default function Homepage() {
         {/* <ResourcesSection /> */}
         {/* <HelpSection className="-mb-48" /> */}
       </div>
-
       {/* <CommunitySection /> */}
-
       <HomeFooter className="" />
     </Layout>
   );
