@@ -15,7 +15,7 @@ A smart contract wallet is not without keys; instead, it allows you to set and m
 
 UniPass Contract is a versatile contract that creates smart wallets and mainly handles different types of keys and their permissions.
 
-When you create a smart wallet based on UniPass Contract, it's like making a special contract wallet just for you. The address of this contract becomes your smart wallet address, and it holds the keys information that manages your account.
+When you create a smart wallet based on UniPass Contract, it's like making a proxy contract wallet just for you. The address of this proxy contract becomes your smart wallet address, and it holds the keys information that manages your account.
 
 In UniPass Contract, you can manage your account using various keys, each with a specific role and weights. By gathering signatures from keys that meet or exceed the required weights for a certain role, you can execute the permissions associated with that role through the UniPass Contract.
 

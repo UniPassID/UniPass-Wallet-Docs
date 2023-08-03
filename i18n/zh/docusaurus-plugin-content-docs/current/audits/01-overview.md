@@ -13,6 +13,3 @@ UniPass 钱包合约经过了 **[BlockSec](https://blocksec.com/)** 和 **[Salus
 
 ## Salus
 [Jan 19, 2023](https://github.com/UniPassID/Unipass-Wallet-Contract/blob/main/audits/salus_unipass_audit_report_2023-01-19.pdf)
-
-## Open Source License
-[License](https://github.com/UniPassID/Unipass-Wallet-Contract/blob/main/LICENSE)

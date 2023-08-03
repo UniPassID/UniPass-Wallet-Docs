@@ -15,7 +15,7 @@ import thumbnail_3 from './img/roles-type.png';
 
 UniPass Contract 是一个通用的可以生成智能钱包的合约，主要管理支持的密钥类型以及密钥和账户权限之间的逻辑。
 
-为用户创建一个基于 UniPass Contract 的智能钱包，可以视为是创建了一个基于 UniPass Contract 的实例合约，这个实例合约的地址就是用户的智能钱包地址，并且这个实例合约中会存储着管理这个账户的密钥数据。
+为用户创建一个基于 UniPass Contract 的智能钱包，可以视为是创建了一个基于 UniPass Contract 的代理合约，这个代理合约的地址就是用户的智能钱包地址，并且这个代理合约中会存储着管理这个账户的密钥数据。
 
 在 UniPass Contract 中，用户可以通过一系列具有角色权重的密钥来管理账户，每一个密钥都有一个对应的角色及权重。用户只要集齐了超过某角色要求权重的密钥的签名后，就可以通过 UniPass Contract 执行这个角色相关的权限。
 

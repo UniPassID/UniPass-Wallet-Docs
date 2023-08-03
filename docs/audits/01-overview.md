@@ -14,5 +14,6 @@ UniPass will arrange more audits in the future to ensure the security of the con
 ## Salus
 [Jan 19, 2023](https://github.com/UniPassID/Unipass-Wallet-Contract/blob/main/audits/salus_unipass_audit_report_2023-01-19.pdf)
 
-## Open Source License
-[License](https://github.com/UniPassID/Unipass-Wallet-Contract/blob/main/LICENSE)
+## Open Source & Auditing
+
+UniPass Contract is currently open-source and available on [GitHub](https://github.com/UniPassID/Unipass-Wallet-Contract). It has undergone independent audits by two highly respected companies in the blockchain industry, BlockSec, and Salus. You can find more details about the audits [here](../audits/01-overview.md).
