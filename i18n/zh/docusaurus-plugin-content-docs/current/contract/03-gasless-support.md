@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # 免 gas 支持
 
-UniPss Wallet 是一个智能合约钱包，用户发起交易时需要由一个第三方作为 relayer 帮助用户发起交易。在这个过程中，relayer 可以支持用户使用任意代币支付 gas，甚至可以完全帮助用户代付 gas，实现免 gas 的体验。
+在 EVM 中，受限于底层架构设计，合约地址无法直接发起交易，需要通过 EOA 地址发起交易。
+
+因此基于 UniPass Contract 创建的智能钱包在发起交易时需要由一个第三方作为 relayer 帮助用户发起交易。在这个过程中，relayer 可以支持用户使用任意代币支付 gas，甚至可以完全帮助用户代付 gas，实现免 gas 的体验。
 
 ## 默认 gas 支付选择
 

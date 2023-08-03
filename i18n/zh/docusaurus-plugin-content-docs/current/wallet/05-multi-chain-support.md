@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # 多链支持
@@ -34,5 +34,6 @@ UniPass Wallet 可以支持所有 EVM 兼容链，并通过 [**EIP-2470**](https
 ## 未来将支持的链
 
 - Optimism
+- opBNB
 - Godwoken
 - Fantom

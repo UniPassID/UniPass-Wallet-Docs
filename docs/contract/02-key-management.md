@@ -11,9 +11,13 @@ import thumbnail_3 from './img/roles-type.png';
 
 ## Key structure
 
-When a user registers for a UniPass Wallet account, a smart contract is deployed on the chain for each user, and the data and logic connected with that account is saved within the contract.
+A smart contract wallet is not without keys; instead, it allows you to set and manage your wallet's keys flexibly using smart contracts. Even if you lose your key, you can recover your account by using a backup key through a social recovery process.
 
-Users manage their accounts in UniPass Wallet's smart contract via a sequence of keys with role weights. The user can set many different sorts of keys in addition to the Master key, which is implemented in a secure multi-party computation (MPC) scheme. Each key has a specific function and weight. Only after accumulating more weights than are necessary for that role can a user carry out the relevant actions permitted for that role.
+UniPass Contract is a versatile contract that creates smart wallets and mainly handles different types of keys and their permissions.
+
+When you create a smart wallet based on UniPass Contract, it's like making a special contract wallet just for you. The address of this contract becomes your smart wallet address, and it holds the keys information that manages your account.
+
+In UniPass Contract, you can manage your account using various keys, each with a specific role and weights. By gathering signatures from keys that meet or exceed the required weights for a certain role, you can execute the permissions associated with that role through the UniPass Contract.
 
 <p align="center">
     <Image img={thumbnail_1} width="80%" />
@@ -26,21 +30,18 @@ Users manage their accounts in UniPass Wallet's smart contract via a sequence of
     <Image img={thumbnail_2} width="80%" />
 </p>
 
-Different key types are supported by UniPass Wallet in the contract.
 
-Externally Owned Accounts (EOA), which we frequently utilize, and contract accounts that comply with the EIP-1271 protocol are supported.
+UniPass Contract supports various types of keys. The currently supported key types include the commonly used EOA (Externally Owned Account) address and contract addresses that comply with the EIP-1271 protocol. UniPass Contract also allows the use of an email address as a key by verifying the user's ownership of an internet email through DKIM signature verification. During this verification process, UniPass utilizes zero-knowledge proof technology to ensure the privacy and security of the user's email information.
 
-Email addresses can also be used as keys by UniPass users. The smart contract we will implement on the blockchain will be able to verify DKIM to cryptographically validate the user's ownership of an Email.To maintain the confidentiality and security of users' email information, UniPass uses zero-knowledge proof technology during the verification process.
+In the future, UniPass Contract will also consider supporting more efficient and concise signature algorithms compared to secp256k1, such as Schnorr and BLS, as well as post-quantum secure signature algorithms like Lamport and Winternitz.
 
-In the future, UniPass Wallet will also support more efficient and concise signature algorithms than secp256k1 (e.g., Schnorr, BLS), post-quantum secure signature algorithms (e.g., Lamport, Winternitz), and so on.
-
-## Roles and Weight
+## Roles and Weights of Keys
 
 <p align="center">
     <Image img={thumbnail_3} width="80%"/>
 </p>
 
-There are mainly three roles for keys:
+After setting up the key types, we need to assign roles and weights to the keys. Currently, there are three main roles:
 
 :::info 👤 Owner
 
@@ -62,6 +63,6 @@ Guardian is the guardians of the account. Guardians can be used to retrieve the 
 
 A key may be given to a single role or several roles. A key is given a commensurate weight when it is allocated to a role. A user must sign with one or more keys that together have a total weight of `100` or above for that role in order to begin executing actions linked to that role.
 
-Of course, for users who do not have complicated customization needs. UniPass Wallet will naturally take into account the user's current account situation, including the total amount of assets on the account and the registration time, as well as the various types of keys the user currently has bound, and intelligently recommend roles and weight settings for the user to achieve a secure and practical key management experience.
+Of course, for users who don't have complex custom requirements, UniPass Contract will consider the current situation of the user's account. Such as the total assets and registration time, as well as the types of keys currently bound. It will then intelligently recommend role and weight settings to achieve a secure and convenient key management experience.
 
-Developers can create intricate customizations based on UniPass Wallet's support for multiple key types and adaptable role weighting system to cater to the needs of various users and scenarios. Please feel free to get in touch with us through [Twitter](https://twitter.com/UniPassWallet), [Email](mailto:contact@unipass.id).
+With the support for multiple types of keys and a flexible role weighting system in UniPass Contract, developers can deeply customize the system to meet the diverse needs of different users and scenarios. We welcome you to get in touch with us via Twitter or Email to discuss and exchange ideas.

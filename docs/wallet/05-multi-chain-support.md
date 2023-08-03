@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 # Multi-chain Support
@@ -34,5 +34,6 @@ UniPass Wallet supports all EVM-compatible chains and gives users the same addre
 ## Chains to support in the future
 
 - Optimism
+- opBNB
 - Godwoken
 - Fantom

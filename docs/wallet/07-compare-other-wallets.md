@@ -1,5 +1,5 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 # UniPass Wallet vs. Other Wallets
@@ -26,7 +26,7 @@ In contrast, smart contract wallet uses CA, which enables us to create a secure 
 
 **`UniPass Wallet has unified account address across all chains`**
 
-Unipass Wallet can ensure that user enjoys the same address across all EVM-compatible chains. This means that user can use the same address on Ethereum, its layer 2 chains (Arbitrum, Optimism, etc), and other EVM-compatible chains (Binance Smart Chain, Polygon, Avalanche, Cardano, etc).
+UniPass Wallet can ensure that user enjoys the same address across all EVM-compatible chains. This means that user can use the same address on Ethereum, its layer 2 chains (Arbitrum, Optimism, etc), and other EVM-compatible chains (Binance Smart Chain, Polygon, Avalanche, Cardano, etc).
 
 **`Use threshold signature scheme to manage key using multi-party computation`**
 
@@ -60,4 +60,4 @@ Our innovation greatly improved the user experience. Now users do not need to pa
 
 **`Highly customizable security model that provides users with the security they need`**
 
-Thanks to UniPass Wallet’s flexible account model and support of wide range of key types, developers can set up just the right amount of security needed for accounts with different levels of asset. For examples, a new account does not need extra security measures like additional guardian accounts and two-factor authentication, since the default security setting is enough. When users start accumulating more asset inside the account, developers can timely require the users to set up additional security measures. This allows developers to give users just the right amount of security, without unnecessarily sacrificing user experience for the additional security they don’t yet need.
+Thanks to UniPass Contract’s flexible account model and support of wide range of key types, developers can set up just the right amount of security needed for accounts with different levels of asset. For examples, a new account does not need extra security measures like additional guardian accounts and two-factor authentication, since the default security setting is enough. When users start accumulating more asset inside the account, developers can timely require the users to set up additional security measures. This allows developers to give users just the right amount of security, without unnecessarily sacrificing user experience for the additional security they don’t yet need.

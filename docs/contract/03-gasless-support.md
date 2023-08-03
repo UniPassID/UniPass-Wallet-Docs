@@ -4,7 +4,9 @@ sidebar_position: 3
 
 # Gasless Support
 
-UniPass Wallet is a smart contract wallet. When users initiate a transaction, a third-party is needed to act as a relayer to fulfill it. In this process, the relayer can allow users to use arbitrary supported tokens to pay for the gas fee, or even pay the gas fee for the users, thus achieving a gasless user experience.
+In the EVM, due to the limitations of the underlying architecture, contract addresses cannot initiate transactions directly; they require an EOA (Externally Owned Account) address to do so.
+
+Therefore, when using a smart wallet created based on UniPass Contract, users need a third-party relayer to help them initiate transactions. In this process, the relayer can allow users to use arbitrary supported tokens to pay for the gas fee, or even pay the gas fee for the users, thus achieving a gasless user experience.
 
 ## Out of the box relayer
 

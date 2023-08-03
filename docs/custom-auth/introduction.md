@@ -46,6 +46,7 @@ You have the freedom to choose the master key solution based on your application
     |**EOA Wallet**|**Platforms**|
     |--|--|
     |**MetaMask**|[**Web**](./web-sdk/init-master-key/01-eoa.md/#init-master-key-from-metamask)|
+    |**Private Key**|[**Android**](./android-sdk/init-master-key/01-eoa.md/#init-master-key-from-private-key)|
     |**WalletConnect** (coming soon)||
 
 * **Wallet Services**

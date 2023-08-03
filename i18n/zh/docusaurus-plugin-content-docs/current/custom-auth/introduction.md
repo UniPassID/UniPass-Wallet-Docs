@@ -46,6 +46,7 @@ Custom Auth SDK 可以提供以下功能：
     |**EOA 钱包**|**平台**|
     |--|--|
     |**MetaMask**|[**Web**](./web-sdk/init-master-key/01-eoa.md/#init-master-key-from-metamask)|
+    |**Private Key**|[**Android**](./android-sdk/init-master-key/01-eoa.md/#init-master-key-from-private-key)|
     |**WalletConnect** (即将推出)||
 
 * **钱包服务**
