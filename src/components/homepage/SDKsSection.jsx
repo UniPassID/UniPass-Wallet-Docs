@@ -168,9 +168,16 @@ export default function SDKsSection() {
                     label="Android"
                   />
                 </li>
+                <li>
+                  <SDKLink
+                    href="custom-auth/ios-sdk/quick-start"
+                    Icon={iOSIcon}
+                    label="iOS"
+                  />
+                </li>
               </ul>
             </div>
-            <div className="mt-6 flex flex-1 flex-col justify-end">
+            {/* <div className="mt-6 flex flex-1 flex-col justify-end">
               <div className="rounded-2xl bg-secondary-700 p-4 dark:bg-secondary-900">
                 <h5 className="text-center text-xs text-text-400">
                   <Translate id="sdksSection.comingSoon">COMING SOON</Translate>
@@ -181,7 +188,7 @@ export default function SDKsSection() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="flex-1 rounded-b-3xl bg-secondary-800 p-6 px-8 lg:rounded-r-3xl lg:rounded-bl-none">
             <h4>Wallet Connectors</h4>

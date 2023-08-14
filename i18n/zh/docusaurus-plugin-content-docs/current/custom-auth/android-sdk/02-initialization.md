@@ -47,9 +47,9 @@ smartAccount.init(SmartAccountInitOptions(ChainID.POLYGON_MUMBAI))
 `SmartAccount` 实例提供以下函数：
 
 - 获取 SmartAccount 的信息
-    - `getAddress()`: 返回 SmartAccount 的地址。
+    - `address()`: 返回 SmartAccount 的地址。
     - `isDeployed()`: 返回当前链上 SmartAccount 是否已部署。
-    - `getChainId()`: 返回 SmartAccount 当前的链 ID。
+    - `chainId()`: 返回 SmartAccount 当前的链 ID。
 - `switchChain()`: 切换链
 - `sendTransaction()`: 返回交易的响应。
 - `signMessage()`: 返回使用个人签名的消息签名。
@@ -57,7 +57,7 @@ smartAccount.init(SmartAccountInitOptions(ChainID.POLYGON_MUMBAI))
 
 ## 获取 `SmartAccount` 的信息
 
-### `getAddress()`
+### `address()`
 
 返回 SmartAccount 的地址。
 
@@ -73,7 +73,7 @@ val address = smartAccount.address();
 val isDeployed = smartAccount.isDeployed();
 ```
 
-### `getChainId()`
+### `chainId()`
 
 返回 SmartAccount 当前的链 ID。
 

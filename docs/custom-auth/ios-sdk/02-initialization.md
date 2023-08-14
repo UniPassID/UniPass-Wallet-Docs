@@ -6,36 +6,24 @@ sidebar_position: 3
 
 ## Initialize `SmartAccount`
 
-```kotlin
-import com.unipass.smartAccount.*
+```swift
+import Shared
+import CustomAuthSdk
 
-// class SmartAccountOptions(
-//    val masterKeySigner: Signer,
-//    val appId: String,
-//    val unipassServerUrl?: String,
-//    val chainOptions: Array<ChainOptions>
-// )
+// public struct SmartAccountOptions { 
+//     public init(masterKeySigner: Signer? = nil, masterKeyRoleWeight: RoleWeight? = nil, appId: String, unipassServerUrl: String? = nil, chainOptions: Array<ChainOptions>);
+// }
 //
-// class ChainOptions(
-//    var chainId: ChainID,
-//    var rpcUrl: String,
-//    var relayerUrl: String?
-// )
+// public struct ChainOptions {   
+//     public init(chainId: ChainID, rpcUrl: String, relayerUrl: String? = nil);
+// }
 
-val smartAccountOption = SmartAccountOptions(
-    signer,
-    appId, // appId registered From UniPass Dashboard
-    arrayOf(
-        ChainOptions(
-            ChainID.POLYGON_MUMBAI,
-            "https://node.wallet.unipass.id/polygon-mumbai",
-            "https://t.wallet.unipass.vip/relayer-v2-polygon"
-        )
-    )
-)
+let options = SmartAccountOptions(masterKeySigner: masterKeySigner, appId: appId,  chainOptions: [ChainOptions(chainId: ChainID.POLYGON_MUMBAI, rpcUrl: "https://node.wallet.unipass.id/polygon-mumbai")])
 
-val smartAccount = SmartAccount(smartAccountOption)
-smartAccount.init(SmartAccountInitOptions(ChainID.POLYGON_MUMBAI))
+let smartAccount = SmartAccount(options:options)
+
+let initOptions = SmartAccountInitOptions(chainId: ChainID.POLYGON_MUMBAI)
+smartAccount.initialize(options: initOptions)
 ```
 
 :::tip
@@ -61,30 +49,30 @@ The instance of `SmartAccount` returns the following functions:
 
 This returns the address of your smart account.
 
-```kotlin
-val address = smartAccount.address();
+```swift
+let address = try? await smartAccount.address();
 ```
 
 ### `isDeployed()` 
 
 This returns the result whether your smart account is deployed in current chain.
 
-```kotlin
-val isDeployed = smartAccount.isDeployed();
+```swift
+let isDeployed = try? await smartAccount.isDeployed();
 ```
 
 ### `chainId()`
 
 This returns current chain of your smart account.
 
-```kotlin
-val chainId = smartAccount.chainId(); // ChainID
+```swift
+let chainId = try? smartAccount.chainId(); // ChainID
 ```
 
 ### `switchChain()`
 
 Switch active chain.
 
-```kotlin
-smartAccount.switchChain(chainId); // Notice that chainId must be included in the `chainOptions`
+```swift
+try? smartAccount.switchChain(chainId: chainId); // Notice that chainId must be included in the `chainOptions`
 ```
