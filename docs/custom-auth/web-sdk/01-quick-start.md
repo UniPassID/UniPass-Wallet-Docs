@@ -14,14 +14,14 @@ import TabItem from '@theme/TabItem';
 <TabItem value="npm">
 
 ```bash
-npm install @unipasswallet/smart-account@0.1.0-alpha.15
+npm install @unipasswallet/smart-account@0.1.1
 ```
 </TabItem>
 
 <TabItem value="yarn">
 
 ```bash
-yarn add @unipasswallet/smart-account@0.1.0-alpha.15
+yarn add @unipasswallet/smart-account@0.1.1
 ```
 </TabItem>
 
@@ -29,7 +29,7 @@ yarn add @unipasswallet/smart-account@0.1.0-alpha.15
 <TabItem value="pnpm">
 
 ```bash
-pnpm add @unipasswallet/smart-account@0.1.0-alpha.15
+pnpm add @unipasswallet/smart-account@0.1.1
 ```
 </TabItem>
 </Tabs>

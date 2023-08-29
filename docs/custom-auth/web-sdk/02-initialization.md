@@ -20,6 +20,8 @@ import { SmartAccount } from "@unipasswallet/smart-account";
  *  }[];
  *  fetch?: typeof fetch;
  *  unipassServerUrl?: string;
+ *  keysetJson?: string;                            // the keyset json string
+ *  address?: string;                               // the address of smart account
  * };
  */
 
