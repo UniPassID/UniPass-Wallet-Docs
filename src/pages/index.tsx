@@ -49,6 +49,7 @@ export default function Homepage() {
       noFooter
     >
       <Head>
+        <meta name="robots" content="noindex, nofollow"/>
         <link rel="prefetch" href="/assets/css/elements.min.css" />
       </Head>
       <HeroSection />
